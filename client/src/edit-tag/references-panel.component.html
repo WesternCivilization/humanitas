@@ -1,0 +1,119 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+
+                <preload-control type="area" icon="{{_settings.getEntityIcon('area')}}" label="Área" value="{{data.areaId}}" (select)="data.areaId = $event.value"
+                    placeholder="Nome da area"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="period" icon="{{_settings.getEntityIcon('period')}}" label="Período" value="{{data.periodId}}" (select)="data.periodId = $event.value"
+                    placeholder="Nome do Período"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="book" icon="{{_settings.getEntityIcon('book')}}" label="Livro" value="{{data.bookId}}" (select)="data.bookId = $event.value"
+                    placeholder="Nome do Livro"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="author" icon="{{_settings.getEntityIcon('author')}}" label="Autor 1" value="{{data.personId1}}" (select)="data.personId1 = $event.value"
+                    placeholder="Nome do Autor 1"></preload-control>
+
+                <preload-control type="author" icon="{{_settings.getEntityIcon('author')}}" label="Autor 2" value="{{data.personId2}}" (select)="data.personId2 = $event.value"
+                    placeholder="Nome do Autor 2"></preload-control>
+
+                <preload-control type="author" icon="{{_settings.getEntityIcon('author')}}" label="Autor 3" value="{{data.personId3}}" (select)="data.personId3 = $event.value"
+                    placeholder="Nome do Autor 3"></preload-control>
+
+                <preload-control type="author" icon="{{_settings.getEntityIcon('author')}}" label="Autor 4" value="{{data.personId4}}" (select)="data.personId4 = $event.value"
+                    placeholder="Nome do Autor 4"></preload-control>
+
+                <preload-control type="author" icon="{{_settings.getEntityIcon('author')}}" label="Autor 5" value="{{data.personId5}}" (select)="data.personId5 = $event.value"
+                    placeholder="Nome do Autor 5"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="topic" icon="{{_settings.getEntityIcon('topic')}}" label="Tópico 1" value="{{data.topicId1}}" (select)="data.topicId1 = $event.value"
+                    placeholder="Nome do Tópico 1"></preload-control>
+
+                <preload-control type="topic" icon="{{_settings.getEntityIcon('topic')}}" label="Tópico 2" value="{{data.topicId2}}" (select)="data.topicId2 = $event.value"
+                    placeholder="Nome do Tópico 2"></preload-control>
+
+                <preload-control type="topic" icon="{{_settings.getEntityIcon('topic')}}" label="Tópico 3" value="{{data.topicId3}}" (select)="data.topicId3 = $event.value"
+                    placeholder="Nome do Tópico 3"></preload-control>
+
+                <preload-control type="topic" icon="{{_settings.getEntityIcon('topic')}}" label="Tópico 4" value="{{data.topicId4}}" (select)="data.topicId4 = $event.value"
+                    placeholder="Nome do Tópico 4"></preload-control>
+
+                <preload-control type="topic" icon="{{_settings.getEntityIcon('topic')}}" label="Tópico 5" value="{{data.topicId5}}" (select)="data.topicId5 = $event.value"
+                    placeholder="Nome do Tópico 5"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="skill" icon="{{_settings.getEntityIcon('skill')}}" label="Habilidade 1" value="{{data.skillId1}}"
+                    (select)="data.skillId1 = $event.value" placeholder="Nome da Habilidade 1"></preload-control>
+
+                <preload-control type="skill" icon="{{_settings.getEntityIcon('skill')}}" label="Habilidade 2" value="{{data.skillId2}}"
+                    (select)="data.skillId2 = $event.value" placeholder="Nome da Habilidade 2"></preload-control>
+
+                <preload-control type="skill" icon="{{_settings.getEntityIcon('skill')}}" label="Habilidade 3" value="{{data.skillId3}}"
+                    (select)="data.skillId3 = $event.value" placeholder="Nome da Habilidade 3"></preload-control>
+
+                <preload-control type="skill" icon="{{_settings.getEntityIcon('skill')}}" label="Habilidade 4" value="{{data.skillId4}}"
+                    (select)="data.skillId4 = $event.value" placeholder="Nome da Habilidade 4"></preload-control>
+
+                <preload-control type="skill" icon="{{_settings.getEntityIcon('skill')}}" label="Habilidade 5" value="{{data.skillId5}}"
+                    (select)="data.skillId5 = $event.value" placeholder="Nome da Habilidade 5"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="law" icon="{{_settings.getEntityIcon('law')}}" label="Lei" value="{{data.lawId}}" (select)="data.lawId = $event.value"
+                    placeholder="Nome da Lei"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="state" icon="{{_settings.getEntityIcon('state')}}" label="Estado 1" value="{{data.stateId1}}" (select)="data.stateId1 = $event.value"
+                    placeholder="Nome do Estado 1"></preload-control>
+
+                <preload-control type="state" icon="{{_settings.getEntityIcon('state')}}" label="Estado 2" value="{{data.stateId2}}" (select)="data.stateId2 = $event.value"
+                    placeholder="Nome do Estado 2"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="institution" icon="{{_settings.getEntityIcon('institution')}}" label="Instituição 1" value="{{data.institutionId1}}"
+                    (select)="data.institutionId1 = $event.value" placeholder="Nome da Instituição 1"></preload-control>
+
+                <preload-control type="institution" icon="{{_settings.getEntityIcon('institution')}}" label="Instituição 2" value="{{data.institutionId2}}"
+                    (select)="data.institutionId2 = $event.value" placeholder="Nome da Instituição 2"></preload-control>
+
+            </div>
+        </form>
+
+    </div>
+</div>

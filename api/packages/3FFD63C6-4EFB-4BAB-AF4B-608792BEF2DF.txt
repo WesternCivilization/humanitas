@@ -1,0 +1,97 @@
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'cb02c1d5-1290-4e30-9efd-b79fa0210384', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 4 WHERE FragmentId = 'cb02c1d5-1290-4e30-9efd-b79fa0210384' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1e89d187-1b41-46f5-bcd2-0358c7b76b21', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'fd9f7927-416f-4b99-abd5-0bf7c3c7674c', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = 'fd9f7927-416f-4b99-abd5-0bf7c3c7674c' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'df4850f7-b4c2-4193-9704-515a95e1643e', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '9e59d973-58b5-4d34-89e1-6ee250e59881', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4d838d6c-ec0c-4caa-82f7-74b310e8b98c', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '98dc58c2-f15f-480d-add9-7949c92b0289', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '3d4de4ff-d65f-431e-8e10-9ace79c36245', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '0baa42f3-f550-45a2-9f06-9eb97c9f5de0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '92c6b7e4-f97f-4254-960f-9f2f6532e6ec', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('E219EE86-40FF-40DD-ADD5-882ED4586BDB',
+	1,
+	'Gnose e o movimento do discurso politicamente correto',
+	'O ''politicamente correto'' é um movimento cultural 1) de substituição política do homem maduro do Ocidente pelo Estado moderno e positivista; 2) de substituição da cultura cristã, defensora de uma razão linear e biográfica -- em que as ações humanas sempre podem ter ecos morais tanto nessa vida quanto nas próximas gerações ou ainda numa vida no além-túmulo -- por seitas orientais de cunho gnóstico, defensoras de uma razão cíclica e impessoal -- em que os conceitos de culpa moral, bem, mal, inferno ou juízo final já não fazem qualquer sentido.',
+	'Rafael Melo',
+	'',
+	16,
+	'6DB188B9-6770-4E85-9A37-012EE00BDAB8',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	'31FCDBF5-5CFD-4A15-9525-B2264B30CF60',
+	'958ADAA6-39FF-4AE5-B94E-36EBB1DB5A90',
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('3FFD63C6-4EFB-4BAB-AF4B-608792BEF2DF', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 11, 2, 0)
+|~|

@@ -1,0 +1,79 @@
+<div style="text-align: right; margin-bottom: 5px;">
+
+    <div class="row">
+        <div class="col-xs-6" style="text-align: left;">
+            <preload-template type="tag" icon="fa fa-user" value="{{tag}}" label="Pesquisar por" placeholder="Nome do tópico, livro ou autor"
+                (select)="setFilter($event.value)"></preload-template>
+        </div>
+
+        <div class="col-xs-6" style="text-align: left;">
+            <preload-template type="sorttype" value="{{sortType}}" label="Order por" icon="fa fa-sort-amount-asc" placeholder="Classificação, audição, criação"
+                (select)="setSort($event.value)"></preload-template>
+        </div>
+    </div>
+
+    <button class="btn btn-yellow radius-4" (click)="_player.playAll(data)">
+        <i class="ace-icon fa fa-play"></i> Tocar
+    </button>
+
+    <button class="btn btn-yellow radius-4" (click)="_player.queueAll(data)">
+        <i class="ace-icon fa fa-plus"></i> Enfileirar
+    </button>
+
+</div>
+<div *ngFor="let act of data" class="itemdiv commentdiv" style="border: solid 1px #E7E7E7; padding: 10px; border-radius: 10px; margin-bottom: 15px; background-image: linear-gradient(to bottom, #ffffff 0,#f3f3f3 40px,#ededed 42px,#ffffff 70%);">
+    <div class="user" style="left: 10px;">
+        <a [routerLink]="['/users', act.userId]">
+            <img alt="{{act.userName}}" *ngIf="act.userPhotoUrl" src="{{act.userPhotoUrl.replace('=normal', '=small')}}" style="width: 45px; height: 45px; border-radius: 50px; border: solid 2px #963;">
+        </a>
+    </div>
+    <div class="body">
+        <div class="time">
+            <i *ngIf="act.totalListen > 0" class="ace-icon fa fa-volume-down"></i>
+            <span *ngIf="act.totalListen > 0" class="blue">{{act.totalListen}}</span>
+            <i class="ace-icon fa fa-clock-o"></i>
+            <span class="green">{{act.createdTimeElapsed}}</span>
+        </div>
+        <div class="name" style="padding-top:5px">
+            <h3 style="font-size: 20px;">
+                <a [routerLink]="_settings.getViewLink(act.type, act.domainId, act.id, act.title)" style="color: #999;">
+                    <i [class]="_settings.getEntityIcon(act.type)"></i> {{act.title}}
+                </a>
+            </h3>
+        </div>
+        <div class="text" style="color: #5A5A5A!important;">
+            <img *ngIf="act.fileName" style="float:left; margin-right:10px; border: solid 1px #ccc;" [src]="_settings.ApiUrl + '/api/images?imagePath=' + (act.author ? 'fragments' : 'tags') + '/width160/' + act.fileName">
+            <i class="ace-icon fa fa-quote-left" *ngIf="act.content"></i>
+            <p style="display:inline; font-size: 16px;" *ngIf="act.content" [innerHtml]="formatText(act.content)" (click)="selectText($event)"></p>
+            <p style="font-size: 14px; margin-top:10px;">
+                <b>{{act.author}}</b>
+            </p>
+            <p *ngIf="act.reference">
+                <br />
+                <small>
+                    <cite>{{act.reference}}</cite>
+                </small>
+            </p>
+            <p *ngIf="act.tags.length > 0">
+                <a *ngFor="let tag of act.tags" [routerLink]="[tag.link.split(';')[0], toQueryParams(tag.link.split(';')[1])]" class="label"
+                    style="margin:2px;" title="{{tag.label}}">{{trunc(tag.label, 26)}}</a>
+            </p>
+            <div style="clear:both"></div>
+        </div>
+        <div style="position: absolute; right: -15px; margin-top: -5px;">
+            <button class="btn btn-app btn-yellow btn-xs" style="width:40px; height: 30px;" (click)="_player.play(act.type, act.id)">
+                <i class="ace-icon fa fa-play icon-only" style="position: relative; top: -5px;"></i>
+            </button>
+            <button class="btn btn-app btn-yellow btn-xs" style="width:40px; height: 30px;" (click)="_player.queue(act.type, act.id)">
+                <i class="ace-icon fa fa-plus icon-only" style="position: relative; top: -5px;"></i>
+            </button>
+            <a class="btn btn-app btn-light btn-xs" style="width:40px; height: 30px;" [routerLink]="_settings.getEditLink(act.type, act.id)"
+                *ngIf="_settings.getUserType() == 0">
+                <i class="ace-icon fa fa-edit icon-only" style="position: relative; top: -5px;"></i>
+            </a>
+        </div>
+        <score-template *ngIf="act.author" [votes]="act.totalVotes" [score]="act.totalScore" [fragmentId]="act.id"></score-template>
+        <div style="height: 25px;"></div>
+        <div style="clear:both"></div>
+    </div>
+</div>

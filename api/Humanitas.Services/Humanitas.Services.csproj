@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB18E20F-CE53-4C72-A60E-4B315F5CD05E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Humanitas.Services</RootNamespace>
+    <AssemblyName>Humanitas.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimaliaService.cs" />
+    <Compile Include="DogmaticaService.cs" />
+    <Compile Include="EncryptionService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlLiteService.cs" />
+    <Compile Include="TerminalService.cs" />
+    <Compile Include="TopicaService.cs" />
+    <Compile Include="UserAccessService.cs" />
+    <Compile Include="ZeteticaService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Humanitas.Common\Humanitas.Common.csproj">
+      <Project>{6e2a1bde-816d-4d58-81b3-1b8cf655a915}</Project>
+      <Name>Leibniz.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Humanitas.Interfaces\Humanitas.Interfaces.csproj">
+      <Project>{9e48f63a-d025-4f77-abae-5e81d3d02663}</Project>
+      <Name>Leibniz.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Humanitas.Services.Interfaces\Humanitas.Services.Interfaces.csproj">
+      <Project>{f6724b4f-a569-441c-9629-8f4f7267c083}</Project>
+      <Name>Leibniz.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{12a8a24e-9906-4598-96dd-96eb08197670}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositoryWatcher\RepositoryWatcher.csproj">
+      <Project>{5d61633a-2849-489f-9ca6-6195aa58d1b6}</Project>
+      <Name>RepositoryWatcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlCache\SqlCache.csproj">
+      <Project>{f053598f-3921-4cd7-9a71-beaa578df1fc}</Project>
+      <Name>SqlCache</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

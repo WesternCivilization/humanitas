@@ -1,0 +1,155 @@
+<div class="widget-box transparent">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon {{icon}}"></i>
+            {{title}}
+        </h4>
+    </div>
+</div>
+<div class="row" *ngIf="detail && !detailLoading">
+    <tag-template [data]="detail"></tag-template>
+</div>
+
+<div class="row" *ngIf="detailLoading">
+    <img src="assets/images/loading.gif" />
+</div>
+
+<hr *ngIf="detail" />
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="tabbable">
+            <ul id="inbox-tabs" class="inbox-tabs nav nav-tabs padding-16 tab-size-bigger tab-space-1">
+                <li class="active">
+                    <a data-toggle="tab" href="#folders" aria-expanded="true">
+                        <i class="ace-icon fa fa-folder bigger-120"></i>
+                        Pastas
+                        <span *ngIf="folders && !foldersLoading" class="badge badge-default">{{folders.length}}</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#fragments" aria-expanded="false">
+                        <i class="ace-icon fa fa-quote-left bigger-120"></i>
+                        Fragmentos
+                        <span *ngIf="fragments && !fragmentsLoading" class="badge badge-default">{{fragmentsCount}}</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#events" aria-expanded="false">
+                        <i class="ace-icon fa fa-header bigger-120"></i>
+                        Biografia
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#links" aria-expanded="false">
+                        <i class="ace-icon fa fa-link bigger-120"></i>
+                        Links
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#books" aria-expanded="false">
+                        <i class="ace-icon fa fa-book bigger-120"></i>
+                        Livros
+                        <span *ngIf="books && !booksLoading" class="badge badge-default">{{books.length}}</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" style="display:inline-block; width: 100%;">
+                <div id="folders" class="tab-pane fade active in">
+                    <div class="row" *ngIf="folders && !foldersLoading">
+                        <div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let folder of folders">
+                            <div class="thumbnail search-thumbnail" style="height:130px; padding-top:20px">
+                                <a [routerLink]="[folder.link, folder.queryParams]">
+                                    <i class="ace-icon {{folder.icon}} bigger-230" style="display:block;"></i>
+                                    <h5 style="display:block; text-align:center;">{{folder.label}}</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="foldersLoading">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+
+                <div id="fragments" class="tab-pane fade" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onFragmentsScroll()">
+                    <activities-template *ngIf="!fragmentsLoading" [tag]="parent" [data]="fragments"></activities-template>
+                    <div class="row" *ngIf="fragmentsLoading">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+
+                <div id="events" class="tab-pane fade">
+                    <table class="table table-bordered table-hover" *ngIf="detail && detail.events">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let event of detail.events">
+                                <td>{{showDate(event)}}</td>
+                                <td>{{event.name}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row" *ngIf="detailLoading">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+
+                <div id="links" class="tab-pane fade">
+                    <table class="table table-bordered table-hover" *ngIf="detail && detail.links">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Url</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let link of detail.links">
+                                <td>{{link.label}}</td>
+                                <td>
+                                    <a href="{{link.url}}" target="_blank">{{link.url}}</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row" *ngIf="detailLoading">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+
+                <div id="books" class="tab-pane fade">
+                    <div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let node of books">
+                        <div class="thumbnail search-thumbnail" style="height:290px; padding-top:20px">
+                            <a [routerLink]="['/explorer', {domainId: node.domainId, parent: node.tagId, parentName: node.name, parentType: 'book'}]">
+                                <div [style.background-size]="'cover'" [style.width]="'120px'" [style.height]="'170px'" [style.background-image]='url("url(" + _settings.ApiUrl + "/api/images?imagePath=tags/width160/" + _settings.cleanText(node.fileName) + ")")'
+                                    [style.margin]="'auto'">
+                                    <span class="badge badge-yellow" [style.margin-top]="'5px'" [style.margin-right]="'5px'" [style.float]="'right'" [style.display]="node.totalOfFragments > 0 ? 'block' : 'none'">{{node.totalOfFragments}}</span>
+                                </div>
+                                <h6 style="display:block; text-align:center; color: #999999; margin: 0; padding: 0; margin-top: 10px;">{{trunc(node.name.split('[')[0], 50)}}</h6>
+                                <h4 style="display:block; text-align:center;color: #999999; margin: 0; padding: 0;">{{trunc(node.name.split('[')[1].split(']')[0].split(';')[0], 30)}}</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="booksLoading">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.col -->
+
+    <div class="vspace-6-sm"></div>
+
+
+</div>

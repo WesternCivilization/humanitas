@@ -1,0 +1,46 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+
+                <date-control type="any-date" icon="fa fa-calendar" label="Data de Nascimento" value="{{data.beginDate}}|{{data.beginYear}}|{{data.beginCentury}}"
+                    (change)="setBeginDate($event)" placeholder=""></date-control>
+
+                <text-control type="local" icon="fa fa-arrows" label="Local de Nascimento" value="{{data.beginLocal}}" (change)="data.beginLocal = $event"
+                    placeholder=""></text-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <date-control type="any-date" icon="fa fa-calendar" label="Falecimento" value="{{data.endDate}}|{{data.endYear}}|{{data.endCentury}}"
+                    (change)="setEndDate($event)" placeholder=""></date-control>
+
+                <text-control type="local" icon="fa fa-arrows" label="Local de Falecimento" value="{{data.endLocal}}" (change)="data.endLocal = $event"
+                    placeholder=""></text-control>
+
+            </div>
+        </form>
+    </div>
+</div>

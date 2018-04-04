@@ -1,0 +1,25 @@
+<div class="widget-box transparent">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-users"></i>
+            Usuários <span *ngIf="usersCount">({{usersCount}})</span>
+        </h4>
+    </div>
+</div>
+
+<div class="row" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+    <div class="col-xs-12">
+        <div class="row" *ngIf="users">
+            <div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let node of users">
+                <div class="thumbnail search-thumbnail" style="height:250px; padding-top:20px">
+                    <a [routerLink]="['/users', node.userId]">
+                        <div [style.background-size]="'cover'" [style.width]="'150px'" [style.height]="'170px'" [style.background-position]="'center'" [style.background-image]="url('url(' + node.photoUrl + ')')" [style.margin]="'auto'">
+                            <span class="badge badge-yellow" [style.margin-top]="'5px'" [style.margin-right]="'5px'" [style.float]="'right'" [style.display]="node.totalOfFragments > 0 ? 'block' : 'none'">{{node.totalOfFragments}}</span>
+                        </div>
+                        <h6 style="display:block; text-align:center; color: #999999">{{node.name}}</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

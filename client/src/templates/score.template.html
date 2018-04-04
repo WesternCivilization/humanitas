@@ -1,0 +1,18 @@
+<div style="position: absolute; left: -50px;" (mouseleave)="mouseout()">
+    <span (mouseover)="mouseover(1)" (click)="setScore(1)">
+        <i [class]="myVote >= 1 ? 'message-star ace-icon fa fa-star orange2 bigger-150' : 'message-star ace-icon fa fa-star-o light-grey bigger-150'"></i>
+    </span>
+    <span (mouseover)="mouseover(2)" (click)="setScore(2)">
+        <i [class]="myVote >= 2 ? 'message-star ace-icon fa fa-star orange2 bigger-150' : 'message-star ace-icon fa fa-star-o light-grey bigger-150'"></i>
+    </span>
+    <span (mouseover)="mouseover(3)" (click)="setScore(3)">
+        <i [class]="myVote >= 3 ? 'message-star ace-icon fa fa-star orange2 bigger-150' : 'message-star ace-icon fa fa-star-o light-grey bigger-150'"></i>
+    </span>
+    <span (mouseover)="mouseover(4)" (click)="setScore(4)">
+        <i [class]="myVote >= 4 ? 'message-star ace-icon fa fa-star orange2 bigger-150' : 'message-star ace-icon fa fa-star-o light-grey bigger-150'"></i>
+    </span>
+    <span (mouseover)="mouseover(5)" (click)="setScore(5)">
+        <i [class]="myVote >= 5 ? 'message-star ace-icon fa fa-star orange2 bigger-150' : 'message-star ace-icon fa fa-star-o light-grey bigger-150'"></i>
+    </span>
+    <span *ngIf="votes">{{votes > 1 ? votes + ' votos' : votes + ' voto'}}</span>
+</div>

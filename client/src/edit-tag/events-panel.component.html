@@ -1,0 +1,108 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+                <div class="widget-box">
+                    <div class="widget-header">
+                        <h4 class="smaller">
+                            Acontecimentos
+                        </h4>
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <table class="table table-bordered table-hover" *ngIf="data && data.events">
+                                <thead>
+                                    <tr>
+                                        <th>Data</th>
+                                        <th>Descrição</th>
+                                        <th style="width:80px;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let event of data.events">
+                                        <td>{{showDate(event)}}</td>
+                                        <td>{{event.name}}</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-xs" (click)="selected = event">
+                                                <i class="ace-icon fa fa-edit bigger-110 icon-only"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-xs" (click)="remove(event)">
+                                                <i class="ace-icon fa fa-remove bigger-110 icon-only"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <hr>
+
+                            <p>
+                                <button type="button" class="btn btn-sm btn-primary" (click)="add()">
+                                    <i class="ace-icon fa fa-plus align-top bigger-125"></i>
+                                    Novo
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p></p>
+
+                <hr>
+
+                <p></p>
+
+                <div class="widget-box" *ngIf="selected">
+                    <div class="widget-header">
+                        <h4 class="smaller">
+                            Detalhes
+                        </h4>
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <date-control type="any-date" icon="fa fa-calendar" label="Data" value="{{selected.date}}|{{data.year}}|{{data.century}}"
+                                (change)="setDate($event)" placeholder=""></date-control>
+
+                            <text-control type="local" icon="fa fa-arrows" label="Descrição" value="{{selected.name}}" (change)="selected.name = $event"
+                                placeholder=""></text-control>
+
+                            <hr>
+
+                            <p>
+                                <button type="button" class="btn btn-sm btn-primary" (click)="saveEvent()">
+                                    <i class="ace-icon fa fa-save align-top bigger-125"></i>
+                                    Salvar
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

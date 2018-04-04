@@ -1,0 +1,100 @@
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3B36E6AE-6986-487E-A8FC-679F15F35BBA', 2, 'Gustave Flaubert', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('27A7457E-7DCF-48EB-A819-992FD7B9EC6F', 2, 'Henry Miller', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Buscar a verdade é uma vocação de escritores, não de seguidores de uma religião',
+	Content = 'Gustave Flaubert, que era um ateu, e Henry Miller, que era um pornógrafo, praticavam o exame de consciência tão bem ou melhor do que qualquer católico que eu conheça.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '3B36E6AE-6986-487E-A8FC-679F15F35BBA',
+	PersonId3 = '27A7457E-7DCF-48EB-A819-992FD7B9EC6F',
+	TopicId1 = '8670646A-AA50-479E-AFB7-1F813DF2E13A',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1B4C5EF4-4C86-47F5-8D0E-16C17E65F0A2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5D7CBFE7-261F-44A7-A4BE-2B7B90FA5093' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('8DFAFAA9-5A34-4275-BF22-050B18283097', 2, 'Antonio Machado', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Toda vocação de escritor é de algum modo religiosa',
+	Content = 'Mesmo que um escritor não tenha a menor intenção religiosa, não escapará da máxima de Antonio Machado: "Quién habla solo espera hablar a Dios un dia."',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '8DFAFAA9-5A34-4275-BF22-050B18283097',
+	TopicId1 = '268826E9-F73C-421F-B206-F654833F8361',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1B4C5EF4-4C86-47F5-8D0E-16C17E65F0A2'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('89AF25D9-5F41-477A-9EC6-E63443106927', 7, 'Toda tecnologia quando aplicada de modo ilimitado converte-se no seu contrário', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do problema das soluções',
+	Content = 'O problema de todas as soluções é que quando elas saem do pensamento para a realidade os problemas já são outros.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '89AF25D9-5F41-477A-9EC6-E63443106927',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '1173EBF1-B47F-40BA-B508-C54DC729523C',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '3980BD15-FA2C-4F8D-8B5A-4F19E248FAD9'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('04A8E13A-5AC8-49CC-B23D-A3B31B6CDBD3', 7, 'Politicamente correto', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Das condições do politicamente correto',
+	Content = 'Os códigos "politicamente corretos" só podem ser aceitos por uma população previamante desprovida da percepção das nuances e ambigüidades da linguagem escrita e falada. O analfabetismo funcional endêmico é a condição "sine qua non" da Nova Ordem Mundial.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '04A8E13A-5AC8-49CC-B23D-A3B31B6CDBD3',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'B420FF3C-81FE-4DBD-A4A0-0047A6703726',
+	TopicId2 = '94781149-1BC6-4D6C-B261-B6C7C6CDBCF1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2DB2ACA4-76C6-433D-9D03-5E22D5179B11'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Aos seguidores do politicamente correto, a praga!',
+	Content = 'Meu desprezo por leitores intoxicados de preconceitos verbais politicamente corretos é tanto, que espero sinceramente que jamais me leiam. Não quero persuadi-los de nada, não quero mudar o maldito curso das suas vidas, não quero que sua inteligência desperte. Quero que se engasguem cada vez mais na sua massa fedorenta de cacoetes paralisantes até que sua linguagem se reduza a um código de grunhidos legalmente autorizados.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '54D8EDCC-FE48-4EA3-B9C6-2BA3B27316B5',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '04A8E13A-5AC8-49CC-B23D-A3B31B6CDBD3',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B178E19-6113-4A20-8985-6F4EED27AA8E'
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('3A986758-42CB-41A8-9D3F-2FE1EEE5B1EA', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 0, 7, 0)
+|~|

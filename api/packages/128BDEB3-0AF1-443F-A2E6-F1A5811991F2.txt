@@ -1,0 +1,4205 @@
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3225027C-1C3A-492B-8B5B-06672EAA93B9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FB092805-C687-4E7A-9D7A-0675E9019FA4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9AA69B86-FE05-4903-994E-078F12FC3B74' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A89E3367-7D54-4B00-8233-088E2D8287C6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '046F0543-B76D-4942-B053-0930D279A415' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F5D25B9E-1DC7-47D9-A440-0A72F517BA62' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DBD8E80A-A2DA-4777-BE91-0BC0A9A3994B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FD9F7927-416F-4B99-ABD5-0BF7C3C7674C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FD26A8C3-9E95-470E-B97E-0C22D6953C32' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '257A1DBB-08EB-4A01-95AD-0D33CEE13262' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA849812-D6E7-4A56-98E5-0E46F4D6ED0C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '679068D9-3AD8-48CA-BD16-0E6C911C5E67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '679068D9-3AD8-48CA-BD16-0E6C911C5E67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D23384BA-0ACD-4ADC-8481-0E8FA5E0FD1C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5890741D-7C15-4CFD-BA36-0EC7CADD6479' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '91F97F8C-CE5D-40B0-A38A-0FC881901DD3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A758A93C-992D-479A-8C3F-0FD82AE302A5' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A758A93C-992D-479A-8C3F-0FD82AE302A5', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E73E83C2-2B0D-4D09-BCD7-12922DD61FF6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '291CA3C6-2299-4325-A689-132D6378EB1E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Dos que estão procurando a verdade',
+	Content = 'Fato: existem pessoas que estão procurando a verdade e outras que não estão, que aceitaram como verdade qualquer bobagem que passou pela cabeça.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'F6F6F580-6F03-433F-9074-B1584DD88629',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '047FB737-D36A-4F46-AE4C-CF209C4E09A1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A758A93C-992D-479A-8C3F-0FD82AE302A5'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Da obsessão em culpar os outros por crimes que não cometeram',
+	Content = 'Fazer as pessoas sentir-se culpadas por pecados que não cometeram é coisa de psicopata, de mentalidade criminosa -- e nisso consiste TODO o discurso da esquerda hoje em dia.
+Nunca a esquerda foi tão abjeta, tão desprezível.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '0D524254-1DFC-4933-AAA2-28C5C497877C',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'F6F6F580-6F03-433F-9074-B1584DD88629',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '291CA3C6-2299-4325-A689-132D6378EB1E'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('E380886C-819F-48B3-8CE9-731F9175B8C1',
+	1,
+	'Sem o Espírito Santo, o cristianismo enlouquece',
+	'A Igreja nunca cessou de avisar que os mandamentos de Deus não estão à altura do homem natural e só podem ser cumpridos com a ajuda do Espírito Santo. Amputados desse reforço celeste, impostos como se fossem obrigações naturais e civis, eles se tornam uma máquina de fazer doidos, transmutando-se , seja no reacionarismo moralista opressivo e sem alma, seja no ódio revolucionário de inspiração gnóstica.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'8E2683EA-62C0-47AD-8128-92B1776B69B8',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'0D524254-1DFC-4933-AAA2-28C5C497877C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'E380886C-819F-48B3-8CE9-731F9175B8C1', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4F2AD882-69C9-4D96-B46F-0056C010446C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Imperativo de utilidade e imperativo de nobreza',
+	Content = 'Kant distingue entre imperativos hipotéticos e categóricos. O imperativo é hipotético quando a ação que ordena é boa para atingir alguma finalidade, isto é, boa para alguma outra coisa; é categórico quando a ação que determina é boa em si.',
+	Author = 'Flamarion Tavares Leite',
+	Reference = 'cf. Grundlegung, Bd. 6, BA 40',
+	DomainId = 9,
+	ParentId = '7CD42929-0115-4B81-95E6-198C3508C339',
+	BookId = '63F4B7CE-8CDC-4180-B304-471BC7646F4E',
+	PersonId1 = '743FE446-3521-4A5E-9E2E-B81FF336E544',
+	PersonId2 = 'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	TopicId1 = 'F6BDE510-97B9-4483-A8E6-68104125433F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '4F2AD882-69C9-4D96-B46F-0056C010446C'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1613A28D-8749-49A5-91C3-0056E84810ED', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'O trabalho sujo de protestar contra o PT',
+	Content = 'Pessoal, eu sei que é bonito e chique ser de esquerda. Mostrar que está sempre do lado do bem, dos pobres e excluídos. Mostrar que tem "pensamento crítico", que pensa com os próprios miolos. Além de ficar - é claro - sempre bem na foto pros "miguxo" da escola e da faculdade. Mas, nesse dia 15, o Brasil conta com você para fazer esse "trabalho sujo" que é protestar contra a corrupção do PT. Não se omitam! Todos de verde, azul e amarelo.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 16,
+	ParentId = '74F41DBE-2472-4213-9E21-FF2BC62F5245',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1613A28D-8749-49A5-91C3-0056E84810ED'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '284EC4CF-4CBF-4A45-BC29-005F1E5A3757', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O lugar das contradições',
+	Content = 'A filosofia de Marx, antes de constituir um sistema, é o lugar de contradições [..] entre o engajamento político e a vontade de pensar o político como tal. Não é um pensamento acabado, mas um pensamento que não cessava de levantar novas interrogações.',
+	Author = 'Denis Collins',
+	Reference = 'COLLIN. Compreender Marx, p. 10-11',
+	DomainId = 16,
+	ParentId = '01BE97B4-42D3-4991-A1F3-6D2ABBB957A9',
+	BookId = '161747BA-8CD0-4D61-B3FD-C6053D629578',
+	PersonId1 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '284EC4CF-4CBF-4A45-BC29-005F1E5A3757'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '38AB6C88-4568-45CB-9BF1-006936A6C52C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AA175E1E-272B-4D34-B1C0-006A5B0D4BEC', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('7D664A5A-0582-46EE-B049-BD769C1BA352', 7, 'O homem é essencialmente um animal político', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('BBFCACAA-0684-42C5-9B62-D2C403FD05ED', 7, 'O homem que não precisa de ninguém ou é um Deus ou uma besta', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O homem não é uma ilha',
+	Content = 'Ora, para quase todas as pessoas se mostra evidente que o mais agradável na vida é cuidar dos interesses particulares, sobretudo quando são do tipo daqueles pelos quais optaste. Contudo, há algo que deve ser também objeto de ponderação, ou seja, que nenhum de nós nasceu [para viver somente] em função de si mesmo; uma parte de nossa existência pertence à nossa pátria, uma outra aos nossos pais, uma terceira aos nossos demais amigos, ao passo que uma grande parte é devotada às exigências circunstanciais que acossam nossas vidas. ',
+	Author = 'Platão',
+	Reference = '',
+	DomainId = 15,
+	ParentId = '7D664A5A-0582-46EE-B049-BD769C1BA352',
+	BookId = '9426F8F4-DAD7-425E-BC2C-60EB90DA33B5',
+	PersonId1 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	TopicId1 = 'BBFCACAA-0684-42C5-9B62-D2C403FD05ED',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'AA175E1E-272B-4D34-B1C0-006A5B0D4BEC'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O homem não é uma ilha',
+	Content = 'Ora, para quase todas as pessoas se mostra evidente que o mais agradável na vida é cuidar dos interesses particulares, sobretudo quando são do tipo daqueles pelos quais optaste. Contudo, há algo que deve ser também objeto de ponderação, ou seja, que nenhum de nós nasceu [para viver somente] em função de si mesmo; uma parte de nossa existência pertence à nossa pátria, uma outra aos nossos pais, uma terceira aos nossos demais amigos, ao passo que uma grande parte é devotada às exigências circunstanciais que acossam nossas vidas. ',
+	Author = 'Platão',
+	Reference = '',
+	DomainId = 15,
+	ParentId = '7D664A5A-0582-46EE-B049-BD769C1BA352',
+	BookId = '9426F8F4-DAD7-425E-BC2C-60EB90DA33B5',
+	PersonId1 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	TopicId1 = 'BBFCACAA-0684-42C5-9B62-D2C403FD05ED',
+	TopicId2 = '2D11A542-23C9-43F2-8377-18AEEA000B75',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'AA175E1E-272B-4D34-B1C0-006A5B0D4BEC'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '2A845A00-5100-49FA-AA34-007E7CF2F77A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '319B8AD6-CE37-4F80-9539-008A8760FF43', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Ontologia do Espírito',
+	Content = 'O mais está incluído no menos.',
+	Author = 'Santa Teresa de Jesus',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '84EBF6F0-B06D-4F07-90A6-569F8A0FEBB1',
+	BookId = '78545853-A2A6-4A61-AFA0-8AB2EE076ECD',
+	PersonId1 = 'F5BC5154-6859-42F2-A1B6-1E5F143E8CF6',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '319B8AD6-CE37-4F80-9539-008A8760FF43'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'B5777D81-EC2E-432C-88C5-008B07B6BFBF', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Por que os jovens são mais propensos a cair em vícios',
+	Content = 'Os prazeres corporais são buscados simplesmente em função de sua intensidade por pessoas incapazes de fruir outros prazeres (por exemplo, algumas tomam deliberadamente medidas para ficarem com sede). Nenhuma objeção é feita a essa prática se os prazeres forem inócuos, mas ela é nociva se esses prazeres produzirem resultados danosos. O fato é que alguns homens não dispõem de outras fontes de gozo, e também muitos têm uma tal constituição que um estado neutro de sensação é-lhes positivamente penoso. (Isso porque um estado de tensão constitui a condição normal de um organismo animal, como atesta a ciência natural, que nos diz que a visão e a audição são, na verdade, penosas, mas nos acostumamos com elas no decorrer do tempo.) Similarmente, os jovens se encontram numa condição semelhante à intoxicação porque estão crescendo e a juventude é prazerosa em si mesma; mas pessoas de uma natureza excitável necessitam perpetuamente de um restaurativo porque o temperamento delas mantém seus corpos num estado contínuo de irritação e seus apetites permanecem constantemente ativos, e qualquer prazer, se intenso, expulsa a dor, não apenas o prazer oposto. Essa é a razão porque homens excitáveis se tornam dissolutos e viciosos.',
+	Author = 'Aristóteles',
+	Reference = '',
+	DomainId = 20,
+	ParentId = '27B8B74B-F274-418F-B6A7-6178D57259A0',
+	BookId = '54F099A7-AE61-41B2-963F-A0AAF7BF431F',
+	PersonId1 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = '4D92372C-CC04-4040-AFD3-1D635FE28628',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'B5777D81-EC2E-432C-88C5-008B07B6BFBF'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '06B1E785-371D-40B5-A9AC-009EF95A7BDB', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Deus não se contradiz',
+	Content = 'O mesmo Deus que revela os mistérios e infunde a fé dotou o espírito humano da luz da razão; e Deus não poderia negar-se a si mesmo, nem a verdade jamais contradizer a verdade.',
+	Author = 'Vaticano',
+	Reference = '',
+	DomainId = 9,
+	ParentId = 'C568967B-4ABE-4B3C-B0EB-92F9ABFB1493',
+	BookId = '67F65291-0529-4794-A2E0-B8356A59CC15',
+	InstitutionId1 = '9A8198EE-5915-440B-8A36-B56F834D0FCB',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	TopicId2 = 'E21E7565-B61F-4D74-904A-D3A802225B79',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '06B1E785-371D-40B5-A9AC-009EF95A7BDB'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8B9D335E-F5E9-498C-B758-00A3C53AE701', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Homem - um animal catártico',
+	Content = 'Não jazer no lodo, como os outros, mas habitar com os deuses, pois sois kekatharmenos.',
+	Author = 'Sócrates',
+	Reference = 'Fédon',
+	DomainId = 19,
+	ParentId = '38CF6C33-6B8A-4D58-B9E4-C16A66C8EC66',
+	BookId = '65FC25C3-F2D3-4819-B434-A8E241CE7476',
+	PersonId1 = '965A11D8-C2E5-439F-BD1F-A8DC948D1E5F',
+	TopicId1 = '6EE8B7BD-DEB8-46AB-A912-652700F48914',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8B9D335E-F5E9-498C-B758-00A3C53AE701'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '18C37BB3-1656-4D0D-8052-00B5B1ACBD79', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('96F6C9E3-523D-43FE-B1D5-39420F77F312', 7, 'O talento se forma no silêncio da solidão, mas o caráter no barulho do mundo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Tensão entre genialidade individual e de massas',
+	Content = 'As importantes descobertas e soluções de problemas, apenas são possíveis ao indivíduo que trabalha na solidão. Mas a psique das massas também é capaz de criações intelectuais geniais, como demonstram sobretudo a própria linguagem, mas também a canção popular, o folclore etc.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '96F6C9E3-523D-43FE-B1D5-39420F77F312',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '18C37BB3-1656-4D0D-8052-00B5B1ACBD79'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Tensão entre genialidade individual e de massas',
+	Content = 'As importantes descobertas e soluções de problemas, apenas são possíveis ao indivíduo que trabalha na solidão. Mas a psique das massas também é capaz de criações intelectuais geniais, como demonstram sobretudo a própria linguagem, mas também a canção popular, o folclore etc.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '96F6C9E3-523D-43FE-B1D5-39420F77F312',
+	TopicId2 = '7CD42929-0115-4B81-95E6-198C3508C339',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '18C37BB3-1656-4D0D-8052-00B5B1ACBD79'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Tensão entre genialidade individual e de massas',
+	Content = 'As importantes descobertas e soluções de problemas, apenas são possíveis ao indivíduo que trabalha na solidão. Mas a psique das massas também é capaz de criações intelectuais geniais, como demonstram sobretudo a própria linguagem, mas também a canção popular, o folclore etc.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '96F6C9E3-523D-43FE-B1D5-39420F77F312',
+	TopicId2 = 'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '18C37BB3-1656-4D0D-8052-00B5B1ACBD79'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '08A22D29-120E-47F4-999D-00C85474C946', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O gênio de Fichte',
+	Content = 'Fichte havia levado a filosofia crítica até suas últimas consequências, propondo como ponto de partida, a originalidade do Eu. Este filósofo - o mais radical dos kantianos - ao situar o eu como ato vivo da consciência foi reconhecido por Schelling (seu primeiro seguidor e intérprete) como o "novo herói no país da verdade".',
+	Author = 'Virginia Careaga',
+	Reference = '',
+	DomainId = 9,
+	ParentId = 'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	BookId = '5A280753-2433-4A81-90C7-BF860DB82484',
+	PersonId1 = '6F1D3251-CCED-4879-85B3-2E8BC9255F79',
+	PersonId2 = '86A9A83A-D44E-46AE-97FC-70D1258BB0C0',
+	TopicId1 = '8798CA9F-0D03-416A-8247-690298ACD09B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '08A22D29-120E-47F4-999D-00C85474C946'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '6954EBA8-4FE0-4875-BCD8-00CF604B9277', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Indignar-se é achar-se superior',
+	Content = 'O ressentimento ou indignação provém desse sentimento de superioridade. Exigimos respeito igualmente daqueles que, segundo nós, nos devem tratar bem posto que são pessoas que tratamos bem no passado e continuamos a tratar bem, ou que nos predispomos, no presente e no passado, a tratar bem, quer pessoalmente, quer através de nossos amigos, quer através de terceiros a nosso pedido.',
+	Author = 'Aristóteles',
+	Reference = '',
+	DomainId = 15,
+	ParentId = 'BCF2B0E4-FB39-42FC-A150-D11082A43C08',
+	BookId = 'DCC3F9AC-4D3A-40DC-ADD1-9A555C81DC17',
+	PersonId1 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = '2903C4EA-B6F3-446E-BB71-27CEBD2DFC66',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '6954EBA8-4FE0-4875-BCD8-00CF604B9277'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A72C0CFC-CE7C-4810-AA77-00E30FFEC904', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('7C6D925C-668A-4E13-A6D4-15038841F623', 7, 'A tecnologia potencializa o arbítrio humano tanto para fazer o bem quanto o mal', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Os dois efeitos do roubo da arte do fogo por Prometeu',
+	Content = 'Agora que o ser humano passara a compartilhar com os deuses de algo que antes fora exclusivo destes últimos, ele, primeiramente, devido a uma espécie de afinidade os venerava, tendo erigido altares e confeccionado imagens sagradas; em segundo lugar, não demorou a capacitar-se, em função de sua habilidade, a articular a voz e as palavras, e a inventar casas, roupas, calçados, leitos e nutrir-se dos alimentos provenientes da terra.',
+	Author = 'Protágoras',
+	Reference = '',
+	DomainId = 14,
+	ParentId = '7C6D925C-668A-4E13-A6D4-15038841F623',
+	BookId = 'CC11504F-202A-4219-9ABC-809DBC7C1DC4',
+	PersonId1 = '0D94C7FC-D46C-4510-B32E-20B0F20164BA',
+	TopicId1 = 'E4A86DF7-1663-4684-A987-CBB3117E850E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A72C0CFC-CE7C-4810-AA77-00E30FFEC904'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('64846D28-251D-4378-9B9E-2E0373D92D7A', 7, 'Árvore do bem e do mal', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Os dois efeitos do roubo da arte do fogo por Prometeu',
+	Content = 'Agora que o ser humano passara a compartilhar com os deuses de algo que antes fora exclusivo destes últimos, ele, primeiramente, devido a uma espécie de afinidade os venerava, tendo erigido altares e confeccionado imagens sagradas; em segundo lugar, não demorou a capacitar-se, em função de sua habilidade, a articular a voz e as palavras, e a inventar casas, roupas, calçados, leitos e nutrir-se dos alimentos provenientes da terra.',
+	Author = 'Protágoras',
+	Reference = '',
+	DomainId = 14,
+	ParentId = '7C6D925C-668A-4E13-A6D4-15038841F623',
+	BookId = 'CC11504F-202A-4219-9ABC-809DBC7C1DC4',
+	PersonId1 = '0D94C7FC-D46C-4510-B32E-20B0F20164BA',
+	TopicId1 = 'E4A86DF7-1663-4684-A987-CBB3117E850E',
+	TopicId2 = '64846D28-251D-4378-9B9E-2E0373D92D7A',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A72C0CFC-CE7C-4810-AA77-00E30FFEC904'
+|~|
+UPDATE FragmentLikes SET Score = 5 WHERE FragmentId = '18C37BB3-1656-4D0D-8052-00B5B1ACBD79' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A182060C-7D68-4285-AB9D-00E5DF261AB5', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('31C5029F-18A0-4B2F-BBBE-BB043066EE11', 7, 'Juízo científico-juízo ideológico', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Medo objetivo e medo libidinoso',
+	Content = 'No indivíduo, o medo é causado ou pelo tamanho do perigo ou pela dissolução das ligações emocionais (investimentos libidinais); o último caso é o do medo neurótico. Da mesma forma, o pânico surge pelo aumento do perigo que atinge a todos ou pelo cessar das ligações emocionais que mantêm a massa coesa, e este último caso é análogo ao medo neurótico.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 16,
+	ParentId = '09747C3A-AD0E-43D8-ACDE-838BFE6115D0',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '31C5029F-18A0-4B2F-BBBE-BB043066EE11',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A182060C-7D68-4285-AB9D-00E5DF261AB5'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '84ECCBA1-E285-4CE6-9F58-0102381AF41D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C08B18A5-1BCD-4C23-B89E-3AD0EEBEF253', 7, 'Da mescla entre jôio e trigo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O mal e o bem estão em todos os lugares',
+	Content = 'O bem e o mal se misturam e se confundem universalmente, da mesma forma que a felicidade e a miséria, a sabedoria e a loucura, a virtude e o vício. Nada é puro nem inteiramente uniforme. Todas as vantagens são acompanhadas de desvantagens[..]. E não nos é possível, por meio dos nossos mais quiméricos desejos, formar a ideia de um estado ou de uma satisfação perfeitamente desejável.',
+	Author = 'David Hume',
+	Reference = 'David Hume. História natural da religião, 2005, p. 124',
+	DomainId = 9,
+	ParentId = 'C08B18A5-1BCD-4C23-B89E-3AD0EEBEF253',
+	BookId = 'EF1D8E62-FD2E-42C6-9473-F9CCEDEFB0F3',
+	PersonId1 = '1AE18E31-B150-40B2-89AA-4E9934CE844A',
+	TopicId1 = 'F6BDE510-97B9-4483-A8E6-68104125433F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '84ECCBA1-E285-4CE6-9F58-0102381AF41D'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '14B7BF31-66B7-4912-9014-01084CF5A0C1', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Toda vontade coletiva transparece um rudimento de ordem',
+	Content = 'Dificilmente uma multidão se reúne sem que nela se formem pelo menos os primeiros rudimentos de uma organização, e que precisamente nessas massas simples é possível reconhecer com especial facilidade alguns fatos fundamentais da psicologia coletiva.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'B76A1698-1EBA-47AF-8903-918A2C27E547',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '8527C657-B6A7-4862-B240-2784065EE4B1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '14B7BF31-66B7-4912-9014-01084CF5A0C1'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1EC113F0-74BE-446E-A653-010CFF2B40AF', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '33154F79-7872-4429-9104-010DE38F758E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O princípio primordial para os pitagóricos',
+	Content = 'O conceito de divindade em Pitágoras equivalia a um princípio indeterminado, do qual procediam o Cosmos, os Deuses e todas as coisas[..]. A ideia do Fogo Primordial central identificado com Deus é indiscutivelmente posterior. Tampouco deve interpretar o pitagorismo em sentido imanentista em quanto que do Um ou da Mônada se derivam, por divisão, todos os demais seres.',
+	Author = 'Guillermo Fraile',
+	Reference = '',
+	DomainId = 9,
+	ParentId = '10FD8EC8-5F03-4125-BB98-75D5000D0017',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = '1D1B10BE-7BE1-4BA4-AE5A-938FA41AF0A4',
+	PersonId2 = '63442F2D-D9F2-4969-9CD3-D410E64334B6',
+	TopicId1 = '8140D909-6745-4999-AAC2-6A35D2E55400',
+	TopicId2 = '90706D48-2484-4E11-92F5-2218D1009DBD',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '33154F79-7872-4429-9104-010DE38F758E'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '39EE108F-D334-470F-9800-011432DA802F', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C4F6F2CC-D62B-49D7-BB1F-B5BAFD1FD763', 7, 'A história é uma sucessão de acontecimentos absurdos e tiranos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da cidade dos homens',
+	Content = 'Pode-se dizer tudo da história universal - tudo quanto ocorrer à imaginação mais exaltada. Só não se pode dizer o seguinte: que é sensata.',
+	Author = 'Dostoiévski (Narrador)',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C4F6F2CC-D62B-49D7-BB1F-B5BAFD1FD763',
+	BookId = '1141FC5D-7EBC-4675-98B3-7B0C9E3E4681',
+	PersonId1 = 'F99B501F-71AF-4101-A53C-4085A98A8AD9',
+	TopicId1 = '53DB66B9-CF34-49B0-AB12-EEE8D098E679',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '39EE108F-D334-470F-9800-011432DA802F'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da cidade dos homens',
+	Content = 'Pode-se dizer tudo da história universal - tudo quanto ocorrer à imaginação mais exaltada. Só não se pode dizer o seguinte: que é sensata.',
+	Author = 'Dostoiévski (Narrador)',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C4F6F2CC-D62B-49D7-BB1F-B5BAFD1FD763',
+	BookId = '1141FC5D-7EBC-4675-98B3-7B0C9E3E4681',
+	PersonId1 = 'F99B501F-71AF-4101-A53C-4085A98A8AD9',
+	TopicId1 = '53DB66B9-CF34-49B0-AB12-EEE8D098E679',
+	TopicId2 = '29EF4436-A0F0-492C-83C9-3F4A64B16C94',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '39EE108F-D334-470F-9800-011432DA802F'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'E3EC56D1-6466-493D-BB8A-011FDF869A6D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'A fantasmagoria hegeliana',
+	Content = 'Afirmar que toda realidade e toda ação humana sejam negações do absoluto como o fez Hegel, é afirmar que todos os seres espirituais são demônios ou almas condenadas, habitando o Inferno. Doce ilusão do homem que acreditou um dia estar apartado do Ser eterno.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 12,
+	ParentId = 'FA8B9CB3-C9BD-4F5A-B393-1BB0044D0234',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	PersonId2 = '9FF61976-E056-408D-AADA-BF18C7C37A1B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'E3EC56D1-6466-493D-BB8A-011FDF869A6D'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '78FD63FA-026C-478F-BDA8-013802618580', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da moral estética dos ricos',
+	Content = 'Caso a revolução recomeçasse... Que papéis desempenhariam Croisenois e meu irmão? Já está determinado: a resignação sublime. Seriam heroicas ovelhas, deixando-se degolar sem dizer uma palavra. Seu único receio na morte ainda seria o mau gosto. Meu pequeno Julien queimaria os miolos jacobinos que viesse prendê-lo, se tivesse a mínima esperança de salvar-se. Ele não tem medo do mau gosto, não ele.',
+	Author = 'Stendhal (Mathilde)',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '9C4F0FB9-077B-4A4E-9CB7-4518B8C40829',
+	BookId = '68D79B04-AFCF-4528-A898-0BF9378A4BBA',
+	PersonId1 = '64CFC37D-9F15-44F6-A830-49DA49962CCE',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '78FD63FA-026C-478F-BDA8-013802618580'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'DBE4C812-776B-4EE7-AE48-0177AEF90CCB', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da espécie sofística',
+	Content = 'A parte da arte da caça de apropriação e controle que se ocupa da caça aos animais, animais terrestres, animais mansos, seres humanos, particulares, paga em dinheiro, que afirma proporcionar educação e que é uma caçada aos jovens ricos e promissores deve ser chamada de sofística.',
+	Author = 'Platão (Estrangeiro)',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'B6A59027-8C36-4AF1-BA21-2AA796DF5B7F',
+	BookId = 'CC11504F-202A-4219-9ABC-809DBC7C1DC4',
+	PersonId1 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	TopicId1 = '704B2D91-B9E0-45D6-AAF6-8A924191EFCB',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'DBE4C812-776B-4EE7-AE48-0177AEF90CCB'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'B377CF63-8CF2-4AC9-80DB-017A0EA85FFD', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Exatidão lógica, precisão contingente',
+	Content = 'Não se deve buscar a mesma exatidão nas coisas teóricas que nas perceptíveis aos sentidos.',
+	Author = 'Aristóteles',
+	Reference = 'Política VII 7,1328a20',
+	DomainId = 9,
+	ParentId = '544AE4A4-434F-4BE5-AA69-2BA1B3B36406',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = 'B0B05F5C-B12E-44F6-AEBD-CC8F70FDAFBD',
+	TopicId2 = 'EF4F8AEC-C914-4A37-9319-F961657BBBD6',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'B377CF63-8CF2-4AC9-80DB-017A0EA85FFD'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '324C9259-AF93-440E-AC61-018DA4FC37D3', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('F676AA3D-55EE-4ADE-8229-B1C4C778AED3', 7, 'Filosofia é a ciência do método', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O que é história?',
+	Content = 'Toda a história é história contemporânea, no sentido de que revive na própria consciência a atividade passada. O que constitui a história é o ato de compreender e entender, induzido pelas exigências da vida prática[..]. A história não consiste na descrição das personagens, dos acontecimentos, catástrofes, horrores do mundo, mas na indagação de quais foram as necessidades efetivas dos povos e de que modo as superaram. A história é, assim, obra do historiador, clara afirmação subjetiva. A história é o conhecimento do eterno presente. Para reviver o passado devemos aproximar-nos de nós mesmos; a história é a história do espírito; finalmente, a história é filosofia, que não é senão metodologia da história.',
+	Author = 'José Honório Rodrigues',
+	Reference = 'Teoria da História do Brasil; José Honório Rodrigues; p. 58; 5a. edição, Companhia Nacional Editorial; 1978',
+	DomainId = 12,
+	ParentId = '8B8F2169-2390-43A9-AD87-C3F36EA938F9',
+	BookId = 'F2C037C9-9A9F-4E7C-9031-6950FC07BD72',
+	PersonId1 = '2E9958F3-ABD6-408A-A555-CA87260BB4AC',
+	TopicId1 = 'F676AA3D-55EE-4ADE-8229-B1C4C778AED3',
+	TopicId2 = 'MORAL, ÉTICO, IDEOLÓGICO)',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '324C9259-AF93-440E-AC61-018DA4FC37D3'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('01D25948-8B1D-49A1-927C-DC06F1447BE7', 7, 'Da constante recriação do universo por Deus como um ato de perdão', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('222A0FC1-CFBE-4BCA-9A21-B397E8A5A15B', 7, 'Aquilo que entra ao ser, jamais volta ao não-ser', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('DD17C2BF-3C78-4063-8B14-DC1E23116419', 7, 'Doutrina do ser-não ser', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Do perdão cósmico',
+	Content = 'Na escala do infinito, tudo aquilo que é consumido, perdido; extinto ou gasto no domínio da matéria e do tempo é instantaneamente reconquistado e recriado na eternidade. A eternidade é a infinita regeneração de tudo. Tudo aquilo que entrou na existência por um momento, ainda que brevíssimo, não pode nem voltar a existir no tempo nem desaparecer da eternidade: o que um dia foi "ser", não pode voltar ao "nada", porque o nada nunca foi. Considerado no entanto em si mesmo, separado do infinito, o mundo finito é o mundo da contínua extinção, o mundo da entropia. A castração espiritual consiste em perder o sentido da regeneração perpétua, por meio do corte entre o finito e o infinito - a prisão no mundo da "carne".',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '01D25948-8B1D-49A1-927C-DC06F1447BE7',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '222A0FC1-CFBE-4BCA-9A21-B397E8A5A15B',
+	TopicId2 = 'DD17C2BF-3C78-4063-8B14-DC1E23116419',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'E42D149F-93B2-4CC1-9B17-01A0E68DD6EC'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'C3F114C8-BAC2-4E4C-A165-01B7795E528B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('5245DB35-D576-4F22-A533-6B3C669B4994', 7, 'Propriedades de Deus', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('37B39639-6C86-4821-AAD6-63A8FCB3830B', 7, 'Do cérebro como um amortecedor da consciência', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O que é Deus?',
+	Content = 'Deus é ''luz inacessível'', energia tão positiva, tão esplendorosa que cega.',
+	Author = 'Francesco Tomatis',
+	Reference = '1Tm 6,16',
+	DomainId = 18,
+	ParentId = '5245DB35-D576-4F22-A533-6B3C669B4994',
+	BookId = '15AC8A1F-FB83-455C-9E53-1DA9BEBAEFB5',
+	PersonId1 = '04D29406-6797-48A1-933E-20EC43033D90',
+	TopicId1 = '37B39639-6C86-4821-AAD6-63A8FCB3830B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'C3F114C8-BAC2-4E4C-A165-01B7795E528B'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A869A45F-30CA-4A90-B370-01BED7842054', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('4902166B-409C-454D-9346-2A2F5F50BC70', 7, 'Da nobreza dos elementos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Quatro regiões celestes',
+	Content = 'Entre a esfera envolvente e a Terra distingue Calcidio quatro regiões[..]. A primeira é a do Fogo puro e sereno, na qual habitam os astros, que são seres divinos, perfeitíssimos, imortais, dotados de vida e inteligência e com um corpo puríssimo e incorruptível. A segunda, o éter, onde moram os dáimons etéreos, que são os santos anjos, ao qual estão ante o trono de Deus. A terceira, o Ar, sede dos dáimons aéreos, que são também anjos bons, inferiores, que têm um corpo sujeito às paixões. A quarta, a das substâncias úmidas morada dos dáimons maus, ou anjos desertores. Finalmente é a Terra, onde habitam os homens.',
+	Author = 'Guillermo Fraile',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '1FF4EB04-8ADD-4209-A98C-25DFB06A190D',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = '1D1B10BE-7BE1-4BA4-AE5A-938FA41AF0A4',
+	PersonId2 = '374E9004-B755-4D96-97BF-3C3EF21497CC',
+	TopicId1 = '48FC2F30-277A-4F78-9B71-DF718756439E',
+	TopicId2 = '4902166B-409C-454D-9346-2A2F5F50BC70',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A869A45F-30CA-4A90-B370-01BED7842054'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '297F4177-E396-4F6C-A536-01D743486F15', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Aula 0001 - O Pedagogo (Clemente de Alexandria)',
+	Content = 'Caso 01- Didático religioso por enumeração.
+Verbos: regrar, recorrer, introduzir-se, afastar-se e entrar.
+Estrutura gramatical: Há [..] a ser [..] no homem.
+Sinônimos: preciso (necessário).
+
+Original:
+Há três coisas a ser regradas no homem: os hábitos, as ações e as paixões. Para regrar os hábitos é preciso recorrer à exortação, que é como o guia da religião e da piedade, e uma maravilhosa ajuda para introduzir-se na fé. Por ela, afastamo-nos dos velhos erros e entramos com alegria na via da salvação, como nos diz o profeta: “O Deus de Israel é bom para os puros de coração”.
+
+Reescrito:
+Há três faculdades a ser regradas no homem: a sensibilidade, a vontade e o pensamento. Para regrar a sensibilidade é preciso recorrer à humildade, que é como a guia do pudor e da castidade, e uma maravilhosa ajuda para introduzir-se na vida espiritual. Por ela, afastamo-nos do barulho do mundo e velhos erros sugeridos pela concupiscência, e entramos com alegria na via da salvação, como nos diz o profeta: “O Deus de Israel é bom aos puros de coração”.
+
+Caso 02 - Didático religioso para definição.
+Verbos: servir-se, remediar, instruir-se, conduzir, render-se, aprender a levar.
+Estrutura gramatical: Chama-se [..] o [..] pela qual [..].
+Sinônimos: artifício (expediente, subterfúgio); exortação (admoestação); se rende (se conforma); correta (reta).
+Advérbios: ardentemente.
+
+Original:
+É preciso se servir dos preceitos para regrar as ações, mas para remediar as paixões da alma existe a via das consolações. Por esse artifício, o homem abandona seus velhos costumes nos quais fora criado, para instruir-se segundo as máximas da fé que conduzem a Deus. Chama-se exortação esse discurso pela qual o homem põe-se a procurar as vias da salvação. A religião é uma espécie de exortação, além de um culto piedoso que se rende ao bom Deus. Trata-se, contudo, de uma instrução perpétua, para nos fazer aprender a levar uma vida correta, inspirando-nos a desejar ardentemente a vida futura.
+
+Reescrito:
+É preciso se servir dos preceitos da lei para regrar as ações, mas para remediar as paixões acalentadas por maus pensamentos e o sentimento de indignação existe a via das consolações. Por esse expediente, o homem abandona seus velhos costumes nos quais fora criado, para instruir-se segundo as máximas dos sábios e místicos. Chama-se de dialético esse discurso pela qual o homem põe-se a procurar as raízes mais profundas de seu ser. A filosofia é uma espécie de exortação, além de um compromisso para com a sinceridade que se rende à verdade. Trata-se, contudo, de uma atividade perpétua, para nos fazer aprender a levar uma vida correta, inspirando-nos a desejar ardentemente a contemplação dos antepredicativos.
+
+Caso 03 - Didático religioso de fechamento.
+Verbos: usar, dar, prometer, seguir.
+Estrutura gramatical: Ele [..], conquanto [..].
+Sinônimos: conquanto (ainda que); dócil (humilde); instrução (preceito).
+
+Original:
+Por isso, estamos usando o nome Pedagogo, por conta dos remédios e preceitos que Ele nos dá. Afinal, Ele mesmo nos prometeu a cura de nossas paixões, conquanto sejamos dóceis e sigamos as suas instruções.
+
+Reescrito:
+Por isso, estamos usando o nome Trindade, por conta dos remédios e preceitos que Ela nos dá, visto que três é o número da Santidade. Afinal, ela mesma nos prometeu a libertação, conquanto sejamos humildes e sigamos as suas instruções.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'EDC91A60-D378-41F1-8511-99A50B9D6E92',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	PersonId2 = '65370948-E0BA-4BC3-A0D0-151AE24F326E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '297F4177-E396-4F6C-A536-01D743486F15'
+|~|
+UPDATE FragmentLikes SET Score = 1 WHERE FragmentId = '297F4177-E396-4F6C-A536-01D743486F15' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'C18C0F89-C71B-488B-8965-0218D85134D3', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da felicidade como subordinação à sabedoria',
+	Content = 'A felicidade consiste na prática da virtude, e a virtude essencialmente na sabedoria. Portanto, a felicidade veem a reduzir-se à Sabedoria.',
+	Author = 'Guillermo Fraile',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '03D68147-8025-4556-938E-A2BC79149953',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = '1D1B10BE-7BE1-4BA4-AE5A-938FA41AF0A4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'C18C0F89-C71B-488B-8965-0218D85134D3'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Elaboração do superego',
+	Content = 'Freud propõe uma instância psíquica denominada supereu. Essa instância, ao mesmo tempo em que possibilita uma aliança psíquica com a cultura, a civilização, os pactos sociais, as leis, as regras, é também responsável pela culpa, pelas frustrações e pelas exigências que o sujeito impõe a si mesmo, muitas delas inalcançáveis. Daí o mal-estar que acompanha todo sujeito e que não pode ser inteiramente superado.',
+	Author = 'Edson Souza',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'MORAL, ÉTICO, IDEOLÓGICO)',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '29EF4436-A0F0-492C-83C9-3F4A64B16C94',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8FA97723-32F0-468C-A90F-021F4DDC9099'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8FA97723-32F0-468C-A90F-021F4DDC9099', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('A7918439-6C38-4341-8212-43F24FF265F1', 7, 'Doutrina da verdade como castração-como libertação', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Elaboração do superego',
+	Content = 'Freud propõe uma instância psíquica denominada supereu. Essa instância, ao mesmo tempo em que possibilita uma aliança psíquica com a cultura, a civilização, os pactos sociais, as leis, as regras, é também responsável pela culpa, pelas frustrações e pelas exigências que o sujeito impõe a si mesmo, muitas delas inalcançáveis. Daí o mal-estar que acompanha todo sujeito e que não pode ser inteiramente superado.',
+	Author = 'Edson Souza',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '1B4B10C5-AB18-43C2-B014-8B0327306154',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '29EF4436-A0F0-492C-83C9-3F4A64B16C94',
+	TopicId2 = 'A7918439-6C38-4341-8212-43F24FF265F1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8FA97723-32F0-468C-A90F-021F4DDC9099'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '9988EF21-0C1C-4AF8-A1CB-022D63B6B696', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C93D231D-888A-409D-BAAB-270567FFE857', 7, 'Teoria da abstração', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3ED3FDE8-2F4E-403E-BC1B-60D40C8FAFF0', 7, 'Doutrina da unidade substancial-multiplicidade teorética', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Todo pensamento é objetivo',
+	Content = 'Todas as idéias são realidades objetivas, no sentido de que dão objetividade a alguma coisa, representam alguma coisa em nossa mente.',
+	Author = 'Francesco Tomatis',
+	Reference = '',
+	DomainId = 20,
+	ParentId = 'C93D231D-888A-409D-BAAB-270567FFE857',
+	BookId = '15AC8A1F-FB83-455C-9E53-1DA9BEBAEFB5',
+	PersonId1 = '04D29406-6797-48A1-933E-20EC43033D90',
+	TopicId1 = '3ED3FDE8-2F4E-403E-BC1B-60D40C8FAFF0',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '9988EF21-0C1C-4AF8-A1CB-022D63B6B696'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre ação e narração',
+	Content = 'A tensão entre ação e narração, assinalada por Aristóteles em sua obra a Poética, está presente não apenas no ofício de escrever, mas em toda atividade técnica. Em todo ofício encontramos artífices por vocação e artífices por acomodação. O maior erro deste último, consiste em pensar que a liberdade de sua vocação consiste na contemplação de obras e participação de fins cuja verdadeira realidade não é jamais lógica e material, mas simbólica e imaterial, e que participamos somente pelo intelecto: seu sentido transcendem em espaço e tempo qualquer expressão ou linguagem que possa personificar ou dar forma. O artífice por acomodação é idólatra, preguiçoso, não percebe nada além de amizade, paz e conforto, mas a verdadeira vocação é apaixonada, e é por jamais perder a sensibilidade das formas perenes de vista que jamais para de dar frutos e mais frutos.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'CD92D6BB-857F-4EEC-B314-D0E879E250B5',
+	BookId = '65FC25C3-F2D3-4819-B434-A8E241CE7476',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	PersonId2 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '10DB2F03-C35A-474E-AD1C-022DA0AC725A'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '10DB2F03-C35A-474E-AD1C-022DA0AC725A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DA632736-501C-4D93-9720-022F6F037318' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '10DB2F03-C35A-474E-AD1C-022DA0AC725A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DA632736-501C-4D93-9720-022F6F037318' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'DA632736-501C-4D93-9720-022F6F037318', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O objetivo da poética de aristóteles',
+	Content = 'O objetivo da poética é certamente mostrar que os efeitos desejados pela tragédia derivam da verdade representada e não das sensações despertadas: que a fortuna depende das ações humanas e não de forças divinas ou demoníacas, do provável e não de conexões acidentais entre os incidentes; que as primeiras emoções despertadas pela tragédia são a pena e o medo com relação ao que pode acontecer e não do horror e temor sobre o modo como irão acontecer. Numa estranha aliança com a chance, intervindo no curso natural das coisas. É o caráter da pessoa que determina suas ações e escolhas, e não uma justiça ou vingança cósmica que determinam o destino do herói. É por essas razões que Aristóteles não discute a respeito do papel dos rituais cívicos e religiosos envolvidos na execução das tragédias clássicas; e é por essa razão que ele julga que tragédias não devam representar coisas sangrentas ou horríveis.',
+	Author = 'Amélie Oksenberg Rorty',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '7043272A-6BA2-4E6D-ADFC-BAFA5B476167',
+	BookId = 'CBDEDC18-0D20-46E1-AE11-49D7FAF3292E',
+	PersonId1 = '9BD34075-0923-4454-BABB-08D9DBECD880',
+	PersonId2 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = '6EE8B7BD-DEB8-46AB-A912-652700F48914',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'DA632736-501C-4D93-9720-022F6F037318'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '615B9BAE-1EB6-4DFC-8F9E-023368A5AED4', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '615B9BAE-1EB6-4DFC-8F9E-023368A5AED4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('EBDDE2E8-3F2D-4C9B-A312-C6968C7215A2', 7, 'Se a consciência da verdade é monopólio dos pobres ou pode emergir de indivíduos da classe dominante', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('FF6010B1-27D3-4059-90F8-EA633FBE331D', 7, 'Doutrina das revoluções por cima-revoluções por baixo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da internacional comunista como uma revolução por baixo',
+	Content = 'O que faz a originalidade da Internacional é que ela foi criada pelos próprios trabalhadores. Antes da fundação da Internacional, todas as organizações eram sociedades fundadas para a classe operária por alguns radicais das classes dominantes.',
+	Author = 'Karl Marx',
+	Reference = 'MARX  ENGELS. A comuna de Paris, 1979, p. 2',
+	DomainId = 19,
+	ParentId = 'EBDDE2E8-3F2D-4C9B-A312-C6968C7215A2',
+	BookId = '161747BA-8CD0-4D61-B3FD-C6053D629578',
+	PersonId1 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	TopicId1 = 'FF6010B1-27D3-4059-90F8-EA633FBE331D',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '615B9BAE-1EB6-4DFC-8F9E-023368A5AED4'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1CF62DB6-E07B-4388-B286-02457B38BF19', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Qual é a origem da vergonha?',
+	Content = 'Nas relações dos homens entre si, um ser aparente se forma que substitui sempre o ser real. Isso supõe uma abdicação de si e uma humilhação de si raramente percebidas, porque um indigno subterfúgio as mascara; é que o nosso ser real quer ainda tirar vantagem da opinião feita sobre nosso ser aparente.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '17991F29-1C2C-4CDD-9CF2-E2D51E928ACE',
+	BookId = '435BACA2-688D-438C-8E20-B7E120048994',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	TopicId1 = '9B99477D-EEC7-44BB-B79F-0E8AC7AFE043',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1CF62DB6-E07B-4388-B286-02457B38BF19'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '068753D9-9825-4F99-A022-0251A9ABD797', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('B6DBCFE8-E700-44B1-85E7-062B97276EE9', 7, 'Tradição platônica', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Metafísica Platônica',
+	Content = 'Ela a metafísica permite ao mesmo tempo subir deste àquele e desce daquele a este; ela é uma dialética ascendente e descendente ao mesmo tempo, uma teoria da origem das coisas e uma teoria da criação.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'B6DBCFE8-E700-44B1-85E7-062B97276EE9',
+	BookId = 'EA96F256-8A97-4DEC-9C36-2B0A88A0EACC',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	PersonId2 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	TopicId1 = 'AB3D7BB8-1B55-466C-BE16-DC80F1618C1C',
+	TopicId2 = '401C7700-CC3E-46C1-AC37-320496BEDD89',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '068753D9-9825-4F99-A022-0251A9ABD797'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7BA7F3C7-4702-487C-BA4A-0268068F5BC4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '181932A8-449A-4DF4-BFC0-02697A9374B2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B45EAAD7-8127-495F-A52E-026C91233649' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '66A408C3-5684-4206-9E63-0271771A402F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD74F18-54EF-4A84-A60F-02758D64571C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('BBC7B5D6-6BD9-462F-A32C-F60A50B1BE9D', 7, 'Doutrina da proporção geométrica-proporção aritimética-proporção harmônica', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da ordem política na proporção harmônica',
+	Content = 'Tanto a proporção aritmética quanto a geométrica, quando empregadas de maneira simples, seriam incapazes de manter a estabilidade política, porque promovem ou o rigor excessivo da lei, ou a possibilidade do seu rompimento pela arbitrária interpretação do magistrado. Por isso, segundo Bodin, as duas proporções devem ser combinadas numa terceira: a proporção harmônica, na qual se baseiam tanto a consonância musical quanto o princípio da correta organização do mundo físico e espiritual.',
+	Author = 'Alberto Ribeiro G. de Barros',
+	Reference = '',
+	DomainId = 17,
+	ParentId = '5F641C03-8E8C-43F6-8B67-33A0C49B2989',
+	BookId = 'D0E9D76C-A7D4-41C9-80A2-7925DD545E61',
+	PersonId1 = '7B12947E-60C5-42E9-AB53-C8D462289072',
+	TopicId1 = 'BBC7B5D6-6BD9-462F-A32C-F60A50B1BE9D',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7BA7F3C7-4702-487C-BA4A-0268068F5BC4'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7BA7F3C7-4702-487C-BA4A-0268068F5BC4', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C0790B12-89C7-4071-8E66-317BBA4CC699', 7, 'Todo governo é um regime misto', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da ordem política na proporção harmônica',
+	Content = 'Tanto a proporção aritmética quanto a geométrica, quando empregadas de maneira simples, seriam incapazes de manter a estabilidade política, porque promovem ou o rigor excessivo da lei, ou a possibilidade do seu rompimento pela arbitrária interpretação do magistrado. Por isso, segundo Bodin, as duas proporções devem ser combinadas numa terceira: a proporção harmônica, na qual se baseiam tanto a consonância musical quanto o princípio da correta organização do mundo físico e espiritual.',
+	Author = 'Alberto Ribeiro G. de Barros',
+	Reference = '',
+	DomainId = 17,
+	ParentId = '5F641C03-8E8C-43F6-8B67-33A0C49B2989',
+	BookId = 'D0E9D76C-A7D4-41C9-80A2-7925DD545E61',
+	PersonId1 = '7B12947E-60C5-42E9-AB53-C8D462289072',
+	TopicId1 = 'BBC7B5D6-6BD9-462F-A32C-F60A50B1BE9D',
+	TopicId2 = 'C0790B12-89C7-4071-8E66-317BBA4CC699',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7BA7F3C7-4702-487C-BA4A-0268068F5BC4'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '181932A8-449A-4DF4-BFC0-02697A9374B2', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Nas massas, todo pensamento se torna esteriótipo exagerado',
+	Content = 'A massa é extraordinariamente influenciável e crédula; é desprovida de crítica; para ela, o improvável não existe. Ela pensa por imagens que se evocam associativamente umas às outras, tal como ocorre ao indivíduo nos estados do livre fantasiar, e nenhuma instância razoável afere sua correspondência com a realidade. Os sentimentos da massa são sempre muito simples e muito exagerados. Assim, a massa não conhece nem a dúvida nem a incerteza.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'B76A1698-1EBA-47AF-8903-918A2C27E547',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '34CBCF79-CBDA-49F7-B351-73AB1805BE4F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '181932A8-449A-4DF4-BFC0-02697A9374B2'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'B45EAAD7-8127-495F-A52E-026C91233649', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('6B848578-3391-4BA7-B02B-E4A5A5BCA986', 7, 'Virtude da boa reputação', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A honra é o salário da virtude',
+	Content = 'A honra é a devida recompensa da virtude e da beneficência.',
+	Author = 'Aristóteles',
+	Reference = '',
+	DomainId = 15,
+	ParentId = '6B848578-3391-4BA7-B02B-E4A5A5BCA986',
+	BookId = '54F099A7-AE61-41B2-963F-A0AAF7BF431F',
+	PersonId1 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'B45EAAD7-8127-495F-A52E-026C91233649'
+|~|
+UPDATE FragmentLikes SET Score = 1 WHERE FragmentId = 'B45EAAD7-8127-495F-A52E-026C91233649' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = 'B45EAAD7-8127-495F-A52E-026C91233649' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '66A408C3-5684-4206-9E63-0271771A402F', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('BC062286-8129-4F66-8F2E-F0B0C31DC1EF', 7, 'Doutrina do nobre-útil', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Entre a razão e o instinto',
+	Content = 'Um exemplo do caráter experimental provará isso; em presença de uma escolha difícil, duas vozes se elevam: a da reflexão racional e a do instinto.',
+	Author = 'Schopenhauer',
+	Reference = 'p. 484',
+	DomainId = 9,
+	ParentId = 'BC062286-8129-4F66-8F2E-F0B0C31DC1EF',
+	BookId = '326E6B21-E097-4678-91DC-27862C2FDCFD',
+	PersonId1 = '1D781969-3B7F-4499-850A-651EA0E28392',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '66A408C3-5684-4206-9E63-0271771A402F'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD74F18-54EF-4A84-A60F-02758D64571C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '2BD74F18-54EF-4A84-A60F-02758D64571C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('199ABD76-E335-428A-AE9D-E36AA936EEC3', 7, 'Doutrina do nome-da coisa', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Distinção entre nome e a coisa',
+	Content = 'Se sustenta que o nome é idêntico à coisa, ver-se-á forçado a dizer que se trata do nome de nada; ou, se diz que é o nome de alguma coisa, o nome estará reduzido a ser unicamente o nome de um nome e de nada mais.',
+	Author = 'Estrangeiro',
+	Reference = '',
+	DomainId = 20,
+	ParentId = '199ABD76-E335-428A-AE9D-E36AA936EEC3',
+	BookId = 'CC11504F-202A-4219-9ABC-809DBC7C1DC4',
+	PersonId1 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	TopicId1 = '3ED3FDE8-2F4E-403E-BC1B-60D40C8FAFF0',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2BD74F18-54EF-4A84-A60F-02758D64571C'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '34D2E458-046A-4850-BF82-028441E5A4CE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '34D2E458-046A-4850-BF82-028441E5A4CE', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('2B5C4CB5-AA7A-4C03-8A19-057B4FCEF25B', 2, 'Fernando Collor de Melo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Sem luta cultural não será possível retirar o PT',
+	Content = 'Sem luta cultural, não será possível retirar o PT do Governo, muito menos a esquerda. Basta comparar a adesão maciça da população brasileira, no ano passado, contra os R$ 0,20 de aumento nas passagens de ônibus e seu silêncio obsceno diante dos casos de corrupção do PT - com valores cada vez mais astronômicos - para constatar que a corrupção do Brasil não está somente em Brasília, ela está nas escolas, nas universidades, na grande mídia, está nessa mentalidade esquerdizante mesma que acredita que toda corrupção da ESQUERDA é tolerável, pois fala em nome dos pobres, ao passo que a corrupção de DIREITA deve ser punida de modo implacável com a retirada imediata do governante, mesmo que seja por causa de um mero FIAT ELBA.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 16,
+	ParentId = '74F41DBE-2472-4213-9E21-FF2BC62F5245',
+	AreaId = '281257AF-2AA7-4649-9911-38BCAF88D6B9',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	PersonId2 = '2B5C4CB5-AA7A-4C03-8A19-057B4FCEF25B',
+	TopicId1 = 'A97B02CA-5469-494A-A1C7-D04A11FA73FF',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '34D2E458-046A-4850-BF82-028441E5A4CE'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '94A3B8C7-A524-4FCB-AF32-028C429D52F0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = '94A3B8C7-A524-4FCB-AF32-028C429D52F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Preparar-se para a vida no espírito',
+	Content = 'De tudo o que fora dito, registramos nosso dever de aprender pela liberdade do conselho a não abusar da liberdade do arbítrio, para que um dia possamos fruir da liberdade da complacência. Somente assim é que reparamos em nós a imagem de Deus, zelando por aquela antiga honra perdida pelo pecado, mas para a qual somos preparados pela graça.',
+	Author = 'São Bernardo de Claraval',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '52CD6769-17C4-4A66-8EC7-863B9E32E6BF',
+	BookId = 'FB2AC166-F270-4D0F-B7CF-0636DF24DE7C',
+	PersonId1 = '7C4EF7F1-F87E-4A52-B1B4-E3BF3BEF6ABF',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '94A3B8C7-A524-4FCB-AF32-028C429D52F0'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '50B8263B-4638-4A5A-B5B7-029A5EDD8CC0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A psicologia individual surge da psicologia de massas em comunhão ao pai primordial',
+	Content = 'O pai primordial da horda ainda não era imortal, como se tornou mais tarde mediante divinização. Quando ele morria, tinha de ser substituído; seu lugar provavelmente era ocupado por um filho mais jovem que até então tinha sido indivíduo de massa como os outros. Assim, tem de haver uma possibilidade de converter a psicologia da massa em psicologia individual; tem de ser encontrada uma condição sob a qual essa transformação se efetue facilmente, assim como é possível às abelhas, em caso de necessidade, fazer de uma larva uma rainha em vez de uma operária. Podemos imaginar apenas o seguinte: o pai primordial impediu seus filhos de satisfazer as aspirações sexuais diretas; ele os forçou à abstinência e, consequentemente, às ligações emocionais com ele e entre eles que puderam resultar das aspirações com meta sexual inibida. Ele os forçou, por assim dizer, à psicologia das massas.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 15,
+	ParentId = 'D0F7AF45-050E-4133-A1E5-28FAE46125B6',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '50B8263B-4638-4A5A-B5B7-029A5EDD8CC0'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CA1EE1A9-5D55-4B38-8901-02A18C586650', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3DBCF9E9-722B-41F7-BC02-8907947A9E9A', 7, 'Do progresso da ignorância', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Dos Colombos retardados',
+	Content = 'Um forte preconceito em favor do "novo" faz tomar por novidades coisas que não o são, ao mesmo tempo que, dia após dia, a crescente ignorância do passado faz a inteligência girar em círculos, quando crê avançar.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 16,
+	ParentId = '3DBCF9E9-722B-41F7-BC02-8907947A9E9A',
+	BookId = 'A9C5E19D-E926-456A-AAAE-AF03D9FF7E5F',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	TopicId2 = '1A721931-D7EB-4AA5-B678-C6481286E52E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '57E061C1-1CDF-404C-9915-02A7687B7074'
+|~|
+UPDATE FragmentLikes SET Score = 3 WHERE FragmentId = '57E061C1-1CDF-404C-9915-02A7687B7074' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'D9FA27D9-32A1-4C46-864B-02A92404D82C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('BAC295D7-64C7-4596-BD27-9BB2E7EC18E1', 2, 'Papa Paulo IV', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Dos anjos para servir a Deus',
+	Content = 'Deus criou também, do nada, a natureza espiritual e inumeráveis Anjos para que o servissem e assistissem.',
+	Author = 'Papa Paulo IV',
+	Reference = '1a. parte, Cap. 2, a 1 do Símbolo, n. 17',
+	DomainId = 18,
+	ParentId = '48FC2F30-277A-4F78-9B71-DF718756439E',
+	BookId = 'D9106A4D-853D-4783-B243-0FF68ABBA9C5',
+	PersonId1 = 'BAC295D7-64C7-4596-BD27-9BB2E7EC18E1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'D9FA27D9-32A1-4C46-864B-02A92404D82C'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('A101EB2E-A73F-4E34-8624-D0A3E56154CC',
+	1,
+	'As três criações gregários são simbolizados pelos três signos de ar',
+	'Freud afirmava que de modo geral, as criações humanas sempre partem da livre iniciativa de um indivíduo particular, mas que, porém, existem criações coletivas e gregárias como a linguagem. Parece que as três criações do coletivo, ou que pelo menos, que são capazes de se desenvolver pela permuta gregária, são: a linguagem (gêmeos), a ética (libra) e a tecnologia (aquário).',
+	'Rafael Melo',
+	'',
+	18,
+	'8D6553A4-0939-4379-AA2C-043C376E7718',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'C5D247DA-51F4-44F6-B49B-72E350795699',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'As três criações gregárias e os três signos de ar',
+	Content = 'Freud afirmava que de modo geral, as criações humanas sempre partem da livre iniciativa de um indivíduo particular, mas que, porém, existem criações coletivas e gregárias como a linguagem. Parece que as três criações do coletivo, ou que pelo menos, que são capazes de se desenvolver pela permuta gregária, são: a linguagem (gêmeos), a ética (libra) e a tecnologia (aquário).',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '8D6553A4-0939-4379-AA2C-043C376E7718',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E380886C-819F-48B3-8CE9-731F9175B8C1' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A101EB2E-A73F-4E34-8624-D0A3E56154CC', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'As três criações gregárias e os três signos de ar',
+	Content = 'Freud afirmava que, de modo geral, as criações humanas sempre partem da livre iniciativa de um indivíduo particular e que só muito posteriormente é assimilado pela coletividade. Mas afirma também que existem criações coletivas e gregárias como a linguagem. De minha parte, parece que as três meta estruturas da elaboração coletiva são representadas pelos três signos de ar: a linguagem (gêmeos), a ética (libra) e a tecnologia (aquário).',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '8D6553A4-0939-4379-AA2C-043C376E7718',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E380886C-819F-48B3-8CE9-731F9175B8C1' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'As três criações gregárias e os três signos de ar',
+	Content = 'Freud afirmava que, de modo geral, as criações humanas sempre partem da livre iniciativa de um indivíduo particular, que só posteriormente é assimilado pela coletividade. Mas afirma também que existem criações coletivas e gregárias como a linguagem. De minha parte, parece que as três meta estruturas da elaboração coletiva são representadas pelos três signos de ar: a linguagem (gêmeos), a ética (libra) e a tecnologia (aquário).',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '8D6553A4-0939-4379-AA2C-043C376E7718',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = 'C5D247DA-51F4-44F6-B49B-72E350795699',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E380886C-819F-48B3-8CE9-731F9175B8C1' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '2F2AF574-7D18-4EB0-86F0-02BA4E4C6190', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Da ignorância dos que fazem o mal',
+	Content = 'Ninguém é voluntariamente mau, como não é involuntariamente bem-aventurado.',
+	Author = 'Sólon',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'C2934CC3-7A2A-4519-91ED-356020188A05',
+	BookId = '54F099A7-AE61-41B2-963F-A0AAF7BF431F',
+	PersonId1 = '3DB22FC9-A8FF-4D09-95BF-455D085CF447',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2F2AF574-7D18-4EB0-86F0-02BA4E4C6190'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'D230B113-32FD-48A0-BD7C-02C10423959E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Demócrito, o pai do materialismo',
+	Content = 'De acordo com a crença vulgar, existem a cor, o doce e o amargo; mas, na verdade, só o que há são átomos e o vazio.',
+	Author = 'Wolfgang Smith',
+	Reference = '',
+	DomainId = 9,
+	ParentId = '76F15592-4D38-422E-A261-E5CC18BD4873',
+	BookId = '31092165-E1F0-46B5-8FE5-37CB8F4619EE',
+	PersonId1 = '35C6702B-C20D-4878-A21E-7BC69ECE20BD',
+	PersonId2 = '3518661A-6B87-4E29-A416-0D02AF310C50',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'D230B113-32FD-48A0-BD7C-02C10423959E'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AF4B31EC-D5C1-4DB7-8999-02C7F7357061', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Das orações com os anjos',
+	Content = 'Aquele que crê, reza com os Anjos, mesmo que reze sozinho. Porque, com ele se reúne o coro dos santos que ficam em sua companhia.',
+	Author = 'São Clemente de Alexandria',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '48FC2F30-277A-4F78-9B71-DF718756439E',
+	BookId = 'D9106A4D-853D-4783-B243-0FF68ABBA9C5',
+	PersonId1 = '65370948-E0BA-4BC3-A0D0-151AE24F326E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'AF4B31EC-D5C1-4DB7-8999-02C7F7357061'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '177A223D-8128-4575-AD30-02E7DEFC8B61', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 1 WHERE FragmentId = '177A223D-8128-4575-AD30-02E7DEFC8B61' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Conhecimento, alimento da alma',
+	Content = 'Da alma é um lógos que a si mesmo aumenta.',
+	Author = 'Heráclito',
+	Reference = 'Estobeu, Antologia, III, 1, 180',
+	DomainId = 19,
+	ParentId = '56C760D2-4619-4055-B710-B7E17D3A4DB6',
+	BookId = 'E7100BE6-0B92-4352-9771-2DC706CE9F02',
+	PersonId1 = 'CCC561DA-EF3D-4D49-AF93-59FC8ED76515',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '177A223D-8128-4575-AD30-02E7DEFC8B61'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1DE72052-020E-4D44-BC45-0304162C7BE0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Situação literária na Inglaterra - do conservadorismo para o socialismo',
+	Content = 'Existem relações íntimas entre Wordsworth e Burke, Coleridge e Carlyle, Ruskin e Morris: são fases da dissolução do romantismo inglês, da transição do conservadorismo romântico ao socialismo romântico.',
+	Author = 'Otto Maria Carpeaux',
+	Reference = 'Otto Maria Carpeaux, História da Literatura Ocidental, Pg. CII',
+	DomainId = 12,
+	ParentId = 'E41BE3C0-F104-4E91-9DE4-12C1D7B2E1CE',
+	BookId = 'VOLUME 1) [OTTO MARIA CARPEAUX]',
+	PersonId1 = '299F2651-E0CA-4732-85E5-AAAA5CDDA75E',
+	PersonId2 = '0BECD3EB-25AC-4B85-BA2D-F0A87CB8F036',
+	PersonId3 = '39067A31-D41C-4FBC-B7ED-A8690E91B404',
+	PersonId4 = '4ADD62A7-06FD-4624-9E1A-13F6ED226FE0',
+	PersonId5 = 'DAC5F5EF-BAF5-4C3E-845B-BB3D11F240A2',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1DE72052-020E-4D44-BC45-0304162C7BE0'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '57CBD2F6-86EA-40C3-A2AE-0304FB42E254', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Os astros revelam o movimento eterno',
+	Content = 'O tempo é eterno e contínuo, o mesmo que o movimento, no qual tem seu fundamento e cuja realidade depende. Assim, ao movimento real responde um tempo real; ao movimento ideal ou imaginário responde um tempo ideal e imaginário. Há tantos tempos quanto movimentos e inteligências que os comparam e mediam. Porém todos podem reduzir-se, relativamente, ao movimento geral dos céus. Tanto o Universo como os corpos contendo nele são limitados e finitos. É impossível a existência de um corpo infinito.',
+	Author = 'Guillermo Fraile',
+	Reference = 'Física V 204a34',
+	DomainId = 18,
+	ParentId = 'D46E1BBC-574A-4D95-8660-1B68750C8E59',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = '1D1B10BE-7BE1-4BA4-AE5A-938FA41AF0A4',
+	TopicId1 = '7A8B9D9A-B154-4868-9A78-054DC6A86112',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '57CBD2F6-86EA-40C3-A2AE-0304FB42E254'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'EE76849E-8477-4842-ADEC-030F8254BEF5', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('03C2FB93-1371-4EE4-ABD5-0005FF363838', 2, 'Jean Lacroix', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Kant é o arquiteto da paz',
+	Content = 'Todo o esforço de Kant tende a substituir ao estado de natureza um estado jurídico em que a guerra será trocada pelo processo e a vitória por uma sentença arbitral. Kant, no mais íntimo do seu ser e do seu gênio, é o homem do direito. Ao estudá-lo separadamente, filósofos e juristas não souberam de modo algum descobrir a unidade de sua inspiração. Plagiando uma forma de Bossuet que se aplicava à ordem, poder-se-ia dizer: o direito é amigo da razão e o seu próprio objeto. Ou, em termos modernos, a razão é normativa. O seu caráter essencial não é o conhecimento do fato mas a imposição do direito. Nisso consistirá, em Kant, a passagem do homem a Deus.',
+	Author = 'Jean Lacroix',
+	Reference = '',
+	DomainId = 17,
+	ParentId = '6E8C5BDD-40B0-4DBC-B84F-47680236B88B',
+	BookId = '63F4B7CE-8CDC-4180-B304-471BC7646F4E',
+	PersonId1 = 'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	PersonId2 = '03C2FB93-1371-4EE4-ABD5-0005FF363838',
+	TopicId1 = 'EBBAFB28-3A85-4364-ADBD-50AA6C8CB04D',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'EE76849E-8477-4842-ADEC-030F8254BEF5'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '05C89E75-5319-4854-A3BC-0330E2A724E1', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O doloroso parto das misturas (das gerações)',
+	Content = 'Pois as coroas mais estreitas enchem-se de fogo sem mistura
+e as que vêm à noite depois destas, mas com elas lança-se uma parte de chama.
+No meio delas está a divindade que tudo governa;
+pois em tudo comanda o parto doloroso e a mistura,
+impelido a fêmea a unir-se ao macho, e ao contrário o macho à fêmea.',
+	Author = 'Parmênides',
+	Reference = 'Fragmento 12',
+	DomainId = 18,
+	ParentId = '1FF4EB04-8ADD-4209-A98C-25DFB06A190D',
+	BookId = 'C6BB753C-04A9-45FB-B3FF-DC905FDEFC36',
+	PersonId1 = '458F9D41-4D50-4FC5-B081-68734051E274',
+	TopicId1 = '06F39C20-FB5C-43BF-A806-E730C98EE910',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '05C89E75-5319-4854-A3BC-0330E2A724E1'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'EB2DE654-1870-4D79-BC8F-033CE73C241A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C2488678-F13A-4900-8488-596E16867666', 2, 'Laura Lafargue', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Todo9s são marxistas',
+	Content = 'Agora somos vitoriosos, e provamos ao mundo que quase todos os socialistas da Europa são "marxistas" (eles [os anarquistas] se darão mal por nos terem conferido este nome).',
+	Author = 'Laura Lafargue',
+	Reference = '',
+	DomainId = 16,
+	ParentId = '40770EE2-EE5F-46A7-BB08-86AFBB3B9160',
+	AreaId = '5AAC9878-62F7-448E-B582-247F9A75E2A0',
+	BookId = '161747BA-8CD0-4D61-B3FD-C6053D629578',
+	PersonId1 = 'C2488678-F13A-4900-8488-596E16867666',
+	TopicId1 = '76CD549D-B079-4C1D-AF56-27202FD28AA7',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'EB2DE654-1870-4D79-BC8F-033CE73C241A'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'FF2E8781-2BFC-48EC-8C8C-033D6609BECD', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Movimento à hierarquia de bens',
+	Content = 'O Bem para a matéria é a forma... para o corpo é a alma... para a alma é a virtude... e, já mais alto que esta, o entendimento, e sobre este, o que chamamos a natureza primeira.',
+	Author = 'Plotino',
+	Reference = '',
+	DomainId = 9,
+	ParentId = 'AB3D7BB8-1B55-466C-BE16-DC80F1618C1C',
+	BookId = 'CDFB9CF2-6DFA-4757-AFA0-4859B6CBB21B',
+	PersonId1 = 'C09D3B9D-3BCC-4D38-8522-0C5A52E1D16A',
+	TopicId1 = 'CONCEPTUALISMO)',
+	TopicId2 = 'BEAE38A6-F7C7-40BD-8686-B4D05016560B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'FF2E8781-2BFC-48EC-8C8C-033D6609BECD'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '98757CCC-B028-4C41-AE0B-033DD009FED1', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1A89ADD8-7C64-4EEB-A26D-0340B5624483', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = '1A89ADD8-7C64-4EEB-A26D-0340B5624483' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7FA0A431-A4BB-4BF3-9EE0-03466640F76E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Se ao mesmo tempo duro e flexível',
+	Content = 'É preciso ser flexível como um cipó, mas, como ele, impossível de romper, e ser suave como uma superfície perfeitamente polida, mas perfeitamente dura.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	BookId = '6ECBE086-5CFA-4BF3-981C-CA26537CCCEF',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	TopicId1 = '8C4A8B30-3F03-49EF-94FD-848D38B526D9',
+	TopicId2 = '4ECB8EBA-EAF2-4969-9B34-1B8385ADFB51',
+	TopicId3 = '69370455-DB5A-4063-A482-58A88AF3767B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7FA0A431-A4BB-4BF3-9EE0-03466640F76E'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'F676C326-18EC-4184-8794-034C11F410EC', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('45758182-22F3-4AAB-B457-F9FAEB070B58', 2, 'Geber', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Do discernimento dos espíritos nas obras alquímicas',
+	Content = 'Um alquimista não deve explicar sua arte com palavras obscuras apenas; nem deve explicar tudo claramente de modo que todos entendam. Eu, por conseguinte, ensino-a de tal modo que nada permaneça oculto ao homem sábio, porém combata o homem medíocre por sua aparência obscura; e então minha arte continuará oculta e ininteligível ao tolo e ignorante.',
+	Author = 'Geber',
+	Reference = '',
+	DomainId = 18,
+	ParentId = '10102FE3-C9AE-4F86-B662-4FE6A5067560',
+	BookId = '11056167-FDC2-43D2-825C-3246B2E3D52E',
+	PersonId1 = '45758182-22F3-4AAB-B457-F9FAEB070B58',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'F676C326-18EC-4184-8794-034C11F410EC'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '94E7E81F-5DF0-4DC7-AF5B-0355E112D075', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O coração sempre manda',
+	Content = 'É difícil lutar com o coração, pois paga-se com alma.',
+	Author = 'Heráclito',
+	Reference = 'Plutarco, Coriolano, 22; Aristóteles, Ética a Eudemo, 1.223b a',
+	DomainId = 19,
+	ParentId = '5703DA1B-2950-486C-A5F5-94DFAC98D597',
+	BookId = 'E7100BE6-0B92-4352-9771-2DC706CE9F02',
+	PersonId1 = 'CCC561DA-EF3D-4D49-AF93-59FC8ED76515',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '94E7E81F-5DF0-4DC7-AF5B-0355E112D075'
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = '94E7E81F-5DF0-4DC7-AF5B-0355E112D075' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '13E7FC78-BAF8-4832-A9C5-035A6585D287', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'O trabalhor é sempre instrumento de sua técnica',
+	Content = 'Como instrumento, o trabalhor é sempre o primeiro entre todos.',
+	Author = 'Aristóteles',
+	Reference = '',
+	DomainId = 14,
+	ParentId = 'BECB744B-F6B2-4A5F-9E59-D14DF702B092',
+	BookId = '215AA978-3474-499B-B928-C6F6EFD17A57',
+	PersonId1 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = 'D0516848-00C2-4385-A481-8771E2D251A5',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '13E7FC78-BAF8-4832-A9C5-035A6585D287'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '96EA07AA-ED87-4918-BA7D-0361C35C6E9A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Do desprezo em toda relação profunda',
+	Content = 'Segundo o testemunho da psicanálise, quase toda relação emocional íntima de longa duração entre duas pessoas - casamento, amizade, relações entre pais e filhos - contém um sedimento de sentimentos de rejeição e de hostilidade que só escapa à percepção devido ao recalcamento. As coisas são mais evidentes quando um sócio discute com o outro, quando um subalterno resmunga contra seu superior. O mesmo acontece quando as pessoas reúnem em unidades maiores. Sempre que duas famílias se unem por meio de um casamento, cada um se julga a melhor ou a mais nobre em detrimento da outra. No caso de duas cidades vizinhas, uma se torna a concorrente invejosa da outra; cada pequeno cantão olha o outro com desprezo. Povos estreitamente aparentados se repelem, o alemão do sul não suporta o alemão do norte, o inglês calunia o escocês, o espanhol despreza o português. No caso de diferenças maiores, não nos surpreende mais que resulte uma aversão difícil de superar, como a do gaulês pelo germano, do ariano pelo semita, do branco pelo negro.',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'CAB98CDD-5524-4F92-8D21-44C8F4D68346',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = 'FE663A46-140A-43D4-A6AE-93D9576BC6A3',
+	TopicId2 = '091FCD54-C06C-47B8-8EEC-838C5F005E9B',
+	TopicId3 = '78B76B93-8A58-4553-A9D2-57FD8831E271',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '96EA07AA-ED87-4918-BA7D-0361C35C6E9A'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'F0707368-C1DF-4176-ACF9-036CCA9DB350', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('B9E707CC-8294-4AF2-BD36-8FCED82A3A96', 7, 'Os homens sente-se obrigados a agir moderada e complacentemente ante manifestações de polidez', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Nas massas, sucumbimos no mesmo afeto',
+	Content = 'Não há dúvida de que existe em nós uma tendência, quando percebemos um sinal de um estado afetivo em outra pessoa, a sucumbir ao mesmo afeto, mas quantas vezes não resistimos a essa tendência com sucesso, repelindo o afeto e muitas vezes reagindo de maneira completamente oposta? Por que, então, geralmente cedemos a esse contágio de massas?',
+	Author = 'Freud',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'B76A1698-1EBA-47AF-8903-918A2C27E547',
+	BookId = '3EB6431B-20EC-4C24-862E-0E48EAC9BF3A',
+	PersonId1 = 'C6D6DD3F-A3BB-417B-9C3B-92A33C6951A8',
+	TopicId1 = '958E76E7-679B-4112-B18F-A493F8409CE9',
+	TopicId2 = 'B9E707CC-8294-4AF2-BD36-8FCED82A3A96',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'F0707368-C1DF-4176-ACF9-036CCA9DB350'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '6791A732-6E30-4020-B3E3-0370E62294DF', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('31274C06-532E-42BF-9144-EF623D4C0FE5', 7, 'Doutrina do belo-sublime', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A diferença entre o Belo e o Sublime',
+	Content = 'Onde a beleza consiste na limitação, o sublime imediatamente envolve a representação do sem limites. Que talvez apareça, de fato, no ponto da forma violada, o final de nosso poder de julgamento, que é adaptado apenas à faculdade da apresentação, e é, como foi, um obstáculo para nossa imaginação.',
+	Author = 'Kant',
+	Reference = '',
+	DomainId = 20,
+	ParentId = '31274C06-532E-42BF-9144-EF623D4C0FE5',
+	BookId = 'CB09BA44-9BF0-48B8-BC54-7FF8F80B4901',
+	PersonId1 = '743FE446-3521-4A5E-9E2E-B81FF336E544',
+	PersonId2 = 'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	TopicId1 = 'B5256826-3B3A-4ED3-9105-B669435D1FFC',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '6791A732-6E30-4020-B3E3-0370E62294DF'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8EA988AB-82AA-4218-870D-037EE8024789', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('05260776-6F70-4F92-830A-296C75D4D5FD', 7, 'Dos limites da imprensa e do respeito à privacidade', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Vaidade das vaidades, tudo é vaidade! Da moça seduzida',
+	Content = 'Reconhecem a sociedade como bárbara e desumana porque ela difama uma moça seduzida. E se tu reconheces que a sociedade é desumana, então reconheces que essa sociedade causa dor a essa moça. E já que causa dor, então como tu mesmo expões essa moça nos jornais diante dessa mesma sociedade e exiges que isso não seja doloroso para ela? Vaidosos! Estão de tal forma corroídos pela vaidade e pelo orgulho que vão acabar devorando uns aos outros, é isto que eu prevejo para os senhores.',
+	Author = 'Dostoiévski (Lisavieta Prokófievna)',
+	Reference = '',
+	DomainId = 15,
+	ParentId = '0D211B00-808B-42D8-9DA8-0AF535FD334D',
+	BookId = '9358DDA9-8BCB-4B95-9318-48D3FCDE5E9F',
+	PersonId1 = 'F99B501F-71AF-4101-A53C-4085A98A8AD9',
+	TopicId1 = '05260776-6F70-4F92-830A-296C75D4D5FD',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8EA988AB-82AA-4218-870D-037EE8024789'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '98C2ACB6-9D71-4FEF-9B51-03895B355B67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '98C2ACB6-9D71-4FEF-9B51-03895B355B67', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 1 WHERE FragmentId = '98C2ACB6-9D71-4FEF-9B51-03895B355B67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('5D5AF084-EDA2-44D5-8049-AD6746FB5D8C', 7, 'Doutrina do infinito-do ilimitado', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Universais na música e no teatro (Heráclito-Olavo de Carvalho)',
+	Content = 'O número de melodias está para a música como o número de enredos para o teatro.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 10,
+	ParentId = '5D5AF084-EDA2-44D5-8049-AD6746FB5D8C',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '98C2ACB6-9D71-4FEF-9B51-03895B355B67'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('24792799-CC64-403D-98A7-E6469ADB622B',
+	1,
+	'Método e sentido',
+	'O método tem para a filosofia da tecnologia a mesma função que o sentido para as matemáticas. Nenhum método ou sentido pode seguir todas as direções, mas uma vez esta selecionada, deve manter-se fiel ao fim proposto. O que equivale a dizer que os diversos métodos e sentidos podem ser ilimitados, porém jamais infinitos.',
+	'Rafael Melo',
+	'',
+	14,
+	'5D5AF084-EDA2-44D5-8049-AD6746FB5D8C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'358C9E53-831C-48BB-B5BE-06660B8043B1',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('AF915772-8089-4412-9E27-01D9FC71FC56', 7, 'Os fins ordenam os meios', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('1FEBCA65-74E7-437D-AB48-BBEA20BC297A',
+	1,
+	'Notas sobre o sentido',
+	'A natureza dispõe, mas somente o animal deseja.
+
+A ordem dispõe, mas somente o homem propõe. 
+
+O fim precede o sentido ou método. 
+
+Logo, os fins ordenam os meios.',
+	'Olavo de Carvalho',
+	'',
+	14,
+	'AF915772-8089-4412-9E27-01D9FC71FC56',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'C984165E-C87A-4CA0-981A-813148B88B32',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8367CC23-64A9-4EBA-9C8B-038A5E437E78', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A filosofia é o acesso ao divino',
+	Content = 'É verdade que os Silenos dos quais fala Alcebíades se revelam, se são abertos, repletos de estátuas de deuses. Todavia, os próprios Silenos não são estátuas. Eles se abrem somente para permitir atingi-las. Poros, o pai de Eros, significa etimologicamente "passagem", "acesso", "saída". Sócrates é apenas um Sileno que se abre sobre algo que está além dele. Tal é o filósofo: um apelo à existência.',
+	Author = 'Pierre Hadot',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '116739AC-68EA-4916-B2C9-9E7CBFDC6F8F',
+	BookId = '966E74BA-5B9A-4C60-8845-F8A4E51ED64B',
+	PersonId1 = '6C74C6C8-F872-41B8-827A-02D23A151CDB',
+	TopicId1 = 'E0C3FC6E-AFA2-4116-89E1-55FC6CB3163F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8367CC23-64A9-4EBA-9C8B-038A5E437E78'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A filosofia é o acesso ao divino',
+	Content = 'É verdade que os Silenos dos quais fala Alcebíades se revelam, se são abertos, repletos de estátuas de deuses. Todavia, os próprios Silenos não são estátuas. Eles se abrem somente para permitir atingi-las. Poros, o pai de Eros, significa etimologicamente "passagem", "acesso", "saída". Sócrates é apenas um Sileno que se abre sobre algo que está além dele. Tal é o filósofo: um apelo à existência.',
+	Author = 'Pierre Hadot',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '116739AC-68EA-4916-B2C9-9E7CBFDC6F8F',
+	BookId = '966E74BA-5B9A-4C60-8845-F8A4E51ED64B',
+	PersonId1 = '6C74C6C8-F872-41B8-827A-02D23A151CDB',
+	PersonId2 = '965A11D8-C2E5-439F-BD1F-A8DC948D1E5F',
+	TopicId1 = 'E0C3FC6E-AFA2-4116-89E1-55FC6CB3163F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8367CC23-64A9-4EBA-9C8B-038A5E437E78'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'BE9BFD60-3DD7-4BC2-82FD-03A9FAFD7256', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('E89320AC-0FE3-437D-AF2C-8018D34ED53A', 7, 'Verdade conhecida é verdade obedecida', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Diferença entre ação mental e ação espiritual',
+	Content = 'Jamais devemos interrogar-nos sobre o que devemos fazer; temos, isto sim, de nos firmar nessa pura intenção espiritual que nos mostrará quando for preciso o que devemos fazer sem que tenhamos de deliberá-lo.
+Pois a vontade é um ato do espírito que se aplica ao espírito mesmo e não às coisas, e que, quando é o que deve ser, se traduz como devido nas coisas.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'E89320AC-0FE3-437D-AF2C-8018D34ED53A',
+	BookId = '6ECBE086-5CFA-4BF3-981C-CA26537CCCEF',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	TopicId1 = 'AB99A837-88F5-4D27-A96A-6A23E72B8991',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'BE9BFD60-3DD7-4BC2-82FD-03A9FAFD7256'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('4C6745F9-8EAA-48E3-883D-612FB4C65EE5', 7, 'Vacare dei - Tudo que Deus pede é que nós capacitemos e estejamos à disposição dele', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Diferença entre ação mental e ação espiritual',
+	Content = 'Jamais devemos interrogar-nos sobre o que devemos fazer; temos, isto sim, de nos firmar nessa pura intenção espiritual que nos mostrará quando for preciso o que devemos fazer sem que tenhamos de deliberá-lo.
+Pois a vontade é um ato do espírito que se aplica ao espírito mesmo e não às coisas, e que, quando é o que deve ser, se traduz como devido nas coisas.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'E89320AC-0FE3-437D-AF2C-8018D34ED53A',
+	BookId = '6ECBE086-5CFA-4BF3-981C-CA26537CCCEF',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	TopicId1 = '4C6745F9-8EAA-48E3-883D-612FB4C65EE5',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'BE9BFD60-3DD7-4BC2-82FD-03A9FAFD7256'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BE9BFD60-3DD7-4BC2-82FD-03A9FAFD7256' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '9D90A95B-919D-40F5-8767-03B737086CD9', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Todo espírito comunga no eterno e na ação',
+	Content = 'Não há nenhum pensamento sério que não envolva o Todo e não se exprima por alguma ação.',
+	Author = 'Louis Lavelle',
+	Reference = '',
+	DomainId = 9,
+	ParentId = 'CD92D6BB-857F-4EEC-B314-D0E879E250B5',
+	BookId = '6ECBE086-5CFA-4BF3-981C-CA26537CCCEF',
+	PersonId1 = '0546405F-D5A9-4759-8A22-CAEBCF63CF95',
+	TopicId1 = '69370455-DB5A-4063-A482-58A88AF3767B',
+	TopicId2 = 'C8D93D70-C15A-487D-9EDC-F750036B01A9',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '9D90A95B-919D-40F5-8767-03B737086CD9'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CDD7828F-1842-44B7-867D-20CD6A146A8D',
+	1,
+	'É Jesus Cristo quem melhora você',
+	'Você não vai melhorar NUNCA. Jesus é que vai melhorar você, aos poucos, pelo poder do Espírito Santo, e você não vai nem entender como Ele fez isso.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('F0D21F94-D7BD-4A54-9B3A-5DF6E8D5AD44',
+	1,
+	'Não lutar contra os vícios, mas orar para Deus os retirar',
+	'Padre Pio ensinava que a melhor maneira de se tornar escravo de um vício é a ânsia de se livrar dele. Os moralistas não entendem a natureza dialética da mente humana e querem resolver tudo na base do manual do usuário.',
+	'Olavo de Carvalho',
+	'',
+	19,
+	'BBA7F22F-B178-4E1B-A66C-2B2AA6398AD2',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'453C5514-659B-4471-A34E-6853425CF9D4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'63FBB518-2E3A-4D90-9873-B265FC97E6E0',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'F0D21F94-D7BD-4A54-9B3A-5DF6E8D5AD44', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = 'F0D21F94-D7BD-4A54-9B3A-5DF6E8D5AD44' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CDD7828F-1842-44B7-867D-20CD6A146A8D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'É Jesus Cristo quem melhora você',
+	Content = 'Você não vai melhorar NUNCA. Jesus é que vai melhorar você, aos poucos, pelo poder do Espírito Santo, e você não vai nem entender como Ele fez isso.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = 'CC7C7DF9-53A1-47E4-B352-663E65ED16C4',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '41926AC6-AD08-4A6F-90AC-AD9B992A030B',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'CDD7828F-1842-44B7-867D-20CD6A146A8D'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('A76AC1AF-2EEF-4304-ABB3-7659B35CC624', 7, 'A esquerda é uma posição política de inteligências inferiores', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('D3DDDD0D-1BE6-4BB2-BC25-DA0CB0EE2B78', 2, 'Thomas Mann', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('E7236C77-B6C0-48C1-8F2B-1848C79DF24D',
+	1,
+	'A esquerda é uma posição de inteligências inferiores',
+	'Quase todos os grandes gênios da literatura e da filosofia no século XX foram reaças. Na mais esquerdista das hipóteses, eram liberais como Thomas Mann. Gênio comunista, só Georg Lukacs.',
+	'Olavo de Carvalho',
+	'',
+	16,
+	'A76AC1AF-2EEF-4304-ABB3-7659B35CC624',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'D3DDDD0D-1BE6-4BB2-BC25-DA0CB0EE2B78',
+	'0D39F7AC-5FA3-46C8-BABD-619ACEA0FBC6',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Notas sobre o sentido',
+	Content = 'A natureza dispõe, mas somente o homem propõe. 
+
+Para os animais a cultura ditada pelo instinto, para o homem pelo desejo de glorificação do símbolo.
+
+O fim precede o sentido ou método. 
+
+Logo, os fins ordenam os meios.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 14,
+	ParentId = 'AF915772-8089-4412-9E27-01D9FC71FC56',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = 'C984165E-C87A-4CA0-981A-813148B88B32',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1FEBCA65-74E7-437D-AB48-BBEA20BC297A'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '24792799-CC64-403D-98A7-E6469ADB622B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '24792799-CC64-403D-98A7-E6469ADB622B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E380886C-819F-48B3-8CE9-731F9175B8C1' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9D3DCB1B-2221-4811-88D2-7DBC49085AFE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ADD773B4-F305-4EDF-A127-0F281CEF940E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Método e sentido',
+	Content = 'O método tem para a filosofia da tecnologia a mesma função que o sentido tem para as matemáticas: de seguir indefinidamente o fim proposto. O que equivale a dizer que métodos e sentidos podem ser ilimitados, porém não infinitos.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 14,
+	ParentId = '5D5AF084-EDA2-44D5-8049-AD6746FB5D8C',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '358C9E53-831C-48BB-B5BE-06660B8043B1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '24792799-CC64-403D-98A7-E6469ADB622B'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1FEBCA65-74E7-437D-AB48-BBEA20BC297A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('60B2FEB8-AA25-4847-8728-94AC32015FCF',
+	1,
+	'Temas dos romances de Jacob Wassermann',
+	'Os temas dos romances do Jacob Wassermann são: a falibilidade da justiça humana, o contraste entre a maldade e a inocência, a opressão estatal e social, a busca de Deus e do sentido da vida num mundo absurdo.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'DE280567-A929-479B-BC42-787A149BC4D6',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'094A739D-EEC8-4C5C-9B0E-57C8A484CC8A',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('004B164E-53F7-41DF-9DAD-21414FE90B9E',
+	1,
+	'Do crime causado pela imperfeição humana uma ova',
+	'Aprendi num filme francês esta resposta adequada para quando alguém atribuir a conduta criminosa à mera imperfeição humana:
+-- Ser imperfeito é roncar, peidar e coçar o saco. Crime é outra coisa.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'2444352C-2440-4769-B581-0DEB46063DFA',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '004B164E-53F7-41DF-9DAD-21414FE90B9E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('5B75C5D2-1D54-4DC1-8BAE-644428A9F4FE',
+	0,
+	'Tolerância moral é desorientação cultural',
+	'"Um povo só se mantém pela intolerância no que diz respeito à sua tradição e ao seu sentimento: nesta esfera de valores espirituais a tolerância significa desorientação.',
+	'Gilberto Freyre',
+	'Tempo de Aprendiz',
+	16,
+	'58E2F193-20A4-48B7-89A9-F4DC9DD66CBF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34D82ECE-321A-4C48-91C5-61B173E33D8E',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'205AD56E-0013-4BDE-9EAF-9A87E1EB0DBE',
+	'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '5B75C5D2-1D54-4DC1-8BAE-644428A9F4FE', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('7C000EC3-20E2-441F-98D2-28201D4F51A9',
+	1,
+	'Quando as preliminares substituíram o ato sexual',
+	'A gentileza e a polidez -- maior bandeira das ideologias diversitárias -- estão para a vida intelectual do mesmo modo que as preliminares para a relação sexual. Seu papel é adoçar os egos, a fim de tornar o encontro de almas e a concepção criadora possíveis; no caso daquele, ela consiste em dar vida e entendimento a uma idéia ou conhecimento que roubou-lhe a atenção (thambos).
+
+Vivemos em uma época em a maioria dos intelectuais, por nunca ter usado seu órgão erótico, a consciência, começa a se convencer de que o "sexo", decerto, consiste somente nas preliminares, e de que qualquer tentativa de ir além não passam de dogmatismo ou de fascismo.',
+	'Rafael Melo',
+	'',
+	16,
+	'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'6DB188B9-6770-4E85-9A37-012EE00BDAB8',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7C000EC3-20E2-441F-98D2-28201D4F51A9', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('841AF978-4DFF-4C0E-9E3A-0474A3287639',
+	1,
+	'Os dois erros do jovem intelectual - abstratismo e partidarismo',
+	'Excluídos os casos raríssimos de maturação intelectual prematura (e eu mesmo nunca fui um deles), o jovem, quando se mete a ler sobre política, religião e sociedade, NUNCA está buscando um conhecimento da realidade objetiva. Está buscando, isto sim, VALORES E IDEAIS que ajudem a definir a sua personalidade perante o mundo. Desse egocentrismo ideológico decorrem as duas tendências que caracterizam o estilo juvenil de discussão: (a) o amor aos termos classificatórios mais abstratos e gerais: (b) a compulsão de tudo julgar positivamente ou negativamente, de "tomar partido" mesmo ante hipóteses remotas ou possibilidades inexistentes. 
+Que esse fenômeno se observe sobretudo entre os jovens não impede que apareça também entre adultos que não chegaram à maturidade intelectual.
+Noto isso na quase totalidade dos opinadores hoje em dia, mas eu gostaria, neste momento, de chamar a atenção para o caso dos intervencionistas. Cada vez que abrem a boca, é para DEFENDER a intervenção militar, sobretudo no campo jurídico e moral, NUNCA para explicar COMO fazê-la, material e objetivamente, muito menos para investigar como, depois de feita, ela posicionaria o Brasil num cenário internacional maciçamente hostil. 
+Ou seja: estão apenas definindo-se a si mesmos mediante a opção por um ideal e valor, e não estão dizendo NADA sobre a realidade das coisas.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'341C91BA-4593-477B-98E3-DB6C10FA7F0D',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('8D3E1DA8-6154-473D-A88A-16B2855A92DD', 2, 'Camilo Castelo Branco', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('A7030DC0-4FCA-47EE-8444-B4D3E8617C4C', 2, 'Aquilino Ribeiro', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('29B4F582-1411-484D-9392-2A784CB0D278', 2, 'Ferreira de Castro', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('BEE1BE85-A7F3-4BFA-8FB3-FA9ABABA60FF', 2, 'Vergílio Ferreira', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('B3C86919-4A44-4881-883E-1A2A20A5EC35',
+	1,
+	'Melhores literatos de língua portuguesa',
+	'Dos ficcionistas de lingua portuguesa, os que mais aprecio são Camilo Castelo Branco, Aquilino Ribeiro, Ferreira de Castro, Vergílio Ferreira, Machado de Assis, Graciliano Ramos, Herberto Sales, Josué Montello, José J. Veiga, Cyro dos Anjos, Annibal M. Machado. Já dos poetas do nosso idioma, a lista dos bons não acaba mais, mas eu destacaria Antero de Quental, Fernando Pessoa, Manuel Bandeira, Drummond, Jorge de Lima, Bruno Tolentino, Alphonsus pai e Alphonsus filho.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'8D3E1DA8-6154-473D-A88A-16B2855A92DD',
+	'A7030DC0-4FCA-47EE-8444-B4D3E8617C4C',
+	'29B4F582-1411-484D-9392-2A784CB0D278',
+	'BEE1BE85-A7F3-4BFA-8FB3-FA9ABABA60FF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('2F554BF0-6A9C-4D6B-98FC-208E73CFC05F',
+	1,
+	'Da confusão moral causada pela absolvição dos pecados',
+	'Antigamente a vida era mais fácil. O sujeito casado que comia a vizinha ia apenas à igreja confessar, fazia a penitência e saía novinho em folha. Hoje tem de fazer meses de terapia de casal, divorcia, casa com a vizinha, põe chifres nela com a ex-mulher e acaba pensando que no fundo é gay.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'38CF6C33-6B8A-4D58-B9E4-C16A66C8EC66',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C80BD6D3-5935-42E0-90C3-C59F58A2CF85' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('56F22455-B13A-49AE-BCCA-8485241C36FF',
+	1,
+	'Dos efeitos da queda',
+	'"Diante da doutrina cristã segundo a qual, na Queda, o homem perdeu uma parte dos seus poderes cognitivos -- assim explica o Doutor Sutil John Duns Scot --, o filósofo ou cientista que, guiado somente pela razão natural, se perguntasse se haveria necessidade de algum conhecimento superior revelado, responderia inevitavelmente que não e até julgaria inútil a pergunta, justamente por lhe faltarem não apenas aqueles mesmos poderes que Adão perdeu e todos nós perdemos, mas também a fé que assegura terem eles um dia existido e que nos faz desejá-los de volta. Ninguém sente falta daquilo que nem suspeita que exista. Eis aí condensado, com séculos de antecedência, o círculo vicioso em que o ateísmo moderno aprisionou o pensamento naquilo que Eric Voegelin viria a chamar "a proibição de perguntar"."
+
+Olavo de Carvalho',
+	'Olavo de Carvalho',
+	'Facebook',
+	18,
+	'97FA5161-AAC6-447D-B709-E282F36B471F',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'5DFD3BB7-3281-4AAF-B426-5C923A2DF9D0',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('C1961776-3CB4-4B20-9A2F-8A22D5A5614B',
+	1,
+	'Do pior mal como o em doses homeopáticas',
+	'Teria sido talvez melhor se o século XIX, em vez de disseminar uma cópia burguesa da moral cristã, esvaziada de todo conteúdo espiritual, amputada da linha de contato com o Espírito Santo, tivesse logo implantado a putaria geral franca e descarada. Aprendemos mais com um erro medonho cometido todo de uma vez do que com uma sucessão anestésica de erros imperceptíveis.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'65F73629-F1DA-44D9-87A0-03F61CCF39CE',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'63FBB518-2E3A-4D90-9873-B265FC97E6E0',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Dos efeitos da queda',
+	Content = 'Diante da doutrina cristã segundo a qual, na Queda, o homem perdeu uma parte dos seus poderes cognitivos -- assim explica o Doutor Sutil John Duns Scot --, o filósofo ou cientista que, guiado somente pela razão natural, se perguntasse se haveria necessidade de algum conhecimento superior revelado, responderia inevitavelmente que não e até julgaria inútil a pergunta, justamente por lhe faltarem não apenas aqueles mesmos poderes que Adão perdeu e todos nós perdemos, mas também a fé que assegura terem eles um dia existido e que nos faz desejá-los de volta. Ninguém sente falta daquilo que nem suspeita que exista. Eis aí condensado, com séculos de antecedência, o círculo vicioso em que o ateísmo moderno aprisionou o pensamento naquilo que Eric Voegelin viria a chamar "a proibição de perguntar".',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 18,
+	ParentId = '97FA5161-AAC6-447D-B709-E282F36B471F',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '5DFD3BB7-3281-4AAF-B426-5C923A2DF9D0',
+	PersonId3 = '854A08AB-AD7B-40F4-B285-E003D6D7C24B',
+	TopicId1 = '63C6E446-4D60-444E-8AA9-294CD3D9AA8A',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '56F22455-B13A-49AE-BCCA-8485241C36FF'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('8524D24F-785C-43BD-A1F2-936B406EE50C',
+	0,
+	'Do analfabetismo funcional como a raíz de todos os males culturais',
+	'O que vai estragando o brasileiro alfabetizado é a leitura ruim e imprópria.',
+	'Gilberto Freyre',
+	'Tempo de Aprendiz',
+	16,
+	'B420FF3C-81FE-4DBD-A4A0-0047A6703726',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34D82ECE-321A-4C48-91C5-61B173E33D8E',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1961776-3CB4-4B20-9A2F-8A22D5A5614B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8524D24F-785C-43BD-A1F2-936B406EE50C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('93455EFE-1E47-4B9E-BC62-46C4D429A698', 7, 'Afinal, você vai acreditar em mim ou nos seus próprios olhos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('58D1269A-44EF-4504-9747-E39432D546FF',
+	1,
+	'Aos progressistas o direito à imaginação está acima do direito à percepção',
+	'Se alguém tem o direito de me impor o "gênero" em que ele imagina estar, eu não tenho o direito de dizer o que vejo com os olhos da cara. Perante a lei e a opinião bem-pensante, a imaginação dele prevalece sobre as minhas percepções sensíveis.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'BA16226F-D800-4239-8B5F-19C3ADBE4904',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'93455EFE-1E47-4B9E-BC62-46C4D429A698',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CC4CDE91-356E-4F2E-9834-2172E4E60697',
+	1,
+	'A instrução não é suficiente para promover a libertação de um povo',
+	'Se mera instrução fosse suficiente para promover liberdade e igualdade social, os alunos miseráveis e subnutridos da China comunista não tirariam sempre o primeiro lugar em todos testes internacionais, mas o último. Quem fala isso não tem a mínima idéia do que vem a ser liberdade nem igualdade social, muito menos educação. Serão o café da manhã na mesa das elites globalistas em disputa no mundo.',
+	'Rafael Melo',
+	'Facebook',
+	16,
+	'FE54538F-B46A-4ED7-9384-570140AD23FD',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'3758B559-4AF6-478C-8103-D84C36F50527',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'A instrução não é suficiente para promover a libertação de um povo',
+	Content = 'Se a mera instrução fosse suficiente para promover liberdade e igualdade social, os alunos miseráveis e subnutridos da China comunista não tirariam sempre o primeiro lugar em todos testes internacionais, mas o último. Quem fala isso não tem a mínima idéia do que vem a ser liberdade nem igualdade social, muito menos educação. Serão o café da manhã na mesa das elites globalistas em disputa no mundo.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = 'FE54538F-B46A-4ED7-9384-570140AD23FD',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '3758B559-4AF6-478C-8103-D84C36F50527',
+	TopicId2 = '94781149-1BC6-4D6C-B261-B6C7C6CDBCF1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CC4CDE91-356E-4F2E-9834-2172E4E60697', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8524D24F-785C-43BD-A1F2-936B406EE50C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1961776-3CB4-4B20-9A2F-8A22D5A5614B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56F22455-B13A-49AE-BCCA-8485241C36FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2F554BF0-6A9C-4D6B-98FC-208E73CFC05F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B3C86919-4A44-4881-883E-1A2A20A5EC35' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '841AF978-4DFF-4C0E-9E3A-0474A3287639' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7C000EC3-20E2-441F-98D2-28201D4F51A9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5B75C5D2-1D54-4DC1-8BAE-644428A9F4FE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('58A2FDE8-22C9-4E39-8EBF-AD053FBD0245', 2, 'Groucho Marx', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('C100B2D2-040B-4CFA-98D8-9D6BE33FD39A',
+	1,
+	'Da realização da profecia de Groucho Marx pela ideologia de gênero',
+	'A ideologia de gênero realiza a profecia de Groucho Marx em sentido literal. Você vê um marmanjo de 2 metros de altura, musculoso, voz grossa, mandíbula destacadas, mas que deseja ser chamado de Natasha. O que você faz, acredita no marmanjo ou nos seus próprios olhos?',
+	'Rafael Melo',
+	'Facebook',
+	16,
+	'BA16226F-D800-4239-8B5F-19C3ADBE4904',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	'58A2FDE8-22C9-4E39-8EBF-AD053FBD0245',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C7837CF7-38A6-4E83-BD80-0D96A3A10664', 7, 'Jamais se humilhar diante dos que lhe desprezam', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('50FA7215-D314-4817-85A6-1F9412BCF46B', 2, 'Jordan Peterson', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('36900292-7464-40E7-BF20-118B1AEF237D',
+	1,
+	'Da compaixão pelos que nos desprezam',
+	'Nunca peça desculpas a uma multidão sedenta de sangue.',
+	'Jordan Peterson',
+	'',
+	16,
+	'C7837CF7-38A6-4E83-BD80-0D96A3A10664',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'50FA7215-D314-4817-85A6-1F9412BCF46B',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '36900292-7464-40E7-BF20-118B1AEF237D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('DF8CC472-6476-4AE2-B4FF-77F42C51ADFB', 7, 'Os maiores culpados de corrupção econômica são as empresas da iniciativa privada', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('F73C939D-5809-4AD2-A6E0-0CA9E3D5CE7B',
+	4,
+	'Dos maiores culpados pela corrupção no Brasil',
+	'A maior parcela dos brasileiros sabe que a corrupção que destruiu o Brasil nos últimos anos foi liderada e orquestrada por partidos políticos; partidos como o PT, o PP, o PMDB e o PSDB. 
+
+No entanto, sempre é possível encontrar uma pequena parcela de indivíduos, que se dizem "esclarecidos", defendendo um diagnóstico totalmente diverso. O de que os grandes culpados pela corrupção no Brasil foram, de um lado, as empresas privadas e, por outro, o capitalismo desenfreado, que fomenta um ambiente propício para que empresas do setor privado aliem-se ao setor público com intuito de roubar para si mesmas.
+
+Ora, longe de mim querer advogar em favor de um Marcelo Odebrecht ou um Jueslei Batista. Tenho certeza que eles já têm bons advogados fazendo isso, senão os melhores. Meu objetivo ao escrever esse breve ensaio é apenas, por um lado, examinar as opiniões e forças culturais que levam tal grupo a defender um modo de pensar tão extravagante, e se possível, examinar as experiências humanas que tão logo convertidas em imagens, servem de suporte a tais opiniões.
+
+1) Do domínio político como essencialmente bom, do domínio econômico como essencialmente mau
+
+De início, é necessário dizer que a visão dita "esclarecida" de que os grandes culpados pela corrupção no Brasil são as empresas privadas, e não os políticos que tinham a função de fiscalizar suas atividades, esconde uma escolha ideológica -- ou se quiser, um entendimento cultural não científico -- de que o POLÍTICO é essencialmente BOM e SUBLIME e que o ECONÔMICO é essencialmente MAU e DESUMANO.
+
+Eu sei, é difícil desmantelar uma escolha ideológica, especialmente quando imantada de símbolos, de sentimentos e de juízos que não fazem outra coisa senão fortalecer a personalidade a situar-se em seu conjunto  de exigências, obrigações, culpas e  esperanças, que se traduzem em modos diferentes de relação com os próprios indivíduos.',
+	'Rafael Melo',
+	'',
+	16,
+	'DF8CC472-6476-4AE2-B4FF-77F42C51ADFB',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('91865ED1-8E4B-4584-BB2B-7ECD96AC4B6C',
+	4,
+	'Maiores culpados pela corrupção no Brasil',
+	'A maior parcela dos brasileiros sabe que a corrupção que destruiu o Brasil nos últimos anos foi liderada e orquestrada por partidos políticos; partidos como o PT, o PP, o PMDB e o PSDB. 
+
+No entanto, sempre é possível encontrar uma pequena parcela de indivíduos, que se dizem "esclarecidos", defendendo um diagnóstico totalmente diverso. O de que os grandes culpados pela corrupção no Brasil foram, de um lado, as empresas privadas e, por outro, o capitalismo desenfreado, que fomenta um ambiente propício para que empresas do setor privado aliem-se ao setor público com intuito de roubar para si mesmas.
+
+Ora, longe de mim querer advogar em favor de um Marcelo Odebrecht ou um Jueslei Batista. Tenho certeza que eles já têm bons advogados fazendo isso, senão os melhores. Meu objetivo ao escrever esse breve ensaio é apenas, por um lado, examinar as opiniões e forças culturais que levam tal grupo a defender um modo de pensar tão extravagante, e se possível, examinar as experiências humanas que tão logo convertidas em imagens, servem de suporte a tais opiniões.',
+	'Rafael Melo',
+	'Facebook',
+	16,
+	'DF8CC472-6476-4AE2-B4FF-77F42C51ADFB',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('52767FE4-FDD2-4B9C-9751-D6C4ABDCFB91',
+	4,
+	'Grandes culpados',
+	'A maior parcela dos brasileiros sabe que a corrupção que destruiu o Brasil nos últimos anos foi liderada e orquestrada por partidos políticos; partidos como o PT, o PP, o PMDB e o PSDB. 
+
+No entanto, sempre é possível encontrar uma pequena parcela de indivíduos, que se dizem "esclarecidos", defendendo um diagnóstico totalmente diverso. O de que os grandes culpados pela corrupção no Brasil foram, de um lado, as empresas privadas e, por outro, o capitalismo desenfreado, que fomenta um ambiente propício para que empresas do setor privado aliem-se ao setor público com intuito de roubar para si mesmas.',
+	'Rafael Melo',
+	'',
+	16,
+	'DF8CC472-6476-4AE2-B4FF-77F42C51ADFB',
+	'281257AF-2AA7-4649-9911-38BCAF88D6B9',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('4D982E3F-0BDF-4F7F-AD82-AF63F22223B0',
+	1,
+	'Sábio é quem reconhece Jesus Cristo',
+	'Esse mesmo padre fez hoje o sermão mais curto e decisivo que já ouvi. Transcrevo de memória:
+-- Dizem que os reis que visitaram Jesus eram sábios porque sabiam astrologia e mais isto e mais aquilo. Mas não é nada disso. Sábio é aquele que reconhece Jesus.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'282C07F1-DDCD-4EBC-8871-FE8EA87D6949',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'2D11A542-23C9-43F2-8377-18AEEA000B75',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '36900292-7464-40E7-BF20-118B1AEF237D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Sábio é quem reconhece Jesus Cristo',
+	Content = 'Esse mesmo padre fez hoje o sermão mais curto e decisivo que já ouvi. Transcrevo de memória:
+-- Dizem que os reis que visitaram Jesus eram sábios porque sabiam astrologia e mais isto e mais aquilo. Mas não é nada disso. Sábio é aquele que reconhece Jesus.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '282C07F1-DDCD-4EBC-8871-FE8EA87D6949',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '2D11A542-23C9-43F2-8377-18AEEA000B75',
+	TopicId2 = '3451BC56-4313-4A47-9D84-17B6493B7F17',
+	TopicId3 = '8D2E7994-0D22-470E-BAD3-70ABA5698369',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C100B2D2-040B-4CFA-98D8-9D6BE33FD39A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C100B2D2-040B-4CFA-98D8-9D6BE33FD39A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CC0F8B6A-9DCD-4031-A47F-BE962CE70F19',
+	1,
+	'Não pode haver bondade no emocionalismo que se orgulha de não saber das coisas',
+	'Não vejo bondade nenhuma em não querer saber das coisas; do mesmo modo que, não vejo caráter nenhum em querer salvar os pobres e oprimidos, mas pouco caso fazer de sua família e seus pais. O comunista que despreza, por preguiça ou má-fé, o conhecimento de todas as épocas, a religiosa, a literatura, a moral, a cultura, a técnica e a ciência, mas ainda assim quer que todos acreditem que "tem a melhor das intenções para com a humanidade" é um vigarista e deve ser desmascarado.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'F6F6F580-6F03-433F-9074-B1584DD88629',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Não pode haver bondade no emocionalismo que se orgulha de não saber das coisas',
+	Content = 'Não vejo bondade nenhuma em não querer saber das coisas; do mesmo modo que, não vejo caráter nenhum em querer salvar os pobres e oprimidos, mas pouco caso fazer de sua família e seus pais. O comunista que despreza, por preguiça ou má-fé, o conhecimento de todas as épocas, a religiosa, a literatura, a moral, a cultura, a técnica e a ciência, mas ainda assim quer que todos acreditem que "tem a melhor das intenções para com a humanidade" é um vigarista e deve ser desmascarado.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = 'F6F6F580-6F03-433F-9074-B1584DD88629',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('784285C3-8056-40AF-8C01-8842A2CD676C',
+	1,
+	'Da finalidade da razão e da emoção',
+	'O Cristianismo consiste num arranjo bastante frágil entre razão e emoção, entre tecnologia. Quem estuda as diversas culturas existentes nas diferentes épocas, percebe facilmente que o ponto mais alto que a emoção humana sempre chegou foi o do arrependimento e da contrição de coração, que força cada indivíduo a confrontar-se com seus vícios e misérias, e não concluir outra coisa: tenho que melhorar.
+
+A cultura socialista e diversitária tem uma visão totalmente oposta do fim último das emoções. Para eles, as emoções devem ser o caldeirão para onde devemos cozinhar 
+
+continua..',
+	'Rafael Melo',
+	'Facebook',
+	16,
+	'3451BC56-4313-4A47-9D84-17B6493B7F17',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'F6F6F580-6F03-433F-9074-B1584DD88629',
+	'0D524254-1DFC-4933-AAA2-28C5C497877C',
+	'38CF6C33-6B8A-4D58-B9E4-C16A66C8EC66',
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '784285C3-8056-40AF-8C01-8842A2CD676C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '784285C3-8056-40AF-8C01-8842A2CD676C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '784285C3-8056-40AF-8C01-8842A2CD676C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '36900292-7464-40E7-BF20-118B1AEF237D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C100B2D2-040B-4CFA-98D8-9D6BE33FD39A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('7E129A1C-C871-4445-BDE0-88E4DBC1FDF3', 2, 'Rafael Falcón', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('57CDB7CE-ED0F-4E49-9291-DD9D3CAB6BDF',
+	1,
+	'Os grupelhos são a maior fonte de burrice',
+	'A maior fonte de burrice, ao menos no Brasil, é o convívio social. A pertença a grupelhos que se pretendem especialmente inteligentes ou bem-intencionados força o indivíduo a frear suas intuições, pensando no que é "aceitável" dentro do grupo. Na melhor das hipóteses, essa "aceitabilidade" diz respeito ao que o grupo pensa ser verdadeiro ou falso, mas o mais das vezes é definida simplesmente pela suscetibilidade emocional dos outros membros. O medo de ofender um "irmão" emburrece de modo praticamente incurável. E isso vale para grupos direitistas, conservadores, olavetes, o diabo que o parta.',
+	'Rafael Falcón',
+	'Facebook',
+	19,
+	'88A7588B-C539-4BE4-8C9E-3039A9087976',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'7E129A1C-C871-4445-BDE0-88E4DBC1FDF3',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4D0689C0-5F7D-4D79-A7BD-542B668F09F7',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8524D24F-785C-43BD-A1F2-936B406EE50C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1961776-3CB4-4B20-9A2F-8A22D5A5614B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56F22455-B13A-49AE-BCCA-8485241C36FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('78EE3D81-856B-4C80-92F3-6B8E6E940DA3', 2, 'Josué Montello', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('08223009-FE67-4D49-AD3C-A33BA0A5372B',
+	0,
+	'O dever da verdade deve sempre vir em primeiro lugar',
+	'O dever da verdade tem que ser mais forte que o dever da polidez.',
+	'Josué Montello',
+	'Diário, 18-01-1969',
+	19,
+	'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'78EE3D81-856B-4C80-92F3-6B8E6E940DA3',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('EFD1CB27-8A15-41F0-BE69-0D2BFC5C818E', 7, 'Tradição Humanista', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('F9770388-3A27-4260-B823-F08FAA2BE84D', 7, 'Doutrina do humanismo-humanitarismo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('2CB9F971-9C00-49BA-98E2-8AAAFE807034',
+	1,
+	'O humanismo, começou como classicismo, hoje não passa de bandeira ideológica para promover o socialismo, o ateísmo militante e, finalmente, a extinção violenta do Cristianismo',
+	'O humanismo não tem nada a ver com humanitarismo e amor aos coitadinhos. Se Paulo Roberto de Almeida lhe dá implicitamente essa acepção, é para melhor ludibriar os leitores após ter-se ludibriado a si mesmo. O humanismo é um movimento com muitos séculos de história, que começou com um esforço para dar à literatura humana o mesmo valor e importância das Sagradas Escrituras, subiu de tom no “ottocento” com Feuerbach, Stirner, Strauss e Marx reduzindo Deus a uma invenção dos homens e culminou no século seguinte com Antonio Gramsci instituindo a “terrestrialização absoluta do pensamento”, a proibição total e definitiva de qualquer interesse que transcenda a esfera dos assuntos econômico-sociais.  Coerentemente, o “Manifesto Humanista” assinado por algumas centenas de celebridades em 1933 já propunha explicitamente a substituição do capitalismo pelo socialismo, e sua segunda versão, de 1973, a dos governos nacionais por uma autoridade supranacional – a essência da ideologia globalista que, segundo Paulo Roberto de Almeida, não existe nem age.
+ Ao contribuir para esses “avanços”, o grande feito de Nosso Senhor Jesus Cristo teria consistido, segundo a lógica de Paulo Roberto de Almeida, em sumir  discretamente do cenário e ceder lugar à Assembléia Geral da ONU.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'EFD1CB27-8A15-41F0-BE69-0D2BFC5C818E',
+	'5AAC9878-62F7-448E-B582-247F9A75E2A0',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'B9C66C55-4C77-4517-BA9B-BDE36AC821B2',
+	'5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	'5407F212-C58C-4CE7-8599-B498C63A16FA',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'F9770388-3A27-4260-B823-F08FAA2BE84D',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'O humanismo, que começou como classicismo, hoje não passa de bandeira ideológica para promover o socialismo, o ateísmo militante e, finalmente, a extinção violenta do Cristianismo e seus preceitos morais',
+	Content = 'O humanismo não tem nada a ver com humanitarismo e amor aos coitadinhos. Se Paulo Roberto de Almeida lhe dá implicitamente essa acepção, é para melhor ludibriar os leitores após ter-se ludibriado a si mesmo. O humanismo é um movimento com muitos séculos de história, que começou com um esforço para dar à literatura humana o mesmo valor e importância das Sagradas Escrituras, subiu de tom no “ottocento” com Feuerbach, Stirner, Strauss e Marx reduzindo Deus a uma invenção dos homens e culminou no século seguinte com Antonio Gramsci instituindo a “terrestrialização absoluta do pensamento”, a proibição total e definitiva de qualquer interesse que transcenda a esfera dos assuntos econômico-sociais.  Coerentemente, o “Manifesto Humanista” assinado por algumas centenas de celebridades em 1933 já propunha explicitamente a substituição do capitalismo pelo socialismo, e sua segunda versão, de 1973, a dos governos nacionais por uma autoridade supranacional – a essência da ideologia globalista que, segundo Paulo Roberto de Almeida, não existe nem age.
+ Ao contribuir para esses “avanços”, o grande feito de Nosso Senhor Jesus Cristo teria consistido, segundo a lógica de Paulo Roberto de Almeida, em sumir  discretamente do cenário e ceder lugar à Assembléia Geral da ONU.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = 'EFD1CB27-8A15-41F0-BE69-0D2BFC5C818E',
+	AreaId = '5AAC9878-62F7-448E-B582-247F9A75E2A0',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = 'B9C66C55-4C77-4517-BA9B-BDE36AC821B2',
+	PersonId3 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	PersonId4 = '5407F212-C58C-4CE7-8599-B498C63A16FA',
+	TopicId1 = 'F9770388-3A27-4260-B823-F08FAA2BE84D',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'O humanismo, que começou como classicismo, hoje não passa de bandeira ideológica para promover o socialismo, o ateísmo militante e, finalmente, a extinção violenta do Cristianismo',
+	Content = 'O humanismo não tem nada a ver com humanitarismo e amor aos coitadinhos. Se Paulo Roberto de Almeida lhe dá implicitamente essa acepção, é para melhor ludibriar os leitores após ter-se ludibriado a si mesmo. O humanismo é um movimento com muitos séculos de história, que começou com um esforço para dar à literatura humana o mesmo valor e importância das Sagradas Escrituras, subiu de tom no “ottocento” com Feuerbach, Stirner, Strauss e Marx reduzindo Deus a uma invenção dos homens e culminou no século seguinte com Antonio Gramsci instituindo a “terrestrialização absoluta do pensamento”, a proibição total e definitiva de qualquer interesse que transcenda a esfera dos assuntos econômico-sociais.  Coerentemente, o “Manifesto Humanista” assinado por algumas centenas de celebridades em 1933 já propunha explicitamente a substituição do capitalismo pelo socialismo, e sua segunda versão, de 1973, a dos governos nacionais por uma autoridade supranacional – a essência da ideologia globalista que, segundo Paulo Roberto de Almeida, não existe nem age.
+ Ao contribuir para esses “avanços”, o grande feito de Nosso Senhor Jesus Cristo teria consistido, segundo a lógica de Paulo Roberto de Almeida, em sumir  discretamente do cenário e ceder lugar à Assembléia Geral da ONU.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = 'EFD1CB27-8A15-41F0-BE69-0D2BFC5C818E',
+	AreaId = '5AAC9878-62F7-448E-B582-247F9A75E2A0',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = 'B9C66C55-4C77-4517-BA9B-BDE36AC821B2',
+	PersonId3 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	PersonId4 = '5407F212-C58C-4CE7-8599-B498C63A16FA',
+	TopicId1 = 'F9770388-3A27-4260-B823-F08FAA2BE84D',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '08223009-FE67-4D49-AD3C-A33BA0A5372B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '57CDB7CE-ED0F-4E49-9291-DD9D3CAB6BDF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'O humanismo, que começou como classicismo, hoje não passa de bandeira ideológica para promover o socialismo, o ateísmo militante e, finalmente, a extinção violenta do Cristianismo',
+	Content = 'O humanismo não tem nada a ver com humanitarismo e amor aos coitadinhos. Se Paulo Roberto de Almeida lhe dá implicitamente essa acepção, é para melhor ludibriar os leitores após ter-se ludibriado a si mesmo. O humanismo é um movimento com muitos séculos de história, que começou com um esforço para dar à literatura humana o mesmo valor e importância das Sagradas Escrituras, subiu de tom no “ottocento” com Feuerbach, Stirner, Strauss e Marx reduzindo Deus a uma invenção dos homens e culminou no século seguinte com Antonio Gramsci instituindo a “terrestrialização absoluta do pensamento”, a proibição total e definitiva de qualquer interesse que transcenda a esfera dos assuntos econômico-sociais.  Coerentemente, o “Manifesto Humanista” assinado por algumas centenas de celebridades em 1933 já propunha explicitamente a substituição do capitalismo pelo socialismo, e sua segunda versão, de 1973, a dos governos nacionais por uma autoridade supranacional – a essência da ideologia globalista que, segundo Paulo Roberto de Almeida, não existe nem age.
+ Ao contribuir para esses “avanços”, o grande feito de Nosso Senhor Jesus Cristo teria consistido, segundo a lógica de Paulo Roberto de Almeida, em sumir  discretamente do cenário e ceder lugar à Assembléia Geral da ONU.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = 'EFD1CB27-8A15-41F0-BE69-0D2BFC5C818E',
+	AreaId = '5AAC9878-62F7-448E-B582-247F9A75E2A0',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = 'B9C66C55-4C77-4517-BA9B-BDE36AC821B2',
+	PersonId3 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	PersonId4 = '5407F212-C58C-4CE7-8599-B498C63A16FA',
+	TopicId1 = 'F9770388-3A27-4260-B823-F08FAA2BE84D',
+	TopicId2 = '94781149-1BC6-4D6C-B261-B6C7C6CDBCF1',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034'
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('128BDEB3-0AF1-443F-A2E6-F1A5811991F2', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 116, 188, 0)
+|~|

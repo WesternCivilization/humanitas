@@ -1,0 +1,82 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+
+                <text-control icon="fa fa-arrow-right" label="Nome" value="{{data.title}}" (change)="setTitle($event)" placeholder="Título do livro"></text-control>
+
+                <text-control icon="fa fa-user" label="Autor" value="{{data.author}}" (change)="setAuthor($event)" placeholder="Autor do livro"></text-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control label="Biblioteca" type="library" icon="{{_settings.getEntityIcon('library')}}" label="Biblioteca" value="{{data.libraryBook ? data.libraryBook.libraryId : ''}}"
+                    (select)="selectBook($event.value)" placeholder="Biblioteca"></preload-control>
+
+                <div *ngIf="data.libraryBook" class="hr hr-18 dotted"></div>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-slack" label="Edição" value="{{data.libraryBook.edition}}" (change)="data.libraryBook.edition = $event"
+                    placeholder="Edição"></text-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-calendar" label="Ano" value="{{data.libraryBook.year}}" (change)="data.libraryBook.year = $event"
+                    placeholder="Ano"></text-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Isbn" value="{{data.libraryBook.isbn}}" (change)="data.libraryBook.isbn = $event"
+                    placeholder="Isbn"></text-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Editora" value="{{data.libraryBook.publisher}}" (change)="data.libraryBook.publisher = $event"
+                    placeholder="Editora"></text-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Total de Páginas" value="{{data.libraryBook.totalOfPages}}"
+                    (change)="data.libraryBook.totalOfPages = $event" placeholder="Total de Páginas"></text-control>
+
+                <div *ngIf="data.libraryBook" class="hr hr-18 dotted"></div>
+
+                <date-control *ngIf="data.libraryBook" icon="fa fa-calendar" label="Comprado em" value="{{data.libraryBook.purchasedDate}}"
+                    (change)="setPurchasedDate($event)" placeholder="Comprado em"></date-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Preço" value="{{data.libraryBook.price}}" (change)="data.libraryBook.price = $event"
+                    placeholder="Preço"></text-control>
+
+                <div *ngIf="data.libraryBook" class="hr hr-18 dotted"></div>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Largura (X)" value="{{data.libraryBook ? data.libraryBook.sizeX : ''}}"
+                    (change)="data.libraryBook.sizeX = $event" placeholder="em centímetros"></text-control>
+
+                <text-control icon="fa fa-arrow-right" label="Largura (Y)" value="{{data.libraryBook ? data.libraryBook.sizeY : ''}}" (change)="data.libraryBook.sizeY = $event"
+                    placeholder="em centímetros"></text-control>
+
+                <text-control *ngIf="data.libraryBook" icon="fa fa-arrow-right" label="Grossura (Z)" value="{{data.libraryBook ? data.libraryBook.sizeZ : ''}}"
+                    (change)="data.libraryBook.sizeZ = $event" placeholder="em centímetros"></text-control>
+
+                <div *ngIf="data.libraryBook" class="hr hr-18 dotted"></div>
+
+                <textarea-control label="Comentários" value="{{data.libraryBook ? data.libraryBook.comments : ''}}" (change)="data.libraryBook.comments = $event"></textarea-control>
+
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,1675 @@
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('C673BD00-E8DE-4C82-8212-C4C55BB964C0',
+	1,
+	'Da sacralização das fantasias sexuais',
+	'Uma pergunta que não me sai da cabeça é: por que tantas pessoas acham que as suas fantasias sexuais são sagradas?',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'BA16226F-D800-4239-8B5F-19C3ADBE4904',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'C673BD00-E8DE-4C82-8212-C4C55BB964C0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '842C8341-87D2-40CE-AA4E-85B8A1834C16' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('094A739D-EEC8-4C5C-9B0E-57C8A484CC8A', 2, 'Jacob Wassermann', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do retrato de Joseph Kerkhoven',
+	Content = 'Relendo, pela segunda vez, “A Terceira Existência de Joseph Kerkhoven”, de Jacob Wassermann. O que mais claramente define a personalidade de Joseph Kerkhoven é a consciência de um núcleo vital profundo que as pressões do ambiente, as taras hereditárias e o peso do hábito ameaçam a todo instante enrijecer e tornar quebradiço, e que deve constantemente adaptar-se e renovar-se para permanecer ativo e fiel a si mesmo.  Ele observa, consternado, a facilidade com que as almas, levadas pela voragem das forças alienantes, se perdem de si mesmas e desenvolvem toda uma constelação de rituais neuróticos para defender-se de uma angústia que elas mesmas criaram no esforço de evitar o trabalhoso e às vezes humilhante retorno ao seu próprio centro.   Ele aprende a fazer a jornada de volta tantas vezes quanto necessário. Vive, por assim dizer, perto do seu próprio coração, de onde observa as coisas, fatos e pessoas com um realismo e uma compreensão admiráveis. Nisso reside a sua força., mas também a sua limitação permanente: ele não pode negociar nem transigir, tem de permanecer fiel a si mesmo contra todas as circunstâncias, contra todas as adversidades e seduções. É isso o que lhe permite enxergar tão claro na alma alheia ao ponto de perceber o nexo de causa e efeito entre as decisões de ontem e o sofrimento de hoje, entre os compromissos inconscientemente assumidos e as angústias que brotam anos depois como que surgidas do nada. O senso da misteriosa continuidade do destino por entre as falhas de uma atenção volúvel, escandida por mil estímulos fortuitos, é a raiz da sua capacidade de restaurar vidas estilhaçadas e corações retalhados. Kerkhoven é, sem dúvida, o ”alter ego” do romancista, cuja tarefa não é outra senão a de revelar a unidade dos trajetos humanos por trás das consciências fragmentadas.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = 'B6CF3088-75D5-4373-9AC8-B4A53ADA5618',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '094A739D-EEC8-4C5C-9B0E-57C8A484CC8A',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '842C8341-87D2-40CE-AA4E-85B8A1834C16'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('7BEA1194-0863-496C-AEFC-DE78E2735EE6', 2, 'Ignacio da Silva Telles', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Não fichar livros',
+	Content = 'Aprendi com o falecido prof. Ignacio da Silva Telles esta lição que foi essencial para a minha vida de estudos: -- Para que fichar os livros? É só arrumá-los na estante e eles já são um fichário.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '0E811EB4-2571-4197-BBA1-AF28CC75DCF8',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '7BEA1194-0863-496C-AEFC-DE78E2735EE6',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A8B34F9E-2005-4452-91B2-C33E2AD2E0A0'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('AB0DB664-4467-4E3C-8A3B-85D9DF17947B', 2, 'Josiah Royce', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do verdadeiro sentido dos filmes de velho oeste',
+	Content = 'O tema dos filmes de "western" não são tiroteios, não são brancos versus índios, não são xerifes e bandidos, não é nem mesmo a fronteira. O tema é sempre um só e o mesmo: a lealdade, a força coesiva sem a qual a sociedade se desmantela. Não por coincidência, é esse também o tema das obras morais de Josiah Royce, o filósofo do Velho Oeste. Acabo de ver "The Ballad of Lefty Brown" e confirmo isso pela enésima vez. É a história de um velho mocorongo que leva um voto de lealdade às suas últimas conseqüências.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 15,
+	ParentId = 'ECB7FFB6-4CD7-4DF0-A215-8202C16B6800',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = 'AB0DB664-4467-4E3C-8A3B-85D9DF17947B',
+	TopicId1 = 'A6172391-7EBD-46AE-9316-F4B3EBC6AEFB',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8BE0A891-B277-4FA8-AA93-D60797B2C1B2'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Da lição da trilogia de Jacob Wassermann',
+	Content = 'No primeiro volume da trilogia de Jacob Wassermann, o jovem Etzel Andergast, para corrigir um erro judiciário, destrói a vida do próprio pai. O leitor fica com a impressão amarga de que há um erro trágico no fundo do senso de justiça. No segundo volume, o erro latente se mostra à plena luz do dia, quando Etzel cai de herói para patife, comendo a mulher do seu melhor amigo e mestre e dando covardemente no pé. No terceiro, o marido corneado, Joseph Kerkhoven, passa por uma metanóia, reencontra o sentido da vida por meio do perdão e atinge o cume da sabedoria. A obra mais cristã da literatura alemã foi escrita por um judeu.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = 'C645339B-972A-4308-BC2A-D509E0B51324',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '094A739D-EEC8-4C5C-9B0E-57C8A484CC8A',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'C1E1C077-1689-42FD-81FA-ECEE60419100'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '9E59D973-58B5-4D34-89E1-6EE250E59881', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4D838D6C-EC0C-4CAA-82F7-74B310E8B98C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = '4D838D6C-EC0C-4CAA-82F7-74B310E8B98C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '98DC58C2-F15F-480D-ADD9-7949C92B0289', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '3D4DE4FF-D65F-431E-8E10-9ACE79C36245', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '0BAA42F3-F550-45A2-9F06-9EB97C9F5DE0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 4 WHERE FragmentId = '3D4DE4FF-D65F-431E-8E10-9ACE79C36245' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET Score = 3 WHERE FragmentId = '0BAA42F3-F550-45A2-9F06-9EB97C9F5DE0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '29A2F989-F488-45E4-B61A-A24BA9D0B319', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('991A5318-6ECD-422D-8527-90585C9F6A00',
+	1,
+	'A cultura discrimina',
+	'No Brasil, ter cultura é racismo.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'6DB188B9-6770-4E85-9A37-012EE00BDAB8',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'78B76B93-8A58-4553-A9D2-57FD8831E271',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '991A5318-6ECD-422D-8527-90585C9F6A00', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('BA1862E6-3C6F-4FBC-B04D-0706DF11B061',
+	1,
+	'Do sentido atual e do sentido histórico dos termos políticos',
+	'Todo aquele que usa os termos do debate político no sentido atual que têm na mídia, sem levar em conta a história da formação do seu significado, nem portanto as ambiguidades camufladas que ainda carregam, é um charlatão.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'54D8EDCC-FE48-4EA3-B9C6-2BA3B27316B5',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CB0BC1E3-1DE8-410F-8F55-1F6251119020',
+	1,
+	'A sinceridade interior não é monopólio de religiosos',
+	'Não posso saber se Henry Miller foi para o céu ou para o inferno, mas sei com certeza que ele me ensinou a técnica da sinceridade interior tão bem quanto os católicos Georges Bernanos e François Mauriac.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'27A7457E-7DCF-48EB-A819-992FD7B9EC6F',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'B6CF3088-75D5-4373-9AC8-B4A53ADA5618',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('309EA5AF-716F-4A18-BDB8-7DD7F250D74C', 2, 'François Mauriac', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'A sinceridade interior não é monopólio de religiosos',
+	Content = 'Não posso saber se Henry Miller foi para o céu ou para o inferno, mas sei com certeza que ele me ensinou a técnica da sinceridade interior tão bem quanto os católicos Georges Bernanos e François Mauriac.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '27A7457E-7DCF-48EB-A819-992FD7B9EC6F',
+	PersonId3 = '84AD8D05-87FF-42E7-BA56-680DEF2504F9',
+	PersonId4 = '309EA5AF-716F-4A18-BDB8-7DD7F250D74C',
+	TopicId1 = 'B6CF3088-75D5-4373-9AC8-B4A53ADA5618',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CB0BC1E3-1DE8-410F-8F55-1F6251119020', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('804A856E-D93D-4631-B83C-8651303C0BF0',
+	1,
+	'O pior racismo é sempre uma forma de complexo de inferioridade compensado',
+	'Pensem nisto: a forma mais brutal e genocida de racismo não se voltou contra uma raça tida como inferior, mas contra um povo superiormente inteligente que inspirava no racista um tremendo complexo de inferioridade. Ninguém chama um povo de inferior para matá-lo, mas para legitimar a sua redução a burro de carga.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'78B76B93-8A58-4553-A9D2-57FD8831E271',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'89DBB4D0-A66B-4468-826E-9D355DA12D49',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '804A856E-D93D-4631-B83C-8651303C0BF0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('AD0BB595-9905-4A4F-84C7-801FAE89E48E',
+	1,
+	'Matar sim, julgar fantasias sexuais nunca',
+	'No Brasil, matar um ser humano é menos grave do que não gostar das suas fantasias sexuais.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'B44D1DD4-71B2-4761-82CB-0AD323853234',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'BA16226F-D800-4239-8B5F-19C3ADBE4904',
+	'FE6E53AD-6E84-4A9E-80F5-3C9A5149D5AD',
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AD0BB595-9905-4A4F-84C7-801FAE89E48E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('C36F364F-C9CB-4FF9-9711-895350959803', 7, 'A arquitetura das cidades são elementos formativos da personalidade', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('C4D7900F-EC9F-434F-85DA-4B727F18B77E',
+	1,
+	'Da inexistência de uma arquitetura nacional',
+	'O Brasil já durou cinco séculos e picos, e ainda não criou um estilo de arquitetura popular que lhe seja próprio. Perdida por completo a herança portuguesa, nossas cidades são uma mistura de idéias de jerico com lixo enfeitado e falsa chiqueza.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'C36F364F-C9CB-4FF9-9711-895350959803',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'C4D7900F-EC9F-434F-85DA-4B727F18B77E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('39A0A095-4D33-4DE3-8943-974D9E3377DF', 7, 'Os escritores têm a função de dar um sentido autêntico à língua da tribo', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('2EBF7927-9550-45AD-809E-46D0BD2FD9D5', 2, 'Saul Bellow', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('A5987EFD-8B2B-4A70-BA2D-8DAA56388839',
+	0,
+	'Diferença entre ideólogos e escritores autênticos',
+	'Os intelectuais têm por função repetir a ideologia coletiva, mas a função dos escritores é a de expressar impressões autênticas.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'39A0A095-4D33-4DE3-8943-974D9E3377DF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'2EBF7927-9550-45AD-809E-46D0BD2FD9D5',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'54D8EDCC-FE48-4EA3-B9C6-2BA3B27316B5',
+	'61A85D22-62A1-4AE3-A629-B119282DEACF',
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('09222410-E650-46E6-B4D0-7FD571E8EC30',
+	1,
+	'Diferença entre doxologia e epistemologia',
+	'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num sistema científico ordenado e articulado, que não seja pautado por regras normativas, que sempre entram em contradição tão logo entram na realidade, mas em princípio perenes da existência.',
+	'Rafael Melo',
+	'Facebook',
+	16,
+	'61A85D22-62A1-4AE3-A629-B119282DEACF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1B4C5EF4-4C86-47F5-8D0E-16C17E65F0A2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5D7CBFE7-261F-44A7-A4BE-2B7B90FA5093' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '70FFD569-DE68-4739-A292-38856A3C798A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F1C1741E-9F68-4A81-BA98-4706D9142284' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '249015DE-456B-44C0-B94D-4C73FD8FF074' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, em que sentimentos se apresentem heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não seja ordenadas por regras normativas e arbitrárias, que sempre entram em contradição consigo mesmas tão logo entram na realidade, mas em princípio perenes da existência.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, em que sentimentos se apresentem heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias, que sempre entram em contradição consigo mesmas tão logo entram na realidade, mas em princípio perenes da existência. 
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento seja perene.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, em que sentimentos se apresentem heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirana, que sempre entram em contradição consigo mesmas tão logo entram na realidade, mas em princípio perenes da existência. 
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento seja perene.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Em tal sistema os sentimentos, com efeito, devem ser apresentados heroicamente, as vontades dialeticamente e as esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirana, que sempre entram em contradição consigo mesmas tão logo entram na realidade, mas em princípio perenes da existência. 
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento seja perene.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Em tal sistema sentimentos devem ser apresentados heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirana, que sempre entram em contradição consigo mesmas tão logo entram na realidade, mas em princípio perenes da existência. 
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento seja perene.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, honras e esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Em tal sistema sentimentos devem ser apresentados heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirana, que sempre entram em contradição consigo mesmas tão logo entram na realidade.
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento só examine substâncias eternas e universais.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, de honras e de esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Em tal sistema sentimentos devem ser apresentados heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirana, que sempre entram em contradição consigo mesmas tão logo entram na realidade.
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento só examine substâncias eternas e universais.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, de honras e de esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Em tal sistema sentimentos devem ser apresentados heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirânica, que tão logo entra na realidade converte-se no seu contradição.
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento só examine substâncias eternas e universais.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, de honras e de esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Para que em tal sistema, nenhuma razão se confronte indevidamente com  com outras, o critério de ordenação deve ser a coragem: assim os sentimentos devem ser dispostos heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirânica, que tão logo entra na realidade converte-se no seu contrário.
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento só examine substâncias eternas e universais.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre doxologia e epistemologia',
+	Content = 'O papel da doxologia é descrever o conjunto de sentimentos, de honras e de esperanças de um povo. O papel da epistemologia, por sua vez, é ordenar tais crenças num conjunto científico arquitetônico e articulado com o todo, segundo seu valor e dignidade. Para que em tal sistema, nenhuma razão se confronte indevidamente com as outras, o critério de ordenação de seus elementos deve ser a coragem: assim sentimentos devem ser ordenados heroicamente, vontades dialeticamente e esperanças principiologicamente, a fim de que a vida não entre em contradição consigo mesma por regras arbitrárias ditadas por um homem, partido ou cultura tirânica, que tão logo entra na realidade converte-se no seu contrário.
+
+Que o teu sentimento seja nobre, que a tua vontade seja ao mesmo tempo indecisa e sagaz, que teu pensamento só examine substâncias eternas e universais.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 16,
+	ParentId = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '724AFB90-02E3-4774-9A56-3B5E73CE1BC4',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '09222410-E650-46E6-B4D0-7FD571E8EC30', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('ADD773B4-F305-4EDF-A127-0F281CEF940E',
+	1,
+	'Da absoluta ousadia e covardia dos filósofos',
+	'Os intelectuais sabem que são a principal força agente da transformação social e se gabam disso, mas, quando tudo acaba em merda, eles jogam a culpa em todo mundo menos neles mesmos.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'0D524254-1DFC-4933-AAA2-28C5C497877C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'B873B265-D772-45BE-812B-F7C91AD54FE4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'ADD773B4-F305-4EDF-A127-0F281CEF940E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('9D3DCB1B-2221-4811-88D2-7DBC49085AFE',
+	1,
+	'Duas metaideologias - marxismo e positivismo',
+	'As únicas heranças históricas que ainda têm influência sobre as nossas classes dominantes são o positivismo e o marxismo.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'40770EE2-EE5F-46A7-BB08-86AFBB3B9160',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'6E8C5BDD-40B0-4DBC-B84F-47680236B88B',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9D3DCB1B-2221-4811-88D2-7DBC49085AFE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '9D3DCB1B-2221-4811-88D2-7DBC49085AFE', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9D3DCB1B-2221-4811-88D2-7DBC49085AFE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ADD773B4-F305-4EDF-A127-0F281CEF940E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1B4C5EF4-4C86-47F5-8D0E-16C17E65F0A2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5D7CBFE7-261F-44A7-A4BE-2B7B90FA5093' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '70FFD569-DE68-4739-A292-38856A3C798A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F1C1741E-9F68-4A81-BA98-4706D9142284' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '249015DE-456B-44C0-B94D-4C73FD8FF074' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3980BD15-FA2C-4F8D-8B5A-4F19E248FAD9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '823EEA9F-9174-453E-B65F-5401B1CF9E12' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2DB2ACA4-76C6-433D-9D03-5E22D5179B11' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B178E19-6113-4A20-8985-6F4EED27AA8E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '517EB2B6-B93A-40C8-8765-7B0B390AF029' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '842C8341-87D2-40CE-AA4E-85B8A1834C16' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9D3DCB1B-2221-4811-88D2-7DBC49085AFE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8AF9F6E3-C5D0-44B2-BB5A-000DF6DA6AA6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '8AF9F6E3-C5D0-44B2-BB5A-000DF6DA6AA6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4F2AD882-69C9-4D96-B46F-0056C010446C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'A falta de razão chama-se preguiça, a falta de justiça chama-se insensibilidade',
+	Content = 'A falta de razão está ao homem vulgar, como a falta de sensibilidade está ao homem injusto: no primeiro caso temos a preguiça e o embotamento da vontade, no segundo temos o orgulho e o embotamento dos afetos. É, pois, necessário que, a justiça divina manifeste-se sempre como castidade, isto é, uma experiência de comunhão sensível com o permanente para que a Justiça, não mais relativa, mas absoluta, possa ser uma experiência comungável por toda humanidade.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '8BBDA73B-3269-453C-8A9B-0266A05A7C8C',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '71C2A9EA-B49B-42B2-AC89-63B303D62682',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '8AF9F6E3-C5D0-44B2-BB5A-000DF6DA6AA6'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'E42D149F-93B2-4CC1-9B17-01A0E68DD6EC', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Do perdão cósmico',
+	Content = 'Na escala do infinito, tudo aquilo que é consumido, perdido; extinto ou gasto no domínio da matéria e do tempo é instantaneamente reconquistado e recriado na eternidade. A eternidade é a infinita regeneração de tudo. Tudo aquilo que entrou na existência por um momento, ainda que brevíssimo, não pode nem voltar a existir no tempo nem desaparecer da eternidade: o que um dia foi "ser", não pode voltar ao "nada", porque o nada nunca foi. Considerado no entanto em si mesmo, separado do infinito, o mundo finito é o mundo da contínua extinção, o mundo da entropia. A castração espiritual consiste em perder o sentido da regeneração perpétua, por meio do corte entre o finito e o infinito - a prisão no mundo da "carne".',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 18,
+	ParentId = 'F81CD0CE-EDAC-468F-892C-71D0C6ABDF9E',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'E42D149F-93B2-4CC1-9B17-01A0E68DD6EC'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '5C3559C8-33D2-447A-95BC-01F602ADED8B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Germinando o espírito',
+	Content = 'O silêncio forçado é geralmente, para o homem de estudos, oportunidade de germinação de obras de mais longo alcance.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'CD92D6BB-857F-4EEC-B314-D0E879E250B5',
+	BookId = 'E49292BD-D269-4F94-B900-166092D0B35D',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '5C3559C8-33D2-447A-95BC-01F602ADED8B'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '57E061C1-1CDF-404C-9915-02A7687B7074', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A89E3367-7D54-4B00-8233-088E2D8287C6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Do Desconhece-te a ti mesmo dos grandes filósofos modernos',
+	Content = 'Parece que muitas das filosofias modernas, ao contrário das antigas, não resistem às tentativas de fazer delas o que bem se entenda, produzindo-se por exemplo, ao longo de gerações, e às vezes ao mesmo tempo, um Maquiavel apologista da tirania e um Maquiavel democrata, um Descartes cristão sincero e um anticristão disfarçado, um Kant platônico e idealista ou um materialista e positivista, um Hegel precursor do nazismo ou do moderno Estado de direito, um Marx humanista ou anti-humanista, um Nietzsche fascista ou libertário, e assim por diante{..}. O que isso demonstra para além de qualquer possibilidade de dúvida é que{..} não somos nós, os leitores que custamos a comprendê-las. São elas que se explicam mal ou trazem no seu bojo contradições implícitas não resolvidas, talvez nem mesmo percebidas (o que significa que seus autores se compreendiam mal a si mesmos), ou ocultavam no seu tecido algum mistério de outra natureza.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 20,
+	ParentId = '5C28C8A4-4988-489A-B0F6-99FECE084032',
+	BookId = '0650E202-3683-4188-8950-47D501DE6D7D',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = 'D1B1E4EB-9247-4066-99C7-72126DA492C5',
+	PersonId3 = 'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	PersonId4 = '5A7B6644-8CE8-4987-97E1-E250EB2E2AF2',
+	PersonId5 = 'A45078B5-062A-4548-992C-025E6F57CAEE',
+	TopicId1 = 'C984165E-C87A-4CA0-981A-813148B88B32',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'A89E3367-7D54-4B00-8233-088E2D8287C6'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '3225027C-1C3A-492B-8B5B-06672EAA93B9', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 4 WHERE FragmentId = '3225027C-1C3A-492B-8B5B-06672EAA93B9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Idealismo como reação à ciência moderna',
+	Content = 'O idealismo alemão, cinco séculos mais tarde, é uma reação dialética tardia ante o avanço da nova ciência de base lógico-analítica.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 12,
+	ParentId = '8798CA9F-0D03-416A-8247-690298ACD09B',
+	BookId = '46DA7999-D90C-42F4-9284-647ED97F16EE',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '5C28C8A4-4988-489A-B0F6-99FECE084032',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '3225027C-1C3A-492B-8B5B-06672EAA93B9'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'FD26A8C3-9E95-470E-B97E-0C22D6953C32', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A prova-de-fogo da filosofia',
+	Content = 'Quando você se defrontar com um filósofo, em pessoa ou por escrito, verifique se ele se sente à vontade para raciocinar junto com os filósofos do passado, mesmo aqueles dos quais "discorda". A flexibilidade para incorporar mentalmente os capítulos anteriores da evolução filosófica é a marca do filósofo genuíno, herdeiro de Sócrates, Platão e Aristóteles.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 18,
+	ParentId = 'CONCEPTUALISMO)',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '6F2274E6-930D-4978-A737-5B8B3998B29E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'FD26A8C3-9E95-470E-B97E-0C22D6953C32'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '257A1DBB-08EB-4A01-95AD-0D33CEE13262', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A dialética de Carpeaux',
+	Content = 'Os ensaios de Otto Maria Carpeaux não são senão um vasto mostruário, da arte da distinção, elevada às alturas de um virtuosismo quase alucinante. Ora, a distinção é a operação fundamental da arte da dialética, segundo o concebia Aristóteles.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 9,
+	ParentId = '9F4FA730-ED7C-4D66-8424-D9EDEEA18BE6',
+	BookId = 'E49292BD-D269-4F94-B900-166092D0B35D',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '299F2651-E0CA-4732-85E5-AAAA5CDDA75E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '257A1DBB-08EB-4A01-95AD-0D33CEE13262'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA849812-D6E7-4A56-98E5-0E46F4D6ED0C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '679068D9-3AD8-48CA-BD16-0E6C911C5E67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D23384BA-0ACD-4ADC-8481-0E8FA5E0FD1C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '91F97F8C-CE5D-40B0-A38A-0FC881901DD3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Unum, Verum, Bonum',
+	Content = 'O filodoxo não se define só por sua oposição à pessoa do filósofo, e sim, ainda que sem percebê-lo, ao próprio fundamento último da filosofia platônica (e, por extensão, de toda a filosofia cristã): "Platão, explica Voegelin, fala do filodoxo como o homem que não pode suportar a idéia de que ''o belo, ou o justo, ou o que quer que seja, sejam um e o mesmo''". Voegelin lembra a sentença de Xenófanes: "O Um é o Deus". Podemos também evocar os "transcendentais" de Duns Scott, Unum, Verum, Bonum, que se convertem uns nos outras. Tanto em Platão quanto em Aristóteles ou em toda a filosofia escolástica, o Supremo Bem não é um "valor" muito menos uma "criação cultural", mas a realidade suprema, o ens realissimum, fundamento primeiro e objeto último de todo conhecimento.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '116739AC-68EA-4916-B2C9-9E7CBFDC6F8F',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '854A08AB-AD7B-40F4-B285-E003D6D7C24B',
+	PersonId3 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	PersonId4 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	TopicId1 = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	TopicId2 = '492F313B-C217-4FD6-B294-DD8FF3949149',
+	TopicId3 = 'B6A59027-8C36-4AF1-BA21-2AA796DF5B7F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'BA849812-D6E7-4A56-98E5-0E46F4D6ED0C'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A8133B9F-B57F-49CB-8E84-14E754A6430E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA849812-D6E7-4A56-98E5-0E46F4D6ED0C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Unum, Verum, Bonum',
+	Content = 'O filodoxo não se define só por sua oposição à pessoa do filósofo, e sim, ainda que sem percebê-lo, ao próprio fundamento último da filosofia platônica (e, por extensão, de toda a filosofia cristã): "Platão, explica Voegelin, fala do filodoxo como o homem que não pode suportar a idéia de que ''o belo, ou o justo, ou o que quer que seja, sejam um e o mesmo''". Voegelin lembra a sentença de Xenófanes: "O Um é o Deus". Podemos também evocar os "transcendentais" de Duns Scott, Unum, Verum, Bonum, que se convertem uns nos outras. Tanto em Platão quanto em Aristóteles ou em toda a filosofia escolástica, o Supremo Bem não é um "valor" muito menos uma "criação cultural", mas a realidade suprema, o ens realissimum, fundamento primeiro e objeto último de todo conhecimento.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '116739AC-68EA-4916-B2C9-9E7CBFDC6F8F',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '854A08AB-AD7B-40F4-B285-E003D6D7C24B',
+	PersonId3 = '0142E8AC-2EE2-4D81-B2A7-20EE91151A6F',
+	PersonId4 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	PersonId5 = '5DFD3BB7-3281-4AAF-B426-5C923A2DF9D0',
+	TopicId1 = '61A85D22-62A1-4AE3-A629-B119282DEACF',
+	TopicId2 = '492F313B-C217-4FD6-B294-DD8FF3949149',
+	TopicId3 = 'B6A59027-8C36-4AF1-BA21-2AA796DF5B7F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'BA849812-D6E7-4A56-98E5-0E46F4D6ED0C'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '679068D9-3AD8-48CA-BD16-0E6C911C5E67' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '679068D9-3AD8-48CA-BD16-0E6C911C5E67', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D23384BA-0ACD-4ADC-8481-0E8FA5E0FD1C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Filosofia é tradição, filosofia é técnica',
+	Content = 'A filosofia é uma tradição e a filosofia é uma técnica. Chega-se ao domínio da técnica pela absorção ativa da tradição e absorve-se a tradição praticando a técnica segundo as várias etapas do seu desenvolvimento histórico.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'A23CF9D4-402F-4454-BD7A-CAFD90F8F718',
+	BookId = 'EAA4F17F-A2B2-494F-AFEB-CFDAFB416260',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '679068D9-3AD8-48CA-BD16-0E6C911C5E67'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'A teoria dos quatro discursos',
+	Content = 'As quatro modalidades de discurso caracterizam-se por seus respectivos níveis de credibilidade: a) O discurso poético versa sobre o possível, dirigindo-se sobretudo à imaginação; b) O discurso retórico tem por objetivo o verossímil e por meta a produção de uma crença ou decisão; c) O discurso dialético já não se limita a sugerir ou impor uma crença, mas submete as crenças à prova, mediante ensaios e tentativas de traspassá-las por objeções; d) Finalmente, o discurso lógico ou analítico, partindo sempre de premissas admitidas como indiscutivelmente certas, chega, pelo encadeamento silogístico, à demonstração certa (prova indiscutível).',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 9,
+	ParentId = 'DF35571B-0566-48D0-83F7-573E6F0640B9',
+	BookId = '46DA7999-D90C-42F4-9284-647ED97F16EE',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'D23384BA-0ACD-4ADC-8481-0E8FA5E0FD1C'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'D23384BA-0ACD-4ADC-8481-0E8FA5E0FD1C', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '91F97F8C-CE5D-40B0-A38A-0FC881901DD3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET Score = 5 WHERE FragmentId = '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A8133B9F-B57F-49CB-8E84-14E754A6430E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '003176C3-3D02-4E56-AA3E-15327A26C1DC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Verdade e espírito coletivista',
+	Content = 'Ter razão sozinho é, para a mentalidade coletivista, o pior dos pecados. Sócrates ou Jesus Cristo, para essa gente, simplesmente não aconteceram.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'DE280567-A929-479B-BC42-787A149BC4D6',
+	BookId = '38207A43-534C-45F3-8D97-C2411EA19492',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	TopicId2 = '1A721931-D7EB-4AA5-B678-C6481286E52E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1AD82BC9-2DE7-4723-9BE8-0F7CE8D4DFA2'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A8133B9F-B57F-49CB-8E84-14E754A6430E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2F8B57F3-3119-4DDF-9FB6-00164A201568' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E42D149F-93B2-4CC1-9B17-01A0E68DD6EC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5C3559C8-33D2-447A-95BC-01F602ADED8B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '57E061C1-1CDF-404C-9915-02A7687B7074' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('2D58F484-5F0F-47CA-B99A-4B587609C855', 4, 'Les Antimodernes [Antoine Compagnon]', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('14A9E6BE-B3DF-411A-AE57-82E7CE026A52', 2, 'Antoine Compagnon', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Ninguém pode combater uma época',
+	Content = 'Sempre achei uma tolice, uma pura pose, esse negócio de ser "antimoderno". O excelente livro de Antoine Compagnon, "Les Antimodernes", mostra convincentemente que o antimodernismo é elemento integrante da modernidade. Pode-se combater uma doutrina, uma ideologia, uma mentalidade, mas combater uma ÉPOCA é dar chutes no ar.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'BDE6F621-BBBD-4FA2-8012-01F8394E03E1',
+	BookId = '2D58F484-5F0F-47CA-B99A-4B587609C855',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '14A9E6BE-B3DF-411A-AE57-82E7CE026A52',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2F8B57F3-3119-4DDF-9FB6-00164A201568'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B0B703F9-26AD-42A9-AF0A-03128D86B15D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Dos Colombos retardados',
+	Content = 'Um forte preconceito em favor do "novo" faz tomar por novidades coisas que não o são, ao mesmo tempo que, dia após dia, a crescente ignorância do passado faz a inteligência girar em círculos, quando crê avançar.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 15,
+	ParentId = 'D629ED75-45E0-4B3B-BCA3-D84572946CCA',
+	BookId = 'A9C5E19D-E926-456A-AAAE-AF03D9FF7E5F',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	TopicId2 = '1A721931-D7EB-4AA5-B678-C6481286E52E',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '57E061C1-1CDF-404C-9915-02A7687B7074'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'B0B703F9-26AD-42A9-AF0A-03128D86B15D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1E89D187-1B41-46F5-BCD2-0358C7B76B21' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1E89D187-1B41-46F5-BCD2-0358C7B76B21', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DBB22CF2-FCB3-44A2-B978-0501CB5DCD60' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Dos ataques de fora',
+	Content = 'Padre Pio ensina que, quando o diabo começa a atacar você desde fora, é sinal de que ele já não se sente muito confortável dentro da sua alma.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = '6D87920E-216E-4F99-B2D1-37A7C55FA187',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '453C5514-659B-4471-A34E-6853425CF9D4',
+	TopicId1 = 'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	TopicId2 = '09B5F6BF-F82B-4AF3-8CD8-1A99D0C567D2',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1E89D187-1B41-46F5-BCD2-0358C7B76B21'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '60799050-64B6-4A43-A334-054A99A176DD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'DBB22CF2-FCB3-44A2-B978-0501CB5DCD60', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Origem do termo prole',
+	Content = 'O proletariado se chama proletariado porque tem filhos, prole, não porque transa com gatos.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 16,
+	ParentId = 'BA16226F-D800-4239-8B5F-19C3ADBE4904',
+	InstitutionId1 = '5833FC0C-4624-4C02-B1BC-033B1C880D88',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '40770EE2-EE5F-46A7-BB08-86AFBB3B9160',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'DBB22CF2-FCB3-44A2-B978-0501CB5DCD60'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '60799050-64B6-4A43-A334-054A99A176DD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '60799050-64B6-4A43-A334-054A99A176DD', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE FragmentLikes SET Score = 4 WHERE FragmentId = '60799050-64B6-4A43-A334-054A99A176DD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET Score = 5 WHERE FragmentId = '60799050-64B6-4A43-A334-054A99A176DD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'EF996955-4119-4CF7-8050-05AB316B61D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Da falta de discernimento da esquerda em distinguir os amigos e os inimigos',
+	Content = 'O antigo dualismo ideológico marxista tinha pelo menos uma referência sociológica objetiva, a distinção entre burguesia e proletariado.
+O dualismo esquerdista de hoje não tem escrúpulos de catalogar o proletariado inteiro entre os inimigos e opressores, e entre os amigos oprimidos os bilionários que financiam a esquerda e os muçulmanos que assassinam gays a granel.',
+	Author = 'Olavo de Carvalho',
+	Reference = '',
+	DomainId = 19,
+	ParentId = 'F6F6F580-6F03-433F-9074-B1584DD88629',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'EF46C1C0-3605-4474-96F8-6CC4BA4FBF23',
+	TopicId2 = '11F0E5CF-3625-4084-A1BA-3EA792B368FF',
+	TopicId3 = 'CFF2497A-E05F-47D9-8873-829453B01A57',
+	TopicId4 = '58E2F193-20A4-48B7-89A9-F4DC9DD66CBF',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '60799050-64B6-4A43-A334-054A99A176DD'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'EF996955-4119-4CF7-8050-05AB316B61D0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 3 WHERE FragmentId = 'EF996955-4119-4CF7-8050-05AB316B61D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('1DA962D3-AB8F-433E-8C9E-F71E8B79C611', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 45, 163, 0)
+|~|

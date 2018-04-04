@@ -1,0 +1,2569 @@
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3588D5B0-4CED-4293-B523-5AC3C8145C40', 0, 'África', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('AB1D1C90-5414-4AA6-8103-B51A931C6781',
+	1,
+	'Diferença entre o tratamento islâmico e o tratamento ocidental com os negros',
+	'Os muçulmanos inventaram as teorias racistas no século XI e as levaram à prática mandando capar oitenta por cento dos escravos negros que aprisionavam na África. Os brancos ocidentais só chegaram à África quatro séculos depois, não caparam ninguém e ainda inventaram doutrinas abolicionistas, que não só aboliram a escravidão em praticamente todo o mundo, mas fizeram dos negros americanos, no curso de pouco mais de um século, uma comunidade rica com um mercado de UM TRILHÃO DE DÓLARES.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'11F0E5CF-3625-4084-A1BA-3EA792B368FF',
+	'3588D5B0-4CED-4293-B523-5AC3C8145C40',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'C93C581D-B91E-4F45-BD37-36AF5933D3E9',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AB1D1C90-5414-4AA6-8103-B51A931C6781', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Diferença entre o tratamento islâmico e o tratamento ocidental com os negros',
+	Content = 'Os muçulmanos inventaram as teorias racistas no século XI e as levaram à prática mandando capar oitenta por cento dos escravos negros que aprisionavam na África. Os brancos ocidentais só chegaram à África quatro séculos depois, não caparam ninguém e ainda inventaram doutrinas abolicionistas, que não só aboliram a escravidão em praticamente todo o mundo, mas fizeram dos negros americanos, no curso de pouco mais de um século, uma comunidade rica com um mercado de UM TRILHÃO DE DÓLARES.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 12,
+	ParentId = '11F0E5CF-3625-4084-A1BA-3EA792B368FF',
+	AreaId = '3588D5B0-4CED-4293-B523-5AC3C8145C40',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'C93C581D-B91E-4F45-BD37-36AF5933D3E9',
+	TopicId2 = 'A6172391-7EBD-46AE-9316-F4B3EBC6AEFB',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'AB1D1C90-5414-4AA6-8103-B51A931C6781'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('2E58C4B3-B00C-432F-9FAB-3055885E2D0B',
+	1,
+	'Sou sempre excluídos das políticas de inclusão',
+	'O que mais me encanta nas políticas de inclusão é  que elas sempre me excluem.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'6DB188B9-6770-4E85-9A37-012EE00BDAB8',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('96D36136-2EB8-446D-8F3D-734D0081B81A',
+	1,
+	'Minha prece predileta',
+	'Minha prece predileta é: "Eu não sei o que é ser bom, mas o Senhor sabe. Portanto, faça com que eu seja bom sem perceber, porque se perceber vou querer me meter no assunto e estragar tudo."',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'CC7C7DF9-53A1-47E4-B352-663E65ED16C4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'55467235-78C0-4492-B38C-C2A36FA75A84',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '96D36136-2EB8-446D-8F3D-734D0081B81A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('703530DD-5D73-4E8B-A22C-88BBD9836835',
+	1,
+	'Diferença entre o intelectual de esquerda e o intelectual de direita',
+	'Diferença crucial: na esquerda, as idéias corrompem as pessoas; na direita, as pessoas corrompem as idéias.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'40F9739A-08B6-4136-989E-4C708DBC6981',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '703530DD-5D73-4E8B-A22C-88BBD9836835', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('3F4298F9-2D91-4818-806A-83D07AAF79F7',
+	1,
+	'Sem discussões intelectuais toda ação é vazia',
+	'Os que berram "Chega de discussões entre intelectuais! Precisamos agir!" ignoram que foi com "discussões entre intelectuais", com livros e mais livros,  que a esquerda conquistou metade da elite e escravizou a outra metade, privando o povo de todos os meios de ação. 
+É impossível explicar a força da revolução cultural a pessoas sem cultura.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'B873B265-D772-45BE-812B-F7C91AD54FE4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'A94BCC09-63FE-4F42-AFE1-2D9AF7C698FF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '3F4298F9-2D91-4818-806A-83D07AAF79F7', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('40579358-F2FD-440B-B123-8B82A9D6501B',
+	1,
+	'Das pessoas que vivem de sua própria imagem',
+	'O homem que vive da própria imagem projetada não suporta o isolamento, o confronto solitário com a própria miséria (que é a experiência diária do fiel cristão). Isolem-no, e ele ruirá como um castelo de areia.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'9B99477D-EEC7-44BB-B79F-0E8AC7AFE043',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '40579358-F2FD-440B-B123-8B82A9D6501B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 3 WHERE FragmentId = '40579358-F2FD-440B-B123-8B82A9D6501B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('143FCA8D-D854-49C5-8CD5-B876906DD856',
+	1,
+	'Da vulgaridade das mulheres de hoje em dia',
+	'Antigamente as mulheres se vestiam para informar aos homens aonde não deviam olhar. Hoje elas ficam peladas com a mesmíssima finalidade.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'B44D1DD4-71B2-4761-82CB-0AD323853234',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'B8E83BCA-1AAA-443E-BA51-07FD728E54BA',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '143FCA8D-D854-49C5-8CD5-B876906DD856', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('B92AE1F4-9C97-409F-877F-70A5ACA73C5E',
+	1,
+	'Da maior tentação dos católicos',
+	'A maior tentação do católico é imaginar que tudo o que lhe cabe é deixar que os padres e bispos pensem em seu lugar e seguir bovinamente a rotina que eles lhe imponham -- uma vida sem perplexidades, sem contradições, sem nenhuma busca interior, a vida morna daqueles que Deus cospe pela Sua boca. 
+Por isso é que Deus permite que a Igreja se corrompa a olhos vistos e que o próprio Papa escandalize e desoriente os fiéis uma vez por semana. Assim talvez eles entendam que o caminho não vem pronto, que é preciso buscá-lo na escuridão, entre dúvidas, temores e prantos, orando sem cessar.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'9FEBFAE2-B19A-4BCE-9A1E-20C2B7A9C485',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'EFC676F9-9F77-45B2-947F-6BEED69DE193',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('8A89BBBE-4A33-4239-BD9A-ABBC096447AF', 7, 'Personalidade do escritor', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('7B97CA47-0ABE-4550-9894-DCD320E62CEA',
+	1,
+	'Das duas opções de um escritor',
+	'Para um escritor, só há duas possibilidades: escrever com o coração ou escrever com o cu.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'8A89BBBE-4A33-4239-BD9A-ABBC096447AF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7B97CA47-0ABE-4550-9894-DCD320E62CEA', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('01873363-C1B2-4441-B275-013B6AE5BF5F',
+	1,
+	'O pai representa o temor, depois o respeito',
+	'O pai, no início, não representa autoridade, mas PODER, um treco que primeiro aprendemos a temer e só depois a respeitar. 
+E quem não sabe que a maior parte das ordens vem da mãe?',
+	'Olavo de Carvalho',
+	'Facebook',
+	15,
+	'72829435-1213-431C-BBC6-3C419831EC27',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '01873363-C1B2-4441-B275-013B6AE5BF5F', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'O pai representa o temor, depois o respeito',
+	Content = 'O pai, no início, não representa autoridade, mas PODER, um treco que primeiro aprendemos a temer e só depois a respeitar. 
+E quem não sabe que a maior parte das ordens vem da mãe?',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 15,
+	ParentId = '72829435-1213-431C-BBC6-3C419831EC27',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'D016BADF-B80D-4393-BA29-3C34A565E1AA',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('A76A1A48-F8FC-458F-A24C-34D530D6EAB7', 7, 'Tensão entre amor ao próximo e a guerra de todos contra todos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48',
+	1,
+	'O amor ao próximo é a realidade diária, não um ideal longínquo',
+	'Ao contrário do que imaginam Hobbes, Nietzsche, os frankfurtianos e similares, o amor ao próximo NÃO É um ideal longínquo. É a realidade da vida, a base de quase tudo quanto fazemos. Quando as pessoas o perdem, estão no mundo da Lua.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'5F720A3D-4E4B-479A-B64B-B7DC6B3D655B',
+	NULL,
+	NULL,
+	NULL,
+	'5833FC0C-4624-4C02-B1BC-033B1C880D88',
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'A4255195-5584-4385-AA9D-6F57D518BE57',
+	'A45078B5-062A-4548-992C-025E6F57CAEE',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'A76A1A48-F8FC-458F-A24C-34D530D6EAB7',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('BE7DD1EE-2367-4E71-BAF1-DA26842F4031',
+	1,
+	'A origem da autoridade é o amor pela mãe',
+	'De experiências como essa extraí a teoria, já exposta nos meus cursos, de que a origem da autoridade é o fascínio do bebê pela sua mãe.',
+	'Olavo de Carvalho',
+	'Facebook',
+	15,
+	'72829435-1213-431C-BBC6-3C419831EC27',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('1668F8A5-DEDD-45C7-8FFF-96E7356E1612',
+	1,
+	'Deixa que eu mesmo resolva os meus problemas',
+	'Abaixo os apóstolos do "Brasil melhor". Quero os problemas de volta.',
+	'Olavo de Carvalho',
+	'Facebook',
+	14,
+	'F4F0F120-9D46-48E0-8DBB-B226170AE187',
+	'281257AF-2AA7-4649-9911-38BCAF88D6B9',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('63228EEB-023F-42C0-BABD-8DB0EFAC4A44',
+	1,
+	'As palavras o obedecem',
+	'Uma das maiores alegrias de um escritor é ver que as palavras o obedecem, dizem exatamente o que ele está vendo e não o que elas estão acostumadas a dizer.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'8A89BBBE-4A33-4239-BD9A-ABBC096447AF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'086394EC-3BA7-4EE8-A91A-AC0134B951CF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '63228EEB-023F-42C0-BABD-8DB0EFAC4A44', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('52324844-28B5-4112-ACB8-7DD2C0D1ABCD',
+	1,
+	'Do valor de nossos escritos de juventude',
+	'Tudo o que um escritor escreve antes de ter encontrado a sua própria voz só vale -- se tanto -- como documento psicológico de um momento fugaz do seu aprendizado. Comparem o Machado de Assis de "A Mão e a Luva" com o de "Dom Casmurro", ou o Graciliano Ramos de "Caetés" com o de "Angústia" e entenderão o que estou dizendo. Há talentos precoces, mas o meu, definitivamente, nunca foi um deles. Quem matou a charada no ato foi o marido da Dra. Mariana Jacob, um turcão forte como um touro aos oitenta anos: "Noooossa! Tudo lhe custou tanto esforço!"',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'341C91BA-4593-477B-98E3-DB6C10FA7F0D',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'8A89BBBE-4A33-4239-BD9A-ABBC096447AF',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do valor de nossos escritos de juventude',
+	Content = 'Tudo o que um escritor escreve antes de ter encontrado a sua própria voz só vale -- se tanto -- como documento psicológico de um momento fugaz do seu aprendizado. Comparem o Machado de Assis de "A Mão e a Luva" com o de "Dom Casmurro", ou o Graciliano Ramos de "Caetés" com o de "Angústia" e entenderão o que estou dizendo. Há talentos precoces, mas o meu, definitivamente, nunca foi um deles. Quem matou a charada no ato foi o marido da Dra. Mariana Jacob, um turcão forte como um touro aos oitenta anos: "Noooossa! Tudo lhe custou tanto esforço!"',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '341C91BA-4593-477B-98E3-DB6C10FA7F0D',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '73DE77B1-1F44-456C-B989-FEF5D5B71F61',
+	PersonId3 = 'A1EA8C45-938F-4AF8-8750-B15F0E4B7404',
+	TopicId1 = '8A89BBBE-4A33-4239-BD9A-ABBC096447AF',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '52324844-28B5-4112-ACB8-7DD2C0D1ABCD'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('4BCF72F3-8F04-41BC-A757-5787DE68C40B',
+	1,
+	'Por que a anamnese é tão importante?',
+	'Por que a anamnese é tão importante? Porque, segundo ensinava Giambattista Vico, nada conhecemos tão bem quanto aquilo que nós mesmos fazemos.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'72D163EB-92EA-42E7-B146-51A17FB93C9B',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'A52A8BB7-3013-482A-8C29-C9F40EF1741C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4BCF72F3-8F04-41BC-A757-5787DE68C40B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('A0371B24-E2EF-47F4-AF8F-D772725702D9',
+	1,
+	'Conhecer Deus',
+	'S. Boaventura ensinava que Deus é a primeira coisa que conhecemos. Sto. Tomás de Aquino, que é a última. Os dois tinham razão.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'32189A38-9906-4312-9E38-B9253040B981',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'D31D4455-5A62-4640-8F53-43265A09B9E2',
+	'907ECB02-C9B6-42DF-88A9-21C65B31F011',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'90706D48-2484-4E11-92F5-2218D1009DBD',
+	'8C36A731-3875-4899-8601-B19D7E409B12',
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A0371B24-E2EF-47F4-AF8F-D772725702D9', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A0371B24-E2EF-47F4-AF8F-D772725702D9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4BCF72F3-8F04-41BC-A757-5787DE68C40B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '52324844-28B5-4112-ACB8-7DD2C0D1ABCD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '63228EEB-023F-42C0-BABD-8DB0EFAC4A44' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1668F8A5-DEDD-45C7-8FFF-96E7356E1612' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BE7DD1EE-2367-4E71-BAF1-DA26842F4031' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B97CA47-0ABE-4550-9894-DCD320E62CEA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B92AE1F4-9C97-409F-877F-70A5ACA73C5E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '143FCA8D-D854-49C5-8CD5-B876906DD856' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '40579358-F2FD-440B-B123-8B82A9D6501B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3F4298F9-2D91-4818-806A-83D07AAF79F7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '703530DD-5D73-4E8B-A22C-88BBD9836835' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '96D36136-2EB8-446D-8F3D-734D0081B81A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2E58C4B3-B00C-432F-9FAB-3055885E2D0B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AB1D1C90-5414-4AA6-8103-B51A931C6781' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D5B4EA86-C1BD-42EF-82AF-2D81E3AA0B8A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A20301A0-FD41-4141-B4F7-92B68FA456C2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A2FDB57C-6261-468B-8826-F5C839F3D9B7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E2741803-98D6-4CB5-BE52-EA4C48A53BF2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '92376549-2ABD-46F5-95DD-63DC6886DE50' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CF639C38-7FCC-43C3-9A8A-6491D501F88C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C8D4FB99-AF62-47D3-8495-7E6A26B31540' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8057DAAB-D2D8-4CD5-A0D3-71386751D268' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56CCA28B-9BF4-428A-B65F-B814E00CDAB9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F8AB9EAF-7CCD-40F2-B529-9A892BD734AE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '464448CE-865D-4DC2-B76D-7527FC2E7AAE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('648FA4B2-7FDE-4509-9F42-584FC9D33B98', 7, 'Tensão entre ecumenismo católico-ecumenismo laicista', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('82AFF653-E5CE-4D7A-8754-AEC7AADC46C8',
+	1,
+	'Jesus Cristo é a própria verdade, logo o cristianismo não pode ser comparado com as outras religiões',
+	'O Cristianismo ensina que Jesus não é uma testemunha da verdade, mas sim a própria Verdade encarnada como Pessoa humano-divina, e que essa Pessoa, por seu amor, nos abre as portas da vida eterna quando lhe damos nossa confiança e nosso amor. 
+Jesus tem nisso algum concorrente? Podem procurar. 
+As religiões só são similares -- e portanto unificáveis -- com base em generalidades ocas inventadas para consolo da mentalidade laicista. 
+Ou seja: só existe ecumenismo entre cadáveres de religiões.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'648FA4B2-7FDE-4509-9F42-584FC9D33B98',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'3451BC56-4313-4A47-9D84-17B6493B7F17',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('26FFBD54-4461-4F65-BA6F-E064A3706237', 7, 'Não há nada que seja reivindicado pela esquerda nas ruas, que não seja inventado pela tecnologia com antecedência em laboratórios', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('7B01BA1D-9C83-494D-8549-958E7AB6DFC6',
+	1,
+	'Tensão entre o marxismo científico e o marxismo ideológico',
+	'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado dentro de laboratórios pela tecnologia com alguns anos de antecedência, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas. Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas. 
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	'Rafael Melo',
+	'Facebook',
+	14,
+	'26FFBD54-4461-4F65-BA6F-E064A3706237',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '82AFF653-E5CE-4D7A-8754-AEC7AADC46C8', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7B01BA1D-9C83-494D-8549-958E7AB6DFC6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82AFF653-E5CE-4D7A-8754-AEC7AADC46C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A0371B24-E2EF-47F4-AF8F-D772725702D9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4BCF72F3-8F04-41BC-A757-5787DE68C40B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '52324844-28B5-4112-ACB8-7DD2C0D1ABCD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '63228EEB-023F-42C0-BABD-8DB0EFAC4A44' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1668F8A5-DEDD-45C7-8FFF-96E7356E1612' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BE7DD1EE-2367-4E71-BAF1-DA26842F4031' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B97CA47-0ABE-4550-9894-DCD320E62CEA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B92AE1F4-9C97-409F-877F-70A5ACA73C5E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '143FCA8D-D854-49C5-8CD5-B876906DD856' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '40579358-F2FD-440B-B123-8B82A9D6501B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3F4298F9-2D91-4818-806A-83D07AAF79F7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '703530DD-5D73-4E8B-A22C-88BBD9836835' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '96D36136-2EB8-446D-8F3D-734D0081B81A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2E58C4B3-B00C-432F-9FAB-3055885E2D0B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AB1D1C90-5414-4AA6-8103-B51A931C6781' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D5B4EA86-C1BD-42EF-82AF-2D81E3AA0B8A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A20301A0-FD41-4141-B4F7-92B68FA456C2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A2FDB57C-6261-468B-8826-F5C839F3D9B7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E2741803-98D6-4CB5-BE52-EA4C48A53BF2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '92376549-2ABD-46F5-95DD-63DC6886DE50' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CF639C38-7FCC-43C3-9A8A-6491D501F88C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C8D4FB99-AF62-47D3-8495-7E6A26B31540' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8057DAAB-D2D8-4CD5-A0D3-71386751D268' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56CCA28B-9BF4-428A-B65F-B814E00CDAB9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios pela tecnologia, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falante potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios de tecnologia, militares em sua maioria, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falante potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios de tecnologia, militares em sua maioria, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que a invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falante potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82AFF653-E5CE-4D7A-8754-AEC7AADC46C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82AFF653-E5CE-4D7A-8754-AEC7AADC46C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios de tecnologia, militares em sua maioria, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que a invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades na escala produtiva ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falantes potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, na escola, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios de tecnologia, militares em sua maioria, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que a invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades na escala produtiva ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falantes potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, na escola, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem mais reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Tensão entre o marxismo científico e o marxismo ideológico',
+	Content = 'Não há nada que seja reivindicado nas ruas pela cultura da esquerda, que não seja inventado, com alguns anos de antecedência, dentro de laboratórios de tecnologia, militares em sua maioria, e implantado pela sociedade do livre comércio com muito mais eficácia, velocidade e justiça.
+
+Pense bem: não é um fato inegável que a invenção de máquinas e de computadores fez mais pela igualdade dos sexos que todas as passeatas do movimento feminista internacional juntas? Afinal, se ganhar uma guerra tornou-se uma mera questão de apertar um botão, então tanto homens quanto mulheres estão igualmente aptos para a batalha.
+
+Ainda: não é também um fato inegável que a especialização do trabalho nos centros urbanos, em um número ilimitado de capacitações técnicas, fez mais pela qualidade de vida dos trabalhadores das cidades que todas as passeatas do proletariado juntas? Afinal, se na especialização do trabalho, deixou-se de produzir artesanalmente uma bicicleta por dia, para se produzir uma centenas de bicicletas, todas com grande qualidade, então é óbvio que a distribuição e especialização das responsabilidades na escala produtiva ajudou muito a qualidade de vida do proletariado.
+
+Mais ainda: não é um fato inegável que a invenção e utilização comercial do rádio, bem como a de instrumentos elétricos e alto falantes potentes, fizeram mais pela liberdade de expressão da juventude pós-guerra que todas as passeatas de Maio de 1968 juntas? Afinal, se o ensino da juventude agora não é um monopólio dos pais ou da igreja, mas está presente no rádio, na escola, e na cultura dos diversos estilos musicais emergentes, então os jovens já não podem mais reclamar de serem oprimidos pelos pais e pela igreja.
+
+Por essas e outras que, dos dois Karl Marx''s que entraram para a história -- o cientista, que afirmava ser inevitável o advento do socialismo; e o ideólogo, que alardeava aos quatro cantos que trabalhadores pegassem em armas e lutassem pela realização da sociedade comunista -- concordo 100% com o primeiro e julgo a luta do segundo totalmente estúpida e imbecilizante.',
+	Author = 'Rafael Melo',
+	Reference = 'Facebook',
+	DomainId = 14,
+	ParentId = '26FFBD54-4461-4F65-BA6F-E064A3706237',
+	PersonId1 = '4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	TopicId1 = '6BC805E1-18B8-4E31-8207-ED4C0F620663',
+	TopicId2 = 'DF28D4AE-6F4C-4EC3-939B-F5B96E2BCC6F',
+	TopicId3 = 'C3DC52D7-BF94-48F0-A1ED-784575D77F82',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('1578B654-D318-4BDE-992E-35F8CEEB6AD6',
+	1,
+	'Da confusão entre metafísica e religião',
+	'Antes de chegar a essa conclusão, mergulhei no ecumenismo profundamente, tomando-o a sério e levando às suas últimas consequências a hipótese da "unidade transcendente das religiões", até descobrir que ela só é certa no que diz respeito a certas premissas METAFÍSICAS comuns às várias religiões, o que não significa, como pretendem Guénon e Schuon, nem que a metafísica seja superior às religiões por ser mais abrangente -- absurdo equivalente a afirmar que as leis gerais da fisiologia animal sejam um animal superior aos outros --, nem que exista, acima dos ritos religiosos de qualquer espécie, uma "iniciação metafísica". Sem a teoria da unidade transcendente das religiões, o ecumenismo é apenas um agradinho político-diplomático; com ela, é uma confusão entre metafísica e religião.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'648FA4B2-7FDE-4509-9F42-584FC9D33B98',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'8A34F033-0874-4E1D-9B3A-7DAE46148609',
+	'C76EC4EF-79C3-4839-B79C-7AB6E8BD4955',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'075ADEAE-31DC-4FA2-82CA-5AF994E66608',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1578B654-D318-4BDE-992E-35F8CEEB6AD6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('65A12957-8272-4EEC-AD5D-EB8F3A9DD75F', 7, 'Confusão entre metafísica e religião', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Da confusão entre metafísica e religião',
+	Content = 'Antes de chegar a essa conclusão, mergulhei no ecumenismo profundamente, tomando-o a sério e levando às suas últimas consequências a hipótese da "unidade transcendente das religiões", até descobrir que ela só é certa no que diz respeito a certas premissas METAFÍSICAS comuns às várias religiões, o que não significa, como pretendem Guénon e Schuon, nem que a metafísica seja superior às religiões por ser mais abrangente -- absurdo equivalente a afirmar que as leis gerais da fisiologia animal sejam um animal superior aos outros --, nem que exista, acima dos ritos religiosos de qualquer espécie, uma "iniciação metafísica". Sem a teoria da unidade transcendente das religiões, o ecumenismo é apenas um agradinho político-diplomático; com ela, é uma confusão entre metafísica e religião.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 12,
+	ParentId = '648FA4B2-7FDE-4509-9F42-584FC9D33B98',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	PersonId2 = '8A34F033-0874-4E1D-9B3A-7DAE46148609',
+	PersonId3 = 'C76EC4EF-79C3-4839-B79C-7AB6E8BD4955',
+	TopicId1 = '075ADEAE-31DC-4FA2-82CA-5AF994E66608',
+	TopicId2 = '65A12957-8272-4EEC-AD5D-EB8F3A9DD75F',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1578B654-D318-4BDE-992E-35F8CEEB6AD6'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1578B654-D318-4BDE-992E-35F8CEEB6AD6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1578B654-D318-4BDE-992E-35F8CEEB6AD6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B01BA1D-9C83-494D-8549-958E7AB6DFC6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82AFF653-E5CE-4D7A-8754-AEC7AADC46C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A0371B24-E2EF-47F4-AF8F-D772725702D9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4BCF72F3-8F04-41BC-A757-5787DE68C40B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '52324844-28B5-4112-ACB8-7DD2C0D1ABCD' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '63228EEB-023F-42C0-BABD-8DB0EFAC4A44' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1668F8A5-DEDD-45C7-8FFF-96E7356E1612' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BE7DD1EE-2367-4E71-BAF1-DA26842F4031' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CE6661B2-EF01-43A4-A15C-F4C8FB0A5B48' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '01873363-C1B2-4441-B275-013B6AE5BF5F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B97CA47-0ABE-4550-9894-DCD320E62CEA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B92AE1F4-9C97-409F-877F-70A5ACA73C5E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '143FCA8D-D854-49C5-8CD5-B876906DD856' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '40579358-F2FD-440B-B123-8B82A9D6501B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3F4298F9-2D91-4818-806A-83D07AAF79F7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '703530DD-5D73-4E8B-A22C-88BBD9836835' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '96D36136-2EB8-446D-8F3D-734D0081B81A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2E58C4B3-B00C-432F-9FAB-3055885E2D0B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AB1D1C90-5414-4AA6-8103-B51A931C6781' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D5B4EA86-C1BD-42EF-82AF-2D81E3AA0B8A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A20301A0-FD41-4141-B4F7-92B68FA456C2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A2FDB57C-6261-468B-8826-F5C839F3D9B7' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E2741803-98D6-4CB5-BE52-EA4C48A53BF2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '92376549-2ABD-46F5-95DD-63DC6886DE50' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CF639C38-7FCC-43C3-9A8A-6491D501F88C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C8D4FB99-AF62-47D3-8495-7E6A26B31540' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8057DAAB-D2D8-4CD5-A0D3-71386751D268' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56CCA28B-9BF4-428A-B65F-B814E00CDAB9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F8AB9EAF-7CCD-40F2-B529-9A892BD734AE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '464448CE-865D-4DC2-B76D-7527FC2E7AAE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C35C9D90-EE0F-4A43-8F4E-C8606DB3C63C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'EA9017CC-0288-4FFF-9054-8366D31EC319' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '6DE42983-E0C4-4296-93CA-C7DE8758F022' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '15C17C1C-E75C-410B-BC5D-808A67BBD395' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9FE3F4DE-BCB3-4587-8F69-1DEA77D39999' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F6D95F36-06A2-440B-BC97-3FA2BADCB040' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '49E2F089-C35A-4DCC-ADE5-5691FA246191' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '784F5267-2D55-4483-8FF0-CE23A7344A2B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C884D9AA-77E7-42AC-9C78-3E263F40C03C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5DD0DB29-0DE6-4F23-9D60-616EB84A9520' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('6BB1180E-49EC-42EB-9F20-1430CC6D9EC4', 7, 'O senso das proporções é a base da vida moral', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('EC1E4580-E982-41DE-82A7-EF8BCBECAE67', 8, '10 Mandamentos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('1AE0187A-8DA4-4484-A91D-3ABA336F98D3',
+	1,
+	'A maior graça da vida',
+	'Um sonho da minha vida é um dia conseguir calibrar a minha alma para que reaja sempre com senso das proporções, que é uma decorrência imediata do Primeiro Mandamento.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'EC1E4580-E982-41DE-82A7-EF8BCBECAE67',
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'F385BC5B-74E5-458E-8325-589D57159798',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1AE0187A-8DA4-4484-A91D-3ABA336F98D3', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('B6844216-A93E-4402-83D4-1B30B376173E',
+	1,
+	'Do amor-próprio como a base da falta do senso das proporções',
+	'Muitos sentem horror quase físico de adúlteros, ladrões e sem-vergonhas em geral, mas ante um macrogenocida reagem com uma condenação vaga e abstrata, desacompanhada de qualquer sentimento pessoal.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('259647B0-2405-4522-9AA7-5C42B80301C9', 7, '10 Mandamentos', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('4FCDCB0A-2087-40E9-ADDD-AC96A2E55168',
+	1,
+	'Cultivar o senso das proporções sempre',
+	'Jesus é o Logos, a Razão divina, o princípio da ordem e o topo de todas as hierarquias. Cultivar o senso das proporções é uma forma modesta, mas real e obrigatória, da Imitação de Cristo.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'259647B0-2405-4522-9AA7-5C42B80301C9',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'A maior graça da vida',
+	Content = 'Um sonho da minha vida é um dia conseguir calibrar a minha alma para que reaja sempre com senso das proporções, que é uma decorrência imediata do Primeiro Mandamento.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = 'F385BC5B-74E5-458E-8325-589D57159798',
+	TopicId2 = '259647B0-2405-4522-9AA7-5C42B80301C9',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '1AE0187A-8DA4-4484-A91D-3ABA336F98D3'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '4FCDCB0A-2087-40E9-ADDD-AC96A2E55168', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = '4FCDCB0A-2087-40E9-ADDD-AC96A2E55168' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'B6844216-A93E-4402-83D4-1B30B376173E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do amor-próprio como a base da falta do senso das proporções',
+	Content = 'Muitos sentem horror quase físico de adúlteros, ladrões e sem-vergonhas em geral, mas ante um macrogenocida reagem com uma condenação vaga e abstrata, desacompanhada de qualquer sentimento pessoal.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '259647B0-2405-4522-9AA7-5C42B80301C9',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'B6844216-A93E-4402-83D4-1B30B376173E'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('1652D718-24EF-4AB4-8CB6-00B2E5175D67',
+	1,
+	'Das diversas escalas de justiça',
+	'Justiça É senso das proporções. Não há justiça na Terra sem a escala dos delitos e das penas, nem no céu sem a hierarquia dos méritos espirituais, nem no inferno sem a gradação dos vários níveis do mal. 
+Quem diz "Pecado é pecado, não existe pecadinho e pecadão" já peca contra o Primeiro Mandamento.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'6BB1180E-49EC-42EB-9F20-1430CC6D9EC4',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'BEAE38A6-F7C7-40BD-8686-B4D05016560B',
+	'259647B0-2405-4522-9AA7-5C42B80301C9',
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '1652D718-24EF-4AB4-8CB6-00B2E5175D67', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('3ED6F2B1-2F34-4377-B554-19E23A094E23',
+	1,
+	'Falar somente sobre o público, sobre o privado manter o silêncio',
+	'A mim, como escritor, cabe julgar a conduta pública de intelectuais, políticos e homens influentes em geral. O resto, cabe-me apenas compreender em silêncio.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'9768C103-7FC1-4483-8573-254842D9AE94',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'C33DE6E0-640C-489B-8585-9F39E4830F69',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('BAE9954F-4E6B-4016-8981-4F6740EBAC26',
+	1,
+	'Compreender sem julgar é o princípio de todo aprendizado',
+	'O primeiro e mais elementar movimento do amor ao próximo é compreender sem julgar. Só julgar quando for uma obrigação moral ou um dever de estado. 
+Se cada um compreendesse aquilo que julga, na maioria dos casos guardaria o julgamento para si.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'8F36576F-C07A-4E72-9CD5-5358CE39F783',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'E2A5DD0A-E03E-4540-AD4E-57BEEC84375E',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'BAE9954F-4E6B-4016-8981-4F6740EBAC26', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 5)
+|~|
+UPDATE FragmentLikes SET Score = 4 WHERE FragmentId = 'BAE9954F-4E6B-4016-8981-4F6740EBAC26' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('463DF33B-FE4D-491E-A96B-1D12C0B128F2',
+	1,
+	'A solidão é um pré-requisitos para a busca da sinceridade',
+	'Brasileiro só conserva o uso da razão enquanto permanece solitário. Tão logo entra em alguma agremiação, seja o PT, o movimento neopentecostal, a Maçonaria, a Congregação Mariana, uma facção política qualquer ou um clube de futebol de botão, sente-se escorado no consenso dos pares e começa a dizer besteira sem parar nunca mais.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'A5282298-F4AF-4A47-9ACF-D05010A87938',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'2066140F-A085-41F7-8147-054E95B082D7',
+	'96F6C9E3-523D-43FE-B1D5-39420F77F312',
+	'B59C4708-3BC8-493C-86A8-A73D51D023A5',
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('129C05C9-7632-4977-A8D3-134E8A6ABA0A', 7, 'Doutrina do estético-dramático-lógico', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('D7FB75D4-6811-4017-898B-A687E93C1062', 2, 'Hans Urs Von Balthasar', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('63A5BD63-57CB-40BA-AFB6-B6CA0F9213BA', 7, 'Toda experiência estética é dogmática', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('505F4711-F4C1-40DA-A1E4-764DA998A5F6',
+	1,
+	'Toda revolta gnóstica começa como uma revolta contra o Belo',
+	'Toda experiência estética é dogmática. Se revela toda de uma vez. É por isso que a revolta gnóstica sempre começa pela revolta contra o Belo. Nietzsche afirmava que a neutralidade é mais metafísica que a metafísica. Adorno afirma que "o todo é o não verdadeiro". O espírito da Escola de Frankfurt acredita que toda forma é autoritária, o que equivale a dizer que o Belo é autoritário.',
+	'Rafael Melo',
+	'',
+	9,
+	'129C05C9-7632-4977-A8D3-134E8A6ABA0A',
+	NULL,
+	NULL,
+	NULL,
+	'5833FC0C-4624-4C02-B1BC-033B1C880D88',
+	NULL,
+	NULL,
+	'4B94DAAA-0854-467E-80FA-F10FB4CA9E13',
+	'D7FB75D4-6811-4017-898B-A687E93C1062',
+	'A45078B5-062A-4548-992C-025E6F57CAEE',
+	'68C10D33-0188-450B-97FA-94061D0FADB5',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'63A5BD63-57CB-40BA-AFB6-B6CA0F9213BA',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '505F4711-F4C1-40DA-A1E4-764DA998A5F6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '505F4711-F4C1-40DA-A1E4-764DA998A5F6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '505F4711-F4C1-40DA-A1E4-764DA998A5F6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '505F4711-F4C1-40DA-A1E4-764DA998A5F6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '505F4711-F4C1-40DA-A1E4-764DA998A5F6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '505F4711-F4C1-40DA-A1E4-764DA998A5F6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('7EDEFABB-4DFE-4F6C-8C41-EAB836E4864E', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 49, 131, 0)
+|~|

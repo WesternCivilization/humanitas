@@ -1,0 +1,95 @@
+<div class="widget-box transparent">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-calendar"></i>
+            Atividades
+            <span *ngIf="activitiesCount">({{activitiesCount}})</span>
+        </h4>
+        <div class="widget-toolbar">
+            <div class="btn-group">
+                <button class="btn btn-app btn-light btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="width:40px;">
+                    <i class="ace-icon fa fa-plus bigger-160"></i>
+                </button>
+
+                <ul class="dropdown-menu dropdown-info dropdown-menu-right">
+                    <li>
+                        <a [routerLink]="['/edit-fragment/00000000-0000-0000-0000-000000000000,0']">
+                            <i class="{{_settings.getEntityIcon('quote')}}"></i> Citação</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-fragment/00000000-0000-0000-0000-000000000000,1']">
+                            <i class="{{_settings.getEntityIcon('note')}}"></i> Nota</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-fragment/00000000-0000-0000-0000-000000000000,4']">
+                            <i class="{{_settings.getEntityIcon('article')}}"></i> Artigo</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-fragment/00000000-0000-0000-0000-000000000000,5']">
+                            <i class="{{_settings.getEntityIcon('audio')}}"></i> Áudio</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-fragment/00000000-0000-0000-0000-000000000000,3']">
+                            <i class="{{_settings.getEntityIcon('video')}}"></i> Vídeo</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,0']">
+                            <i class="{{_settings.getEntityIcon('area')}}"></i> Área</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,1']">
+                            <i class="{{_settings.getEntityIcon('period')}}"></i> Período</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,2']">
+                            <i class="{{_settings.getEntityIcon('author')}}"></i> Autor</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,3']">
+                            <i class="{{_settings.getEntityIcon('institution')}}"></i> Instituição</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,4']">
+                            <i class="{{_settings.getEntityIcon('book')}}"></i> Livro</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,7']">
+                            <i class="{{_settings.getEntityIcon('topic')}}"></i> Tópico</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,8']">
+                            <i class="{{_settings.getEntityIcon('law')}}"></i> Lei</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,10']">
+                            <i class="{{_settings.getEntityIcon('skill')}}"></i> Habilidade</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/edit-tag/00000000-0000-0000-0000-000000000000,12']">
+                            <i class="{{_settings.getEntityIcon('library')}}"></i> Biblioteca</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+    <div class="col-xs-12">
+
+        <!-- div.table-responsive -->
+
+        <!-- div.dataTables_borderWrap -->
+        <div>
+            <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
+                <div>
+                    <activities-template [data]="activities" (filter)="setFilter($event)" (sort)="setSort($event)"></activities-template>
+                    <div [style.display]="isLoading ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

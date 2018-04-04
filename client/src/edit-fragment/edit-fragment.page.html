@@ -1,0 +1,60 @@
+<div class="row" *ngIf="saved">
+    <div class="col-xs-12">
+        <div class="alert alert-block alert-success">
+            <button type="button" class="close" data-dismiss="alert" (click)="saved = null">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+            <i class="ace-icon fa fa-check green"></i> Fragmento <b>{{saved.title}}</b> salvo com sucesso.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="tabbable">
+            <ul id="inbox-tabs" class="inbox-tabs nav nav-tabs padding-16 tab-size-bigger tab-space-1">
+                <li [class]="activePanel == 'fragment' ? 'active' : ''">
+                    <a [routerLink]="['/edit-fragment/', this.id]" (click)="setPanel('fragment')">
+                        <i class="blue ace-icon fa fa-quote-left bigger-130"></i>
+                        <span class="bigger-110">Fragmento</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'image' ? 'active' : ''">
+                    <a [routerLink]="['/edit-fragment/', this.id]" (click)="setPanel('image')">
+                        <i class="blue ace-icon glyphicon glyphicon-picture bigger-130"></i>
+                        <span class="bigger-110">Figura</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'references' ? 'active' : ''">
+                    <a [routerLink]="['/edit-fragment/', this.id]" (click)="setPanel('references')">
+                        <i class="blue ace-icon fa fa-chain bigger-130"></i>
+                        <span class="bigger-110">Referências</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content no-border no-padding">
+                <div id="tag" [class]="activePanel == 'fragment' ? 'tab-pane in active' : 'tab-pane in'">
+                    <fragment-panel [data]="detail"></fragment-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="image" [class]="activePanel == 'image' ? 'tab-pane in active' : 'tab-pane in'">
+                    <image-panel [data]="detail"></image-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="references" [class]="activePanel == 'references' ? 'tab-pane in active' : 'tab-pane in'">
+                    <references-panel [data]="detail"></references-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.tabbable -->
+    </div>
+    <!-- /.col -->
+</div>

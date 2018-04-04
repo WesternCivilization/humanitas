@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label class="col-sm-3 control-label no-padding-right" for="form-field-recipient">{{label}}</label>
+    <div class="col-sm-9">
+        <span class="input-icon" style="width: 100%">
+            <select style="display: inline; padding-left: 22px;" [(ngModel)]="type">
+                <option value="date">Data</option>
+                <option value="year">Ano</option>
+                <option value="century">Século</option>
+            </select>
+            <input type="text" *ngIf="type == 'date'" [value]="date ? date : ''" [placeholder]="placeholder" (change)="setValue('date', $event)" style="display: inline">
+            <input type="text" *ngIf="type == 'year'" [value]="year ? year : ''" [placeholder]="placeholder" (change)="setValue('year', $event)" style="display: inline">
+            <input type="text" *ngIf="type == 'century'" [value]="century ? century : ''" [placeholder]="placeholder" (change)="setValue('century', $event)" style="display: inline">
+            <i class="ace-icon {{icon}}"></i>
+        </span>
+    </div>
+</div>

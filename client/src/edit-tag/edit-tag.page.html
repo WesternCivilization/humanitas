@@ -1,0 +1,195 @@
+<div class="row" *ngIf="saved">
+    <div class="col-xs-12">
+        <div class="alert alert-block alert-success">
+            <button type="button" class="close" data-dismiss="alert" (click)="saved = null">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+            <i class="ace-icon fa fa-check green"></i> Tag <b>{{saved.name}}</b> salvo com sucesso.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="tabbable">
+            <ul id="inbox-tabs" class="inbox-tabs nav nav-tabs padding-16 tab-size-bigger tab-space-1">
+                <li [class]="activePanel == 'tag' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('tag')">
+                        <i class="blue ace-icon fa fa-edit bigger-130"></i>
+                        <span class="bigger-110">Tag</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 0 || detail.type == 1 || detail.type == 2 || detail.type == 9)" [class]="activePanel == 'area' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('area')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('area')}} bigger-130"></i>
+                        <span class="bigger-110">Área</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 0 || detail.type == 1 || detail.type == 9)" [class]="activePanel == 'period' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('period')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('period')}} bigger-130"></i>
+                        <span class="bigger-110">Período</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 2)" [class]="activePanel == 'author' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('author')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('author')}} bigger-130"></i>
+                        <span class="bigger-110">Autor</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 3)" [class]="activePanel == 'institution' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('institution')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('institution')}} bigger-130"></i>
+                        <span class="bigger-110">Instituição</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 4)" [class]="activePanel == 'library' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('library')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('library')}} bigger-130"></i>
+                        <span class="bigger-110">Biblioteca</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && (detail.type == 9)" [class]="activePanel == 'state' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('state')">
+                        <i class="blue ace-icon {{_settings.getEntityIcon('state')}} bigger-130"></i>
+                        <span class="bigger-110">Estado</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'references' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('references')">
+                        <i class="blue ace-icon fa fa-chain bigger-130"></i>
+                        <span class="bigger-110">Referências</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'image' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('image')">
+                        <i class="blue ace-icon glyphicon glyphicon-picture bigger-130"></i>
+                        <span class="bigger-110">Figura</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'events' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('events')">
+                        <i class="blue ace-icon fa fa-header bigger-130"></i>
+                        <span class="bigger-110">Biografia</span>
+                    </a>
+                </li>
+                <li [class]="activePanel == 'links' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('links')">
+                        <i class="blue ace-icon fa fa-link bigger-130"></i>
+                        <span class="bigger-110">Links</span>
+                    </a>
+                </li>
+                <li *ngIf="detail && detail.createdBy != '00000000-0000-0000-0000-000000000000'" [class]="activePanel == 'fragments' ? 'active' : ''">
+                    <a [routerLink]="['/edit-tag/', this.id]" (click)="setPanel('fragments')">
+                        <i class="blue ace-icon fa fa-quote-left bigger-130"></i>
+                        <span class="bigger-110">Fragmentos</span>
+                        <span *ngIf="fragmentsCount" class="badge badge-default">{{fragmentsCount}}</span>
+                    </a>
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+
+            <div class="tab-content no-border no-padding">
+                <div id="tag" [class]="activePanel == 'tag' ? 'tab-pane in active' : 'tab-pane in'">
+                    <tag-panel [data]="detail"></tag-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="area" [class]="activePanel == 'area' ? 'tab-pane in active' : 'tab-pane in'">
+                    <area-panel [data]="detail"></area-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="author" [class]="activePanel == 'author' ? 'tab-pane in active' : 'tab-pane in'">
+                    <author-panel [data]="detail"></author-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="book" [class]="activePanel == 'book' ? 'tab-pane in active' : 'tab-pane in'">
+                    <book-panel [data]="detail"></book-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="institution" [class]="activePanel == 'institution' ? 'tab-pane in active' : 'tab-pane in'">
+                    <institution-panel [data]="detail"></institution-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="law" [class]="activePanel == 'law' ? 'tab-pane in active' : 'tab-pane in'">
+                    <law-panel [data]="detail"></law-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="library" [class]="activePanel == 'library' ? 'tab-pane in active' : 'tab-pane in'">
+                    <library-panel [data]="detail"></library-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="period" [class]="activePanel == 'period' ? 'tab-pane in active' : 'tab-pane in'">
+                    <period-panel [data]="detail"></period-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="skill" [class]="activePanel == 'skill' ? 'tab-pane in active' : 'tab-pane in'">
+                    <skill-panel [data]="detail"></skill-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="state" [class]="activePanel == 'state' ? 'tab-pane in active' : 'tab-pane in'">
+                    <state-panel [data]="detail"></state-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="topic" [class]="activePanel == 'topic' ? 'tab-pane in active' : 'tab-pane in'">
+                    <topic-panel [data]="detail"></topic-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="references" [class]="activePanel == 'references' ? 'tab-pane in active' : 'tab-pane in'">
+                    <references-panel [data]="detail"></references-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="image" [class]="activePanel == 'image' ? 'tab-pane in active' : 'tab-pane in'">
+                    <image-panel [data]="detail"></image-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="events" [class]="activePanel == 'events' ? 'tab-pane in active' : 'tab-pane in'">
+                    <events-panel [data]="detail"></events-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="links" [class]="activePanel == 'links' ? 'tab-pane in active' : 'tab-pane in'">
+                    <links-panel [data]="detail"></links-panel>
+                    <div [style.display]="!detail ? 'block' : 'none'">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+                <div id="fragments" [class]="activePanel == 'fragments' ? 'tab-pane in active' : 'tab-pane in'" infiniteScroll [infiniteScrollDistance]="2"
+                    [infiniteScrollThrottle]="50" (scrolled)="onFragmentsScroll()">
+                    <activities-template [data]="fragments"></activities-template>
+                    <div class="row" *ngIf="fragmentsScroll">
+                        <img src="assets/images/loading.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.tabbable -->
+    </div>
+    <!-- /.col -->
+</div>

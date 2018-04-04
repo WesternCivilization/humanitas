@@ -1,0 +1,1 @@
+electron-packager electron\ DiarioFilosofico --platform=win32 --arch=x64

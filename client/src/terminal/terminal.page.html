@@ -1,0 +1,36 @@
+<div class="widget-box transparent">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-terminal"></i>
+            Comandos
+        </h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <batchdata [content]="commands" (change)="commands = $event"></batchdata>
+    </div>
+</div>
+
+<button class="btn btn-sm btn-success" (click)="run()">
+    <i class="ace-icon fa fa-plus-circle bigger-120"></i>
+    <span class="bigger-110">Executar</span>
+</button>
+
+<hr *ngIf="results" />
+
+<div class="widget-box transparent" *ngIf="results">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-database"></i>
+            Resultados
+        </h4>
+    </div>
+</div>
+
+<div class="row" *ngIf="results">
+    <div class="col-sm-12">
+        <div [innerHtml]="results"></div>
+    </div>
+</div>

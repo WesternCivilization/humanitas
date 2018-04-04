@@ -1,0 +1,160 @@
+<div id="navbar" class="navbar navbar-default    navbar-collapse       h-navbar ace-save-state">
+    <div class="navbar-container ace-save-state" id="navbar-container">
+        <div class="navbar-header pull-left">
+            <a href="#/activities" class="navbar-brand">
+                <small>
+                    <i class="fa fa-university"></i>
+                    Humanitas
+                </small>
+            </a>
+
+            <div *ngIf="user" class="light-blue dropdown-modal" style="
+            display: inline-block;
+            text-align:  right;
+            float: right;
+            position: absolute;
+            top:5px;
+            width: 500px;
+            right: 40px;
+        ">
+                <a aria-expanded="true" class="dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none; color: white;">
+                    <img alt="Jason's Photo" class="nav-user-photo" style="
+                    width: 40px; 
+                    height: 40px; 
+                    margin: -4px 8px 0 0;
+                    border-radius: 100%;
+                    border: 2px solid #FFF;
+                    max-width: 40px;" src="{{user.photoUrl.replace('=normal', '=small')}}">
+                    <span class="user-info" style="top:0px;">
+                        <small>Bem-vindo,</small>
+                        {{user.name.split(' ')[0]}}
+                    </span>
+
+                    <i class="ace-icon fa fa-caret-down" style="position: relative;
+                    top: 0px;"></i>
+                </a>
+
+                <ul *ngIf="user" class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                    <li>
+                        <a [routerLink]="['/users', user.userId]">
+                            <i class="ace-icon fa fa-cog"></i>
+                            Perfil
+                        </a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                        <a style="cursor: pointer; cursor: hand;" (click)="signOut()">
+                            <i class="ace-icon fa fa-power-off"></i>
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button id="menu-toggler" class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#sidebar">
+                <span class="sr-only">Toggle sidebar</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+    </div>
+    <!-- /.navbar-container -->
+</div>
+
+<div class="main-container ace-save-state" id="main-container">
+    <script type="text/javascript">
+        try { ace.settings.loadState('main-container') } catch (e) { }
+    </script>
+
+    <div id="sidebar" class="sidebar      h-sidebar                navbar-collapse collapse          ace-save-state">
+        <script type="text/javascript">
+            try { ace.settings.loadState('sidebar') } catch (e) { }
+        </script>
+
+        <ul class="nav nav-list" *ngIf="user">
+            <li [class]="_breadcrumb.pathStartWith('/activities') ? 'active' : ''">
+                <a href="#/activities" onclick="document.getElementById('menu-toggler').click()">
+                    <i class="menu-icon fa fa-calendar"></i>
+                    Atividades
+                </a>
+                <b class="arrow"></b>
+            </li>
+            <li [class]="_breadcrumb.pathStartWith('/explorer') ? 'active' : ''" *ngIf="user.userTypeId <= 1">
+                <a href="#/explorer" onclick="document.getElementById('menu-toggler').click()">
+                    <i class="menu-icon fa fa-university"></i>
+                    Filosofias
+                </a>
+                <b class="arrow"></b>
+            </li>
+            <li [class]="_breadcrumb.pathStartWith('/libraries') ? 'active' : ''" *ngIf="user.userTypeId <= 1">
+                <a href="#/libraries" onclick="document.getElementById('menu-toggler').click()">
+                    <i class="menu-icon fa fa-book"></i>
+                    Biblioteca Virtual
+                </a>
+                <b class="arrow"></b>
+            </li>
+            <li [class]="_breadcrumb.pathStartWith('/terminal') ? 'active' : ''" *ngIf="user.userTypeId <= 1">
+                <a href="#/terminal" onclick="document.getElementById('menu-toggler').click()">
+                    <i class="menu-icon fa fa-terminal"></i>
+                    Terminal
+                </a>
+                <b class="arrow"></b>
+            </li>
+            <li [class]="_breadcrumb.pathStartWith('/users') ? 'active' : ''" *ngIf="user.userTypeId <= 2">
+                <a href="#/users" onclick="document.getElementById('menu-toggler').click()">
+                    <i class="menu-icon fa fa-users"></i>
+                    Usuários
+                </a>
+                <b class="arrow"></b>
+            </li>
+        </ul>
+        <!-- /.nav-list -->
+
+        <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+            <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left"
+                data-icon2="ace-icon fa fa-angle-double-right"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main-content-inner">
+
+            <div class="breadcrumbs ace-save-state" id="breadcrumbs" *ngIf="user" style="height:50px;">
+                <breadcrumb-template [data]="_breadcrumb.getPath()" *ngIf="!searching"></breadcrumb-template>
+                <quick-search></quick-search>
+            </div>
+
+            <div class="page-content">
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+    </div>
+    <!-- /.main-content -->
+
+    <player-template></player-template>
+
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <span class="bigger-120">
+                    <span class="blue bolder">Humanitas</span>
+                    &copy; 2018
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+    </a>
+
+</div>
+<!-- /.main-container -->

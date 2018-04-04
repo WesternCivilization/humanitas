@@ -1,0 +1,8 @@
+<ul class="breadcrumb" *ngIf="data">
+    <li *ngFor="let link of data">
+        <a [routerLink]="[link.link, link.queryParams]" style="color: #5A5A5A;">
+            <i [class]="link.icon"></i>
+            {{link.label}}
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label class="col-sm-3 control-label no-padding-right" for="form-field-recipient">{{label}}</label>
+    <div class="col-sm-9">
+        <span class="input-icon" style="width: 100%">
+            <input type="text" value="{{selected ? selected.label + ' [' + selected.value + ']' : value}}" (change)="setValue($event)"
+                [placeholder]="placeholder" (keyup)="query($event)" [style.width]="'100%'" [style.background-color]="loading ? 'lightyellow' : 'white'">
+            <select *ngIf="options" multiple="multiple" (click)="onSelect($event)" [style.width]="'100%'">
+                <option *ngFor="let option of options" value="{{option.value}}" selected="{{option.selected ? 'selected' : ''}}">{{option.label}} [{{option.value}}]</option>
+            </select>
+            <i class="ace-icon {{loading ? 'fa fa-spinner' : icon}}"></i>
+        </span>
+    </div>
+</div>

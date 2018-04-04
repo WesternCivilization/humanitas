@@ -1,0 +1,98 @@
+<div class="widget-box transparent" *ngIf="data">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-user"></i>
+            {{data.name}}
+        </h4>
+    </div>
+</div>
+<div class="row" *ngIf="!data">
+    <img src="assets/images/loading.gif" />
+</div>
+
+<div class="col-xs-12 col-sm-3 center">
+    <span class="profile-picture">
+        <img class="editable img-responsive" alt="{{data.name}}" [src]="data.photoUrl ? data.photoUrl : 'assets/images/empty.png'">
+    </span>
+    <div class="space space-4"></div>
+</div>
+<!-- /.col -->
+
+<div class="col-xs-12 col-sm-9">
+    <h4 class="blue">
+        <span class="middle">{{data.name}}</span>
+    </h4>
+
+    <div class="profile-user-info">
+
+        <div class="profile-info-row" *ngIf="data.provider">
+            <div class="profile-info-name"> Provedor </div>
+            <div class="profile-info-value">
+                <span>{{data.provider}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.externalId">
+            <div class="profile-info-name"> ID </div>
+            <div class="profile-info-value">
+                <a target="_blank" href="https://www.facebook.com/{{data.externalId}}">{{data.externalId}}</a>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.email">
+            <div class="profile-info-name"> E-mail </div>
+            <div class="profile-info-value">
+                <span>{{data.email}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.createdAt">
+            <div class="profile-info-name"> Cadastrado em </div>
+            <div class="profile-info-value">
+                <span>{{data.createdAt.split('T')[0]}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row">
+            <div class="profile-info-name"> Contribuições </div>
+            <div class="profile-info-value">
+                <div *ngIf="!metrics">
+                    <img src="assets/images/loading.gif" />
+                </div>
+                <div class="center" style="width: 450px;" *ngIf="metrics">
+                    <span class="btn btn-app btn-sm btn-light no-hover" title="{{(metrics.quotes / metrics.totalQuotes) * 100}}%">
+                        <span class="line-height-1 bigger-170 blue"> {{metrics.quotes}} </span>
+                        <br>
+                        <span class="line-height-1 smaller-90"> Citações </span>
+                    </span>
+
+                    <span class="btn btn-app btn-sm btn-yellow no-hover" title="{{(metrics.notes / metrics.totalNotes) * 100}}%">
+                        <span class="line-height-1 bigger-170"> {{metrics.notes}} </span>
+                        <br>
+                        <span class="line-height-1 smaller-90"> Notas </span>
+                    </span>
+
+                    <span class="btn btn-app btn-sm btn-pink no-hover" title="{{(metrics.books / metrics.totalBooks) * 100}}%">
+                        <span class="line-height-1 bigger-170"> {{metrics.books}} </span>
+                        <br>
+                        <span class="line-height-1 smaller-90"> Livros </span>
+                    </span>
+
+                    <span class="btn btn-app btn-sm btn-grey no-hover" title="{{(metrics.authors / metrics.totalAuthors) * 100}}%">
+                        <span class="line-height-1 bigger-170"> {{metrics.authors}} </span>
+                        <br>
+                        <span class="line-height-1 smaller-90"> Autores </span>
+                    </span>
+
+                    <span class="btn btn-app btn-sm btn-success no-hover" title="{{(metrics.topics / metrics.totalTopics) * 100}}%">
+                        <span class="line-height-1 bigger-170"> {{metrics.topics}} </span>
+                        <br>
+                        <span class="line-height-1 smaller-90"> Tópicos </span>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

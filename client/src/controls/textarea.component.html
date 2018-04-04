@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label class="col-sm-3 control-label no-padding-right">
+        <span class="inline space-24 hidden-480"></span>
+        {{label}}
+    </label>
+    <div class="col-sm-9">
+        <div #el class="wysiwyg-editor" contenteditable="true" [innerText]="value" (blur)="setValue(el.innerText)"></div>
+        <span class="btn btn-app btn-light btn-xs" style="width:40px; height: 30px;" (click)="_player.speak(value)">
+            <i class="ace-icon fa fa-play icon-only" style="position: relative; top: -5px;"></i>
+        </span>
+        <span class="btn btn-app btn-light btn-xs" style="width:40px; height: 30px;" (click)="_player.pause()">
+            <i class="ace-icon fa fa-stop icon-only" style="position: relative; top: -5px;"></i>
+        </span>
+    </div>
+</div>

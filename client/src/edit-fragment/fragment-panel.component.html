@@ -1,0 +1,96 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+
+                <preload-control type="domain" icon="fa fa-university" label="Filosofia" value="{{data.domainId}}" (select)="data.domainId = $event.value"
+                    placeholder="Nome da Filosofia"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="tag" icon="fa fa-tag" label="Dentro de" value="{{data.parentId}}" (select)="data.parentId = $event.value"
+                    placeholder="Dentro da Tag"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <preload-control type="fragmenttype" icon="glyphicon glyphicon-asterisk" label="Tipo" value="{{data.type}}" (select)="data.type = $event.value"
+                    placeholder="Tipo"></preload-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <text-control icon="fa fa-arrow-right" label="Título" value="{{data.title}}" (change)="data.title = $event" placeholder="Título do Fragmento"></text-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <textarea-control label="Texto" value="{{data.content}}" (change)="data.content = $event"></textarea-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <text-control icon="fa fa-user" label="Autor" value="{{data.author}}" (change)="data.author = $event" placeholder="Autor do fragmento"></text-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <text-control type="name" icon="fa fa-bookmark" label="Referência" value="{{data.reference}}" (change)="data.reference = $event"
+                    placeholder="Referência"></text-control>
+
+                <div class="hr hr-18 dotted"></div>
+
+                <div class="form-group no-margin-bottom">
+                    <label class="col-sm-3 control-label no-padding-right">Imagem</label>
+
+                    <div class="col-sm-9">
+                        <div id="form-attachments">
+                            <div class="form-group file-input-container">
+                                <div class="col-sm-7">
+                                    <label class="ace-input width-90 inline">
+                                        <input type="file" name="image[]">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space"></div>
+
+                <div class="form-group no-margin-bottom">
+                    <label class="col-sm-3 control-label no-padding-right">Playlist</label>
+
+                    <div class="col-sm-9">
+                        <span class="btn btn-app btn-yellow btn-xs" style="width:40px; height: 30px;" (click)="_player.play('fragment', data.fragmentId)">
+                            <i class="ace-icon fa fa-play icon-only" style="position: relative; top: -5px;"></i>
+                        </span>
+                        <span class="btn btn-app btn-yellow btn-xs" style="width:40px; height: 30px;" (click)="_player.queue('fragment', data.fragmentId)">
+                            <i class="ace-icon fa fa-plus icon-only" style="position: relative; top: -5px;"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>

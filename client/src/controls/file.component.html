@@ -1,0 +1,14 @@
+<div class="form-group no-margin-bottom">
+    <label class="col-sm-3 control-label no-padding-right">{{label}}</label>
+    <div class="col-sm-9">
+        <div id="form-attachments">
+            <div class="form-group file-input-container">
+                <div class="col-sm-7">
+                    <label class="ace-input width-90 inline">
+                        <input type="file" name="image[]" (change)="selectFile($event)">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

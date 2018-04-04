@@ -1,0 +1,6 @@
+System.InvalidCastException: Invalid property .
+   at SqlCache.SqlBuilder.SqlBuilder.ChangeValues(Object& data) in C:\Data\GitHub\leibniz-server\Leibniz.Api\SqlCache\SqlBuilder\SqlBuilder.cs:line 337
+   at SqlCache.SqlCacheConnection.RunUpdate(SqlBuilder builder) in C:\Data\GitHub\leibniz-server\Leibniz.Api\SqlCache\SqlCacheConnection.cs:line 1197
+   at SqlCache.SqlCacheConnection.Execute(String sql) in C:\Data\GitHub\leibniz-server\Leibniz.Api\SqlCache\SqlCacheConnection.cs:line 824
+   at Leibniz.Services.SqlLiteService.Leibniz.Services.Interfaces.ISqlLiteService.InstallPackage(String scripts) in C:\Data\GitHub\leibniz-server\Leibniz.Api\Leibniz.Services\SqlLiteService.cs:line 237
+   at Leibniz.Api.Controllers.SqlLiteController.Post() in C:\Data\GitHub\leibniz-server\Leibniz.Api\Leibniz.Api\Controllers\SqlLiteController.cs:line 48

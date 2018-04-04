@@ -1,0 +1,10 @@
+.vs/
+bin/
+obj/
+node_modules/
+api/Humanitas.Api/Downloads/Leibniz_v001.info
+api/Humanitas.Api/Downloads/Leibniz_v001.sql
+api/Humanitas.Api/Downloads/Leibniz_v002.info
+api/Humanitas.Api/Downloads/Leibniz_v002.sql
+*.user
+*.npmignore

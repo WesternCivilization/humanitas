@@ -1,0 +1,1904 @@
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'D0DB5749-BB30-4C6F-859C-1B0F2E88DE07', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '0045BD5D-D7A7-40C5-A3C6-724E8B71C158', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('CF1A2103-A1DE-47A3-B016-4BEFB3A94744', 7, 'Crença no demônio', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('E7A4A13F-7D53-45A9-94AE-92512B134863', 2, 'Leo Trese', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('CED2A5FB-3869-4F96-B956-6462728389C4',
+	1,
+	'Da não crença no demônio como artimanha do próprio demônio',
+	'Que Deus nos defenda da cilada mais sutil do demônio: a de negar a sua existência por não estar na moda acreditar nele.',
+	'Leo Trese',
+	'',
+	19,
+	'CF1A2103-A1DE-47A3-B016-4BEFB3A94744',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'E7A4A13F-7D53-45A9-94AE-92512B134863',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'CED2A5FB-3869-4F96-B956-6462728389C4', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('1EFFAA5D-908E-40B3-867F-CABB29AB6016', 2, 'John Henry Newman', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0',
+	1,
+	'De Newman como modelo',
+	'John Henry Newman é o modelo que a Igreja, sob o pontificado de Bento XVI, propôs aos católicos para seguir. Uma resposta claríssima do Papa ao mundo relativista.',
+	'Daniel Fernandes',
+	'Facebook',
+	19,
+	'1CDB16EB-99BC-4C25-94A8-8E384FAB0830',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CED2A5FB-3869-4F96-B956-6462728389C4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD5F1CE-8EF0-4493-800A-6B40DEC805E2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9E50FDA0-AA9A-46D7-A092-B1094BDA088E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '082B50E6-5DDA-4FE6-9168-5C04850C73AA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4C9315FE-9F0F-485B-89B4-BB352A6797CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DF77B81A-110B-4081-A9C9-99195B644C8F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E46EE720-C96F-4111-9EC1-F6794579672D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('BEA8742F-E846-4E06-B6A2-E97AE41BDAE4',
+	0,
+	'Cristianismo e catolicismo como sendo as mesmas coisas',
+	'O Cristianismo e o Catolicismo são uma só coisa; são, como em sua própria natureza e na História, termos conversíveis.',
+	'John Henry Newman',
+	'Sermão IX, Cristo sobre as águas I',
+	19,
+	'1CDB16EB-99BC-4C25-94A8-8E384FAB0830',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET Score = 2 WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CED2A5FB-3869-4F96-B956-6462728389C4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD5F1CE-8EF0-4493-800A-6B40DEC805E2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 0,
+	Title = 'Cristianismo e catolicismo como sendo as mesmas coisas',
+	Content = 'O Cristianismo e o Catolicismo são uma só coisa; são, como em sua própria natureza e na História, termos conversíveis.',
+	Author = 'John Henry Newman',
+	Reference = 'Sermão IX, Cristo sobre as águas I',
+	DomainId = 19,
+	ParentId = '1CDB16EB-99BC-4C25-94A8-8E384FAB0830',
+	PersonId1 = '1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	TopicId1 = '3451BC56-4313-4A47-9D84-17B6493B7F17',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9E50FDA0-AA9A-46D7-A092-B1094BDA088E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '082B50E6-5DDA-4FE6-9168-5C04850C73AA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4C9315FE-9F0F-485B-89B4-BB352A6797CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DF77B81A-110B-4081-A9C9-99195B644C8F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E46EE720-C96F-4111-9EC1-F6794579672D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('C2538889-99A6-4583-ACD0-C4AB8078F730',
+	0,
+	'Da verdadeira teologia',
+	'A verdadeira teologia se faz de joelhos.',
+	'Joseph Ratzinger',
+	'',
+	19,
+	'32189A38-9906-4312-9E38-B9253040B981',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'8321F645-6E33-4E46-95F7-64541145E3FE',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'D12156C5-61BE-4323-B4B9-7415F0CA777A',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A3938E99-34F1-4095-9D4C-FF4D0AA4F9FB' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8DEC5889-CA30-42B9-980B-D0A2BE90F413' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '860A73A0-90E0-4EB9-847E-102D860AE2BA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3B8BEE94-FE20-4C5F-868D-E39C34F43823' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('7F1B7778-BCBC-49F0-ACF8-8ECD24C4C691',
+	1,
+	'A proclamação da república foi seguida de um banho de dangue',
+	'A Proclamação da República foi seguida de um banho de sangue. Pouco tempo depois, houve no mínimo três revoltas de grande porte: Rev. Federalista, no sul, Revolta da Armada, na capital (RJ), e Guerra de Canudos, no Nordeste. Só na primeira mencionada foram 10 mil mortos, com vários prisioneiros submetidos a tortura antes de serem executados. Como os torturadores lidavam com gado (gaúchos, tchê), eles cortavam parte por parte do inimigo, começando pelas orelhas, e, muitas vezes, castrando antes de matar. Não me venham com a conversinha de que a República não foi imposta, ok?',
+	'Rafael Nogueira',
+	'Facebook',
+	12,
+	'05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	NULL,
+	'C02A925C-FCE6-44BE-9227-F31AED350B98',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1C91F9E-D6E4-44DA-BB36-F16FD788BC3B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F266BD64-172C-4C9C-9944-AD81E3ADD2C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5A405DF2-34A2-4042-AD9D-1723235E3032' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '43F5778C-BF6A-4C78-8988-BF1B1B67808F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '43CA1E56-97A3-48D4-B7DE-D4559E83A876' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '34227FE7-BAE8-4106-9551-C6039D04A091' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F3D2A84A-E709-4AFF-B58B-7C7A761E45B3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9AD77BC6-F2C7-4DA9-B2E4-19C7C413F542' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '0EAB16E0-2072-4EB4-8EC4-7B2A945265A9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '6360BA79-4B8C-4629-9947-A5E953C6FD0F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8448BB1D-74C0-46CE-BD20-C2AA6354C64C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '0FE1E829-C6B9-4616-9CBE-330205DEA8BC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D23D0BEE-6735-4FEC-A0B5-7255043DBEDE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B0875C1B-5DFE-4171-BF9D-8B785FAD0AB6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AC371DAD-4989-4EF8-B8BB-8BB6EA5C1ACC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F99DB595-BD05-42EB-9552-7952BF75627F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '68F8E857-294B-40D9-AA55-B479D71A9951' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8C41E420-F5CD-4CFC-8EC2-98A8291F5D85' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FA8A307B-93DA-4D9B-80C1-DD1F5F6BB559' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3A762B7B-579F-4131-BF82-4A585723D96C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '85209C46-E623-49CE-AE3D-247932A4D1E6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3B187C17-0CA7-4598-B4EF-D9571344D7B6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AF766CCA-FDF7-4132-BC64-5522477C1E43' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DF753C0C-4FC1-441C-9B5F-7F0AA6BD313C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FCEE7BED-0EC4-431F-8046-DE5548E716C3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '42F5ACC7-7AC3-446D-BA9D-789F08846312' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D08A66FE-43B8-403C-B7BF-D296524DB356' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '08223009-FE67-4D49-AD3C-A33BA0A5372B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '57CDB7CE-ED0F-4E49-9291-DD9D3CAB6BDF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '784285C3-8056-40AF-8C01-8842A2CD676C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '36900292-7464-40E7-BF20-118B1AEF237D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C100B2D2-040B-4CFA-98D8-9D6BE33FD39A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8524D24F-785C-43BD-A1F2-936B406EE50C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1961776-3CB4-4B20-9A2F-8A22D5A5614B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56F22455-B13A-49AE-BCCA-8485241C36FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2F554BF0-6A9C-4D6B-98FC-208E73CFC05F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B3C86919-4A44-4881-883E-1A2A20A5EC35' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '841AF978-4DFF-4C0E-9E3A-0474A3287639' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '841AF978-4DFF-4C0E-9E3A-0474A3287639', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7F1B7778-BCBC-49F0-ACF8-8ECD24C4C691' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C2538889-99A6-4583-ACD0-C4AB8078F730' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CED2A5FB-3869-4F96-B956-6462728389C4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD5F1CE-8EF0-4493-800A-6B40DEC805E2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9E50FDA0-AA9A-46D7-A092-B1094BDA088E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '082B50E6-5DDA-4FE6-9168-5C04850C73AA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4C9315FE-9F0F-485B-89B4-BB352A6797CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DF77B81A-110B-4081-A9C9-99195B644C8F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E46EE720-C96F-4111-9EC1-F6794579672D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A3938E99-34F1-4095-9D4C-FF4D0AA4F9FB' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8DEC5889-CA30-42B9-980B-D0A2BE90F413' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '860A73A0-90E0-4EB9-847E-102D860AE2BA' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3B8BEE94-FE20-4C5F-868D-E39C34F43823' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1C91F9E-D6E4-44DA-BB36-F16FD788BC3B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F266BD64-172C-4C9C-9944-AD81E3ADD2C8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5A405DF2-34A2-4042-AD9D-1723235E3032' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '43F5778C-BF6A-4C78-8988-BF1B1B67808F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '43CA1E56-97A3-48D4-B7DE-D4559E83A876' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '34227FE7-BAE8-4106-9551-C6039D04A091' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F3D2A84A-E709-4AFF-B58B-7C7A761E45B3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9AD77BC6-F2C7-4DA9-B2E4-19C7C413F542' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '0EAB16E0-2072-4EB4-8EC4-7B2A945265A9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '6360BA79-4B8C-4629-9947-A5E953C6FD0F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8448BB1D-74C0-46CE-BD20-C2AA6354C64C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '0FE1E829-C6B9-4616-9CBE-330205DEA8BC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D23D0BEE-6735-4FEC-A0B5-7255043DBEDE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B0875C1B-5DFE-4171-BF9D-8B785FAD0AB6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AC371DAD-4989-4EF8-B8BB-8BB6EA5C1ACC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F99DB595-BD05-42EB-9552-7952BF75627F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '68F8E857-294B-40D9-AA55-B479D71A9951' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8C41E420-F5CD-4CFC-8EC2-98A8291F5D85' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FA8A307B-93DA-4D9B-80C1-DD1F5F6BB559' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3A762B7B-579F-4131-BF82-4A585723D96C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '85209C46-E623-49CE-AE3D-247932A4D1E6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3B187C17-0CA7-4598-B4EF-D9571344D7B6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AF766CCA-FDF7-4132-BC64-5522477C1E43' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'DF753C0C-4FC1-441C-9B5F-7F0AA6BD313C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FCEE7BED-0EC4-431F-8046-DE5548E716C3' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '42F5ACC7-7AC3-446D-BA9D-789F08846312' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D08A66FE-43B8-403C-B7BF-D296524DB356' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2CB9F971-9C00-49BA-98E2-8AAAFE807034' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '08223009-FE67-4D49-AD3C-A33BA0A5372B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '57CDB7CE-ED0F-4E49-9291-DD9D3CAB6BDF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '57CDB7CE-ED0F-4E49-9291-DD9D3CAB6BDF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '784285C3-8056-40AF-8C01-8842A2CD676C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC0F8B6A-9DCD-4031-A47F-BE962CE70F19' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '4D982E3F-0BDF-4F7F-AD82-AF63F22223B0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '36900292-7464-40E7-BF20-118B1AEF237D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C100B2D2-040B-4CFA-98D8-9D6BE33FD39A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CC4CDE91-356E-4F2E-9834-2172E4E60697' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '58D1269A-44EF-4504-9747-E39432D546FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '8524D24F-785C-43BD-A1F2-936B406EE50C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C1961776-3CB4-4B20-9A2F-8A22D5A5614B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '56F22455-B13A-49AE-BCCA-8485241C36FF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2F554BF0-6A9C-4D6B-98FC-208E73CFC05F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'B3C86919-4A44-4881-883E-1A2A20A5EC35' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '841AF978-4DFF-4C0E-9E3A-0474A3287639' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7C000EC3-20E2-441F-98D2-28201D4F51A9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5B75C5D2-1D54-4DC1-8BAE-644428A9F4FE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '004B164E-53F7-41DF-9DAD-21414FE90B9E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '60B2FEB8-AA25-4847-8728-94AC32015FCF' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E7236C77-B6C0-48C1-8F2B-1848C79DF24D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F0D21F94-D7BD-4A54-9B3A-5DF6E8D5AD44' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CDD7828F-1842-44B7-867D-20CD6A146A8D' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1FEBCA65-74E7-437D-AB48-BBEA20BC297A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '24792799-CC64-403D-98A7-E6469ADB622B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '24792799-CC64-403D-98A7-E6469ADB622B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A101EB2E-A73F-4E34-8624-D0A3E56154CC' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E380886C-819F-48B3-8CE9-731F9175B8C1' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9D3DCB1B-2221-4811-88D2-7DBC49085AFE' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ADD773B4-F305-4EDF-A127-0F281CEF940E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '09222410-E650-46E6-B4D0-7FD571E8EC30' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A5987EFD-8B2B-4A70-BA2D-8DAA56388839' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C4D7900F-EC9F-434F-85DA-4B727F18B77E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AD0BB595-9905-4A4F-84C7-801FAE89E48E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '804A856E-D93D-4631-B83C-8651303C0BF0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CB0BC1E3-1DE8-410F-8F55-1F6251119020' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BA1862E6-3C6F-4FBC-B04D-0706DF11B061' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '991A5318-6ECD-422D-8527-90585C9F6A00' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C673BD00-E8DE-4C82-8212-C4C55BB964C0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '82517961-98C4-4E99-86EA-0576D853EF7B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '1B4C5EF4-4C86-47F5-8D0E-16C17E65F0A2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5D7CBFE7-261F-44A7-A4BE-2B7B90FA5093' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '70FFD569-DE68-4739-A292-38856A3C798A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'F1C1741E-9F68-4A81-BA98-4706D9142284' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '249015DE-456B-44C0-B94D-4C73FD8FF074' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '3980BD15-FA2C-4F8D-8B5A-4F19E248FAD9' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '823EEA9F-9174-453E-B65F-5401B1CF9E12' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2DB2ACA4-76C6-433D-9D03-5E22D5179B11' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7B178E19-6113-4A20-8985-6F4EED27AA8E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '517EB2B6-B93A-40C8-8765-7B0B390AF029' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '842C8341-87D2-40CE-AA4E-85B8A1834C16' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BCB6EBA0-3E24-4992-84B6-87557F905FFB' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E185B383-AA4E-4EAC-82E9-8F6BAC61EE32' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5BB22365-96A8-4AFC-B8AF-9C7091100F59' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5165AA5D-9ABC-4FD6-820D-9FFD8F28762E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ED3F61D2-4FF1-475C-9580-A43B7651D370' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '87794318-16BB-4777-B205-A6CBAFD0717F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E347255B-D618-40D4-9544-A6D8E41AB179' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '61A4AB41-FFD2-42FE-8FAC-B4851E935F33' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET Score = 3 WHERE FragmentId = '61A4AB41-FFD2-42FE-8FAC-B4851E935F33' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('7E2D7AF7-B828-4A3C-A794-836EC8F25340',
+	1,
+	'Da espiritualidade sem Deus',
+	'Se lemos tudo o que os distintos intelectuais escrevem sobre religião, ficamos com a impressão de que ela só trata de "estados de consciência", "evolução espiritual", "harmonia" e coisas assim. Nada tem a ver com Deus.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'DE28E06D-D558-4A41-B6C1-1F09D6B264DE',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7E2D7AF7-B828-4A3C-A794-836EC8F25340' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '7E2D7AF7-B828-4A3C-A794-836EC8F25340', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('27D2D920-8ACF-43D9-99E7-577CCE47DD4A',
+	1,
+	'Do kantismo como vale tudo',
+	'O kantismo é o vale tudo espistemológico.',
+	'Rafael Melo',
+	'',
+	20,
+	'5C28C8A4-4988-489A-B0F6-99FECE084032',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '27D2D920-8ACF-43D9-99E7-577CCE47DD4A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('2AA28732-DCBE-4BC1-B0B8-081E30D045F0',
+	1,
+	'Da falta de hombridade e coragem dos conservadores',
+	'O comodismo conservador é tão obsceno quanto o fanatismo esquerdista.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'2D38B5AF-FFD7-46CC-AC27-BA26376A993D',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2AA28732-DCBE-4BC1-B0B8-081E30D045F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '2AA28732-DCBE-4BC1-B0B8-081E30D045F0', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET Score = 1 WHERE FragmentId = '2AA28732-DCBE-4BC1-B0B8-081E30D045F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('A268B531-A093-487C-AE38-28B8999FDB96',
+	1,
+	'Da obrigação número um de todo comunista que se preza',
+	'Por que as pessoas votam em candidatos comunistas e depois se escandalizam de que eles roubem dinheiro do Estado? Roubar o "Estado burguës" é OBRIGAÇÃO de todo comunista que tenha os meios de fazê-lo.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'2444352C-2440-4769-B581-0DEB46063DFA',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'A268B531-A093-487C-AE38-28B8999FDB96', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A268B531-A093-487C-AE38-28B8999FDB96' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2AA28732-DCBE-4BC1-B0B8-081E30D045F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('AFEF7839-74ED-4FB3-A620-DA653F6278B6',
+	1,
+	'Dos círculos concêntricos da boa educação',
+	'Confúcio ensinava: o sábio educa primeiro a si mesmo, depois à sua família, depois aos seus amigos, depois à sua cidade e depois ao seu país. O idiota já sai querendo consertar o país antes de haver começado a educar a si mesmo. 
+Eu ainda estou na fase de educar os meus amigos, e não tenho, por enquanto, nenhuma ambição acima disso. Quando eu aprender mais um pouco, pensarei no caso.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'1CDB16EB-99BC-4C25-94A8-8E384FAB0830',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'C07DE217-E389-4333-8B29-4346FF66E906',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'BB167FCF-A168-475F-B8A2-F6A658776DD2',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AFEF7839-74ED-4FB3-A620-DA653F6278B6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AFEF7839-74ED-4FB3-A620-DA653F6278B6', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A268B531-A093-487C-AE38-28B8999FDB96' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2AA28732-DCBE-4BC1-B0B8-081E30D045F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '27D2D920-8ACF-43D9-99E7-577CCE47DD4A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7E2D7AF7-B828-4A3C-A794-836EC8F25340' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7F1B7778-BCBC-49F0-ACF8-8ECD24C4C691' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C2538889-99A6-4583-ACD0-C4AB8078F730' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'CED2A5FB-3869-4F96-B956-6462728389C4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2BD5F1CE-8EF0-4493-800A-6B40DEC805E2' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '9E50FDA0-AA9A-46D7-A092-B1094BDA088E' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('9B4DCA4F-E9DB-46E8-9733-711159E45261', 2, 'Rafael Nogueira', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('D12F31B6-681C-4914-ABD2-75B96DDED76A',
+	1,
+	'Do voto no Brasil República e do voto no Brasil Império',
+	'A República começa com voto aberto. Assim previa a Constituição de 1891. Era fácil corromper os eleitores e fraudar as eleições, portanto. O voto ainda contava com severas restrições: não podiam votar mulheres, menores de 21, padres, militares não oficiais, quem não tinha ocupação fixa, analfabetos. Menos de 1% votava. E esse número está, por incrível que lhe pareça, bem abaixo da proporção de votantes do Império até 1881, quando uma lei aprovou o censo literário (proibição de analfabetos de participar das eleições).',
+	'Rafael Nogueira',
+	'Facebook',
+	12,
+	'05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	NULL,
+	'C02A925C-FCE6-44BE-9227-F31AED350B98',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'9B4DCA4F-E9DB-46E8-9733-711159E45261',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D12F31B6-681C-4914-ABD2-75B96DDED76A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do voto no Brasil República e do voto no Brasil Império',
+	Content = 'A República começa com voto aberto. Assim previa a Constituição de 1891. Era fácil corromper os eleitores e fraudar as eleições, portanto. O voto ainda contava com severas restrições: não podiam votar mulheres, menores de 21, padres, militares não oficiais, quem não tinha ocupação fixa, analfabetos. Menos de 1% votava. E esse número está, por incrível que lhe pareça, bem abaixo da proporção de votantes do Império até 1881, quando uma lei aprovou o censo literário (proibição de analfabetos de participar das eleições).',
+	Author = 'Rafael Nogueira',
+	Reference = 'Facebook',
+	DomainId = 12,
+	ParentId = '05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	PeriodId = 'C02A925C-FCE6-44BE-9227-F31AED350B98',
+	PersonId1 = '9B4DCA4F-E9DB-46E8-9733-711159E45261',
+	TopicId1 = '2B5A2629-B343-4EC3-ADB8-73C51B869139',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'D12F31B6-681C-4914-ABD2-75B96DDED76A'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AFEF7839-74ED-4FB3-A620-DA653F6278B6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3D1C44D1-1E62-4224-90FB-687DBD72F082', 7, 'Da utopia da originalidade científica', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('ABBE0C0A-E07E-4E40-8BE7-DFBB92E9C33F',
+	1,
+	'Da utopia da originalidade científica',
+	'Continue aprendendo e, daqui a trinta anos, talvez você tenha ALGUMA solução brilhante para ALGUM problema nacional. Talvez até para dois.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'3D1C44D1-1E62-4224-90FB-687DBD72F082',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ABBE0C0A-E07E-4E40-8BE7-DFBB92E9C33F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'ABBE0C0A-E07E-4E40-8BE7-DFBB92E9C33F', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 4)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'D12F31B6-681C-4914-ABD2-75B96DDED76A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AFEF7839-74ED-4FB3-A620-DA653F6278B6' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('E7AA6A31-5FE0-4C47-812C-194720F3A018',
+	1,
+	'Da insignificância de Lula',
+	'A mais terrível punição do Lula é ter de enxergar, na velhice, a total insignificância da sua vida. Ele vai sumindo cada vez mais, sem deixar no ar nem sequer um cheiro de enxofre. Nem mesmo de pum.',
+	'Olavo de Carvalho',
+	'Facebook',
+	12,
+	'05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	'F400EA9A-AA94-4697-A6AE-3BCC9F03DE40',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'A268B531-A093-487C-AE38-28B8999FDB96' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2AA28732-DCBE-4BC1-B0B8-081E30D045F0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '27D2D920-8ACF-43D9-99E7-577CCE47DD4A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7E2D7AF7-B828-4A3C-A794-836EC8F25340' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7F1B7778-BCBC-49F0-ACF8-8ECD24C4C691' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('AAA92108-807A-45B1-92C8-B7811A18D25B',
+	1,
+	'Da maior desgraça do Brasil',
+	'Estudar pouco e discutir muito é a desgraça do brasileiro.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'7793E950-F3D0-4EA9-ADFA-EC0D20813662',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'AAA92108-807A-45B1-92C8-B7811A18D25B', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AAA92108-807A-45B1-92C8-B7811A18D25B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Da maior desgraça do Brasil',
+	Content = 'Estudar pouco e discutir muito é a desgraça do brasileiro.',
+	Author = 'Olavo de Carvalho',
+	Reference = 'Facebook',
+	DomainId = 19,
+	ParentId = '7793E950-F3D0-4EA9-ADFA-EC0D20813662',
+	PersonId1 = '34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	TopicId1 = '05BB640A-D1B9-496B-9BBE-700E3433D76C',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = 'AAA92108-807A-45B1-92C8-B7811A18D25B'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E7AA6A31-5FE0-4C47-812C-194720F3A018' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'E7AA6A31-5FE0-4C47-812C-194720F3A018', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ABBE0C0A-E07E-4E40-8BE7-DFBB92E9C33F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), 'D12F31B6-681C-4914-ABD2-75B96DDED76A', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 1)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '27D2D920-8ACF-43D9-99E7-577CCE47DD4A' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7E2D7AF7-B828-4A3C-A794-836EC8F25340' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do kantismo como vale tudo',
+	Content = 'O kantismo é o vale tudo epistemológico.',
+	Author = 'Rafael Melo',
+	Reference = '',
+	DomainId = 20,
+	ParentId = '5C28C8A4-4988-489A-B0F6-99FECE084032',
+	PersonId1 = 'FA7DD21D-0FAA-4B07-B593-3079EEF13158',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '27D2D920-8ACF-43D9-99E7-577CCE47DD4A'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '7F1B7778-BCBC-49F0-ACF8-8ECD24C4C691' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'C2538889-99A6-4583-ACD0-C4AB8078F730' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'BEA8742F-E846-4E06-B6A2-E97AE41BDAE4' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '5F302BD6-73CE-4A2A-8E9D-2B1FCAB041D0' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('FA971A1F-ECFF-4FE2-AAAE-E3B2BC13191C',
+	1,
+	'Da solução oferecida pelo filósofo',
+	'Já expliquei mil vezes: Não tenho nenhuma solução para os problemas nacionais, mas tenho algumas para você deixar de ser burro.',
+	'Olavo de Carvalho',
+	'Facebook',
+	19,
+	'FA8B9CB3-C9BD-4F5A-B393-1BB0044D0234',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('2713F5FD-C485-4C64-9FC5-F872EA83F003',
+	1,
+	'Do caráter universalista da Igreja Católica',
+	'A Igreja sempre buscou e acatou o testemunho de autoridades a ela exteriores, nos assuntos em que, a seu ver, podiam opinar com justeza: e isso segundo o princípio "Cuique in arte sua credendum" [Todo homem merece confiança em sua própria arte, nos negócios ou na profissão que ele segue]. Valeu-se até mesmo de hereges e pagãos para evidenciar sua verdade, na medida do testemunho deles. A Igreja recorre a eruditos, críticos e antiquários que não pertencem à sua comunidade. Expressou seu ensino teológico na fraseologia de Aristóteles; Áquila, Símaco, Teodócio, Orígenes, Eusébio e Apolinário, todos mais ou menos heterodoxos, forneceram material aos exegetas primitivos. São Cipriano chamava Tertuliano de mestre; Santo Agostinho fala de Ticônio; Bossuet, nos tempos modernos, reconheceu o valor do anglicano Bull; os editores beneditinos dos Padres da Igreja não ignoram as obras de Fell, Ussher, Pearson e Beveridge. O papa Benedito XIV cita, conforme a ocasião, trabalhos de protestantes [...]; Se, pois, eu próprio tomar de empréstimo, até certo ponto, as teses de alguns protestantes em relação ao assunto a ser discutido, faço-o acreditando em primeiro lugar, senhores, que a Igreja Católica - na plenitude de sua divina iluminação - sempre recorreu a toda verdade ou sabedoria que encontrou ao ensinar e agir; e que, em determinadas épocas e lugares, seus filhos poderão beneficiar-se de sugestões alheias.',
+	'John Henry Newman',
+	'The Idea of a University. Discourse 1. Introductory',
+	12,
+	'3451BC56-4313-4A47-9D84-17B6493B7F17',
+	NULL,
+	NULL,
+	NULL,
+	'9A8198EE-5915-440B-8A36-B56F834D0FCB',
+	NULL,
+	NULL,
+	'1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('7EBB6A35-C1A4-4F9A-A54A-C5A5D4AC8E7C', 7, 'Todo homem merece confiança em sua própria arte', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do caráter universalista da Igreja Católica',
+	Content = 'A Igreja sempre buscou e acatou o testemunho de autoridades a ela exteriores, nos assuntos em que, a seu ver, podiam opinar com justeza: e isso segundo o princípio "Cuique in arte sua credendum" [Todo homem merece confiança em sua própria arte, nos negócios ou na profissão que ele segue]. Valeu-se até mesmo de hereges e pagãos para evidenciar sua verdade, na medida do testemunho deles. A Igreja recorre a eruditos, críticos e antiquários que não pertencem à sua comunidade. Expressou seu ensino teológico na fraseologia de Aristóteles; Áquila, Símaco, Teodócio, Orígenes, Eusébio e Apolinário, todos mais ou menos heterodoxos, forneceram material aos exegetas primitivos. São Cipriano chamava Tertuliano de mestre; Santo Agostinho fala de Ticônio; Bossuet, nos tempos modernos, reconheceu o valor do anglicano Bull; os editores beneditinos dos Padres da Igreja não ignoram as obras de Fell, Ussher, Pearson e Beveridge. O papa Benedito XIV cita, conforme a ocasião, trabalhos de protestantes [...]; Se, pois, eu próprio tomar de empréstimo, até certo ponto, as teses de alguns protestantes em relação ao assunto a ser discutido, faço-o acreditando em primeiro lugar, senhores, que a Igreja Católica - na plenitude de sua divina iluminação - sempre recorreu a toda verdade ou sabedoria que encontrou ao ensinar e agir; e que, em determinadas épocas e lugares, seus filhos poderão beneficiar-se de sugestões alheias.',
+	Author = 'John Henry Newman',
+	Reference = 'The Idea of a University. Discourse 1. Introductory',
+	DomainId = 12,
+	ParentId = '3451BC56-4313-4A47-9D84-17B6493B7F17',
+	InstitutionId1 = '9A8198EE-5915-440B-8A36-B56F834D0FCB',
+	PersonId1 = '1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	TopicId1 = '7EBB6A35-C1A4-4F9A-A54A-C5A5D4AC8E7C',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '2713F5FD-C485-4C64-9FC5-F872EA83F003', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 3)
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('3E36FC86-224F-4722-8371-CE3CBD5E5747', 2, 'São Cipriano', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do caráter universalista da Igreja Católica',
+	Content = 'A Igreja sempre buscou e acatou o testemunho de autoridades a ela exteriores, nos assuntos em que, a seu ver, podiam opinar com justeza: e isso segundo o princípio "Cuique in arte sua credendum" [Todo homem merece confiança em sua própria arte, nos negócios ou na profissão que ele segue]. Valeu-se até mesmo de hereges e pagãos para evidenciar sua verdade, na medida do testemunho deles. A Igreja recorre a eruditos, críticos e antiquários que não pertencem à sua comunidade. Expressou seu ensino teológico na fraseologia de Aristóteles; Áquila, Símaco, Teodócio, Orígenes, Eusébio e Apolinário, todos mais ou menos heterodoxos, forneceram material aos exegetas primitivos. São Cipriano chamava Tertuliano de mestre; Santo Agostinho fala de Ticônio; Bossuet, nos tempos modernos, reconheceu o valor do anglicano Bull; os editores beneditinos dos Padres da Igreja não ignoram as obras de Fell, Ussher, Pearson e Beveridge. O papa Benedito XIV cita, conforme a ocasião, trabalhos de protestantes [...]; Se, pois, eu próprio tomar de empréstimo, até certo ponto, as teses de alguns protestantes em relação ao assunto a ser discutido, faço-o acreditando em primeiro lugar, senhores, que a Igreja Católica - na plenitude de sua divina iluminação - sempre recorreu a toda verdade ou sabedoria que encontrou ao ensinar e agir; e que, em determinadas épocas e lugares, seus filhos poderão beneficiar-se de sugestões alheias.',
+	Author = 'John Henry Newman',
+	Reference = 'The Idea of a University. Discourse 1. Introductory',
+	DomainId = 12,
+	ParentId = '3451BC56-4313-4A47-9D84-17B6493B7F17',
+	InstitutionId1 = '9A8198EE-5915-440B-8A36-B56F834D0FCB',
+	PersonId1 = '1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	PersonId2 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	PersonId3 = 'E69A3BB3-91C3-42FF-A285-E5A0DB5BBE0A',
+	PersonId4 = '3E36FC86-224F-4722-8371-CE3CBD5E5747',
+	PersonId5 = '4A902E17-46EC-4364-B1D8-60FA67F62EB8',
+	TopicId1 = '7EBB6A35-C1A4-4F9A-A54A-C5A5D4AC8E7C',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('8C93A849-BCD6-4ECE-9193-AC89E11B22DE', 7, 'A Igreja Católica procura e aceita a verdade onde quer que ela esteja', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE Fragments 
+SET 
+	Type = 1,
+	Title = 'Do caráter universalista da Igreja Católica',
+	Content = 'A Igreja sempre buscou e acatou o testemunho de autoridades a ela exteriores, nos assuntos em que, a seu ver, podiam opinar com justeza: e isso segundo o princípio "Cuique in arte sua credendum" [Todo homem merece confiança em sua própria arte, nos negócios ou na profissão que ele segue]. Valeu-se até mesmo de hereges e pagãos para evidenciar sua verdade, na medida do testemunho deles. A Igreja recorre a eruditos, críticos e antiquários que não pertencem à sua comunidade. Expressou seu ensino teológico na fraseologia de Aristóteles; Áquila, Símaco, Teodócio, Orígenes, Eusébio e Apolinário, todos mais ou menos heterodoxos, forneceram material aos exegetas primitivos. São Cipriano chamava Tertuliano de mestre; Santo Agostinho fala de Ticônio; Bossuet, nos tempos modernos, reconheceu o valor do anglicano Bull; os editores beneditinos dos Padres da Igreja não ignoram as obras de Fell, Ussher, Pearson e Beveridge. O papa Benedito XIV cita, conforme a ocasião, trabalhos de protestantes [...]; Se, pois, eu próprio tomar de empréstimo, até certo ponto, as teses de alguns protestantes em relação ao assunto a ser discutido, faço-o acreditando em primeiro lugar, senhores, que a Igreja Católica - na plenitude de sua divina iluminação - sempre recorreu a toda verdade ou sabedoria que encontrou ao ensinar e agir; e que, em determinadas épocas e lugares, seus filhos poderão beneficiar-se de sugestões alheias.',
+	Author = 'John Henry Newman',
+	Reference = 'The Idea of a University. Discourse 1. Introductory',
+	DomainId = 12,
+	ParentId = '3451BC56-4313-4A47-9D84-17B6493B7F17',
+	InstitutionId1 = '9A8198EE-5915-440B-8A36-B56F834D0FCB',
+	PersonId1 = '1EFFAA5D-908E-40B3-867F-CABB29AB6016',
+	PersonId2 = '791E0BFA-5AFC-40A4-80B2-7EE24F6CB41E',
+	PersonId3 = 'E69A3BB3-91C3-42FF-A285-E5A0DB5BBE0A',
+	PersonId4 = '3E36FC86-224F-4722-8371-CE3CBD5E5747',
+	PersonId5 = '4A902E17-46EC-4364-B1D8-60FA67F62EB8',
+	TopicId1 = '7EBB6A35-C1A4-4F9A-A54A-C5A5D4AC8E7C',
+	TopicId2 = '8C93A849-BCD6-4ECE-9193-AC89E11B22DE',
+	UpdatedAt = julianday('now'),
+	UpdatedBy = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003'
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('69AAD9D5-CFCF-44A2-A8DA-C5C92E8911E8',
+	1,
+	'Da necessidade de elucidar os conceitos antes de debater',
+	'Tanto as tomadas de posição ideológico-filosóficas quanto a adesão a correntes religiosas, heréticas ou não, exigem absolutamente a precisão da linguagem e o completo esclarecimento da intenção formal. Sem isso, a conversa toda não passa de adivinhação pejorativa e desejo de ver sangue.',
+	'Olavo de Carvalho',
+	'Facebook',
+	16,
+	'BF40709C-2A82-44D3-B4B7-5591F341FB02',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'34DDDADC-0AE9-498E-A9CC-D94D6E50F480',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'6BACD2DC-3B51-4A3B-ACFA-661431245F84',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '69AAD9D5-CFCF-44A2-A8DA-C5C92E8911E8' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO FragmentLikes (FragmentLikeId, FragmentId, UserId, Score) VALUES ((SELECT MAX(FragmentLikeId) + 1 FROM FragmentLikes), '69AAD9D5-CFCF-44A2-A8DA-C5C92E8911E8', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', 2)
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = '2713F5FD-C485-4C64-9FC5-F872EA83F003' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'FA971A1F-ECFF-4FE2-AAAE-E3B2BC13191C' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'AAA92108-807A-45B1-92C8-B7811A18D25B' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'E7AA6A31-5FE0-4C47-812C-194720F3A018' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+UPDATE FragmentLikes SET ListenAt = julianday('now'), ListenCount = IFNULL(ListenCount, 0) + 1 WHERE FragmentId = 'ABBE0C0A-E07E-4E40-8BE7-DFBB92E9C33F' AND UserId = '7E26AB2D-C568-4BDD-A413-D2EAF79DF842'
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('169A551B-0391-4524-9081-CD760C5A47D4', 2, 'Edith Stein', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Tags (TagId, Type, Name, CreatedAt, CreatedBy, UpdatedAt, UpdatedBy) 
+VALUES ('FD44E14A-C473-413E-A835-845BBCC6722D', 2, 'Mônica Camatti', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), '7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Fragments 
+(FragmentId,
+	Type,
+	Title,
+	Content,
+	Author,
+	Reference,
+	DomainId,
+	ParentId,
+	AreaId,
+	PeriodId,
+	BookId,
+	InstitutionId1,
+	InstitutionId2,
+	LawId,
+	PersonId1,
+	PersonId2,
+	PersonId3,
+	PersonId4,
+	PersonId5,
+	SkillId1,
+	SkillId2,
+	SkillId3,
+	SkillId4,
+	SkillId5,
+	StateId1,
+	StateId2,
+	TopicId1,
+	TopicId2,
+	TopicId3,
+	TopicId4,
+	TopicId5,
+	UpdatedAt,
+	UpdatedBy,
+	CreatedAt,
+	CreatedBy) VALUES ('62574FE9-C253-439F-AE2D-E9A7ED03CDA1',
+	4,
+	'O tomismo não é a única via de busca pela verdade',
+	'Vou repetir algo que já havia escrito: Edith Stein converteu-se católica e tornou-se santa canonizada mesmo sendo uma filósofa que escreveu obras sobre fenomenologia e outras teorias filosóficas diferentes.
+
+Ser católico e ser santo não impede ninguém de ser escritor e cientista que estude e investigue coisas novas e desconhecidas, muito menos determina que um filósofo seja obrigado a restringir-se ao tomismo.
+
+Foram milhares de séculos de catolicismo sem tomismo e nunca faltaram grandes santos e profundamente católicos. Apesar do incalculável valor da obra de Santo Tomás para a Igreja, ninguém é obrigado a ser tomista para ser católico.
+
+Você pode ser agostiniano, salesiano, carmelita, cartuxo e até carismático, e ainda assim ser profunda e plenamente católico. A única coisa que você não pode deixar de ser é você mesmo, sendo verdadeiramente cristão.
+
+Portanto chega de exigir dos demais que limitem seus estudos e sua vivência ao raio de imaginação grupal e temporal em que você está inserido. Há muito a ser escrito e experienciado sobre o mesmo Caminho, Verdade e Vida: O CORPO DE CRISTO.
+
+Essa beleza tão antiga e tão nova permanecerá sendo dita, descoberta e vivida em nós de inúmeras formas, única para cada alma existente. A compreensão unívoca e perfeita da totalidade dos fatos e fenômenos só se dará quando formos UM SÓ COM O CRISTO. 
+
+Não há outro modo de saber tudo nem outra maneira de salvar-se.',
+	'Olavo de Carvalho',
+	'',
+	12,
+	'3451BC56-4313-4A47-9D84-17B6493B7F17',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	'169A551B-0391-4524-9081-CD760C5A47D4',
+	'FD44E14A-C473-413E-A835-845BBCC6722D',
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842',
+	julianday('now'),
+	'7E26AB2D-C568-4BDD-A413-D2EAF79DF842')
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('A99DA900-53EF-49F9-A79C-89364211D41D', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 35, 219, 0)
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('83BA3DAA-0830-496E-B672-9CD0EA182A93', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 35, 219, 0)
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('A6B209C8-0368-4443-9059-F9487E8CE8BA', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 35, 219, 0)
+|~|
+INSERT INTO Packages (PackageId, UserId, PostedAt, Inserts, Updates, Deletes) VALUES ('22FF3951-CB95-49D9-B79E-FD1EB72BCA90', '7E26AB2D-C568-4BDD-A413-D2EAF79DF842', julianday('now'), 35, 219, 0)
+|~|

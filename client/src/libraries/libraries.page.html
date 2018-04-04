@@ -1,0 +1,40 @@
+<div class="widget-box transparent">
+    <div class="widget-header widget-header-flat">
+        <h4 class="widget-title lighter" style="color: #5A5A5A;">
+            <i class="ace-icon fa fa-book"></i>
+            Biblioteca Virtual
+            <span *ngIf="booksCount">({{booksCount}})</span>
+        </h4>
+    </div>
+</div>
+
+<div class="row" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+    <div class="col-xs-12">
+        <div class="row" *ngIf="books">
+            <div class="col-xs-6 col-sm-4 col-md-3" *ngFor="let node of books">
+                <div class="thumbnail search-thumbnail" style="height:290px; padding-top:20px">
+                    <a [routerLink]="['/explorer', {domainId: node.domainId, parent: node.tagId, parentName: node.name, parentType: 'book'}]"
+                        *ngIf="node.name.indexOf('[') != -1">
+                        <div [style.background-size]="'cover'" [style.width]="'120px'" [style.height]="'170px'" [style.background-image]='url("url(" + _settings.ApiUrl + "/api/images?imagePath=tags/width160/" + _settings.cleanText(node.fileName) + ")")'
+                            [style.margin]="'auto'">
+                            <span class="badge badge-yellow" [style.margin-top]="'5px'" [style.margin-right]="'5px'" [style.float]="'right'" [style.display]="node.totalOfFragments > 0 ? 'block' : 'none'">{{node.totalOfFragments}}</span>
+                        </div>
+                        <h6 style="display:block; text-align:center; color: #999999; margin: 0; padding: 0; margin-top: 10px;">{{trunc(node.name.split('[')[0], 50)}}</h6>
+                        <h4 style="display:block; text-align:center;color: #999999; margin: 0; padding: 0;">{{trunc(node.name.split('[')[1].split(']')[0].split(';')[0], 30)}}</h4>
+                    </a>
+                    <a [routerLink]="['/libraries', {libraryId: node.tagId, libraryName: node.name}]" *ngIf="node.name.indexOf('[') == -1">
+                        <div [style.background-size]="'cover'" [style.width]="'120px'" [style.height]="'170px'" [style.background-image]="url('url(' + _settings.ApiUrl + (node.fileName ? '/api/images?imagePath=tags/width160/' + _settings.cleanText(node.fileName) : '/api/images?imagePath=tags/library.jpg') + ')')"
+                            [style.margin]="'auto'">
+                            <span class="badge badge-yellow" [style.margin-top]="'5px'" [style.margin-right]="'5px'" [style.float]="'right'" [style.display]="node.totalOfFragments > 0 ? 'block' : 'none'">{{node.totalOfFragments}}</span>
+                        </div>
+                        <h6 style="display:block; text-align:center; color: #999999">{{node.name}}</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div [style.display]="isLoading">
+            <img src="assets/images/loading.gif" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<ol class="dd-list">
+    <li class="dd-item dd2-item" *ngFor="let folder of folders">
+        <div class="dd-handle dd2-handle">
+            <i class="normal-icon ace-icon {{_settings.getEntityIcon(folder.type)}} bigger-130"></i>
+        </div>
+        <div class="dd2-content">
+            <span (click)="loadChildren(folder)">{{folder.label}}</span>
+        </div>
+        <treeview [domainId]="domainId" [folders]="folder.folders"></treeview>
+    </li>
+</ol>

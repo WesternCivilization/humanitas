@@ -1,0 +1,41 @@
+<div class="message-container">
+    <div id="id-message-new-navbar" class="message-navbar clearfix">
+        <div class="message-bar">
+            <div class="message-toolbar">
+            </div>
+        </div>
+        <div>
+            <div class="messagebar-item-left">
+                <a href="#" class="btn-back-message-list">
+                    <i class="ace-icon fa fa-arrow-left bigger-110 middle blue"></i>
+                    <b class="middle bigger-110">Voltar</b>
+                </a>
+            </div>
+            <div class="messagebar-item-right">
+                <span class="inline btn-send-message">
+                    <button type="button" class="btn btn-sm btn-primary no-border btn-white btn-round" (click)="save(data)">
+                        <span class="bigger-110">Salvar</span>
+                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-list-container">
+        <form id="id-message-form" class="form-horizontal message-form col-xs-12">
+            <div *ngIf="data">
+
+                <span class="profile-picture" *ngIf="data.imageFileName || imageUploading">
+                    <img class="editable img-responsive" [src]="imageUploading ? 'assets/images/loading.gif' : _settings.ApiUrl + '/api/images?imagePath=fragments/width340/' + data.imageFileName">
+                </span>
+
+                <div class="hr hr-18 dotted" *ngIf="data.imageFileName || imageUploading"></div>
+
+                <file-control urlpost="/api/zetetica/image" icon="glyphicon glyphicon-picture" label="Imagem"  (uploading)="imageUploading = true" (uploaded)="setFileName($event)"></file-control>
+
+            </div>
+        </form>
+
+    </div>
+</div>

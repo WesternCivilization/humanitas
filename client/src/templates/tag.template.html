@@ -1,0 +1,93 @@
+<div class="col-xs-12 col-sm-3 center">
+    <span class="profile-picture">
+        <img class="editable img-responsive" alt="{{data.name}}" [src]="data.fileName ? _settings.ApiUrl + '/api/images?imagePath=tags/width340/' + data.fileName : 'assets/images/empty.png'">
+    </span>
+    <div class="space space-4"></div>
+    <a [routerLink]="['/edit-tag/', data.tagId]" class="btn btn-sm btn-block btn-success">
+        <i class="ace-icon fa fa-plus-circle bigger-120"></i>
+        <span class="bigger-110">Editar</span>
+    </a>
+    <!--a href="#" class="btn btn-sm btn-block btn-success">
+        <i class="ace-icon fa fa-plus-circle bigger-120"></i>
+        <span class="bigger-110">Inscrever-se</span>
+    </a-->
+</div>
+<!-- /.col -->
+
+<div class="col-xs-12 col-sm-9">
+    <p style="display:inline;" *ngIf="data.text" [innerHtml]="formatText(data.text)" (click)="selectText($event)"></p>
+
+    <div class="profile-user-info">
+
+        <div class="profile-info-row" *ngIf="data.edition">
+            <div class="profile-info-name"> Edição </div>
+            <div class="profile-info-value">
+                <span>{{data.edition}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.isbn">
+            <div class="profile-info-name"> ISBN </div>
+            <div class="profile-info-value">
+                <span>{{data.isbn}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.publisher">
+            <div class="profile-info-name"> Editora </div>
+            <div class="profile-info-value">
+                <span>{{data.publisher}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.year">
+            <div class="profile-info-name"> Ano </div>
+            <div class="profile-info-value">
+                <span>{{data.year}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.beginDate">
+            <div class="profile-info-name"> Nascimento </div>
+            <div class="profile-info-value">
+                <span>{{data.beginDate}}, {{data.beginLocal}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.endDate">
+            <div class="profile-info-name"> Falecimento </div>
+
+            <div class="profile-info-value">
+                <span>{{data.endDate}}, {{data.endLocal}}</span>
+            </div>
+        </div>
+
+        <div class="profile-info-row" *ngIf="data.functionName">
+            <div class="profile-info-name"> Profissão </div>
+
+            <div class="profile-info-value">
+                <span>{{data.functionName}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hr hr-8 dotted"></div>
+
+    <div class="profile-user-info">
+
+        <div class="profile-info-row" *ngIf="data.tags.length > 0">
+            <div class="profile-info-name"> Tags </div>
+            <p class="profile-info-value">
+                <a *ngFor="let tag of data.tags" [routerLink]="[tag.link.split(';')[0], toQueryParams(tag.link.split(';')[1])]" class="label" style="margin:2px;" title="{{tag.label}}">{{trunc(tag.label, 26)}}</a>
+            </p>
+        </div>
+
+        <div class="profile-info-row" *ngFor="let link of data.links">
+            <div class="profile-info-name"> {{link.label}} </div>
+            <div class="profile-info-value">
+                <a href="{{link.url}}" target="_blank">{{link.url}}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
