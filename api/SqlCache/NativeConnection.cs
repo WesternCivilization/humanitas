@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -18,7 +17,8 @@ namespace SqlCache
             this.ConnectionString = connString;
             if (databaseType.ToLower() == "mysql")
             {
-                this._conn = new MySqlConnection(connString);
+                throw new NotImplementedException();
+                //this._conn = new MySqlConnection(connString);
             }
             else if (databaseType.ToLower() == "mssql")
             {

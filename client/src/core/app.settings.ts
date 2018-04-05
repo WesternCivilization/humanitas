@@ -14,7 +14,7 @@ export class AppSettings {
 
     constructor() {
         if (_window().location.port == 4200) {
-            this.ApiUrl = "http://" + _window().location.hostname + "/humanitasapi";
+            this.ApiUrl = "http://" + _window().location.hostname + ":57978/";
         }
         else {
             this.ApiUrl = "http://rafaelmelo.web1612.kinghost.net/humanitasapi";

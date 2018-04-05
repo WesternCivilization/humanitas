@@ -8,3 +8,5 @@ api/Humanitas.Api/Downloads/Leibniz_v002.info
 api/Humanitas.Api/Downloads/Leibniz_v002.sql
 *.user
 *.npmignore
+packages/
+api/Humanitas.Api/Web.config
