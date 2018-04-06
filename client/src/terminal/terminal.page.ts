@@ -9,7 +9,6 @@ import { AppSettings } from '../core/app.settings';
 import { TopicaService } from '../providers/topica.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
-import { TerminalService } from '../providers/terminal.service';
 
 @Component({
     templateUrl: './terminal.page.html'
@@ -20,9 +19,11 @@ export class TerminalPage {
     commands: string;
     results: string;
     isRunning: boolean = false;
+    method: string = "";
+    count: number = 1;
 
     constructor(public _breadcrumb: Breadcrumb,
-        private _terminalService: TerminalService) {
+        private _topicaService: TopicaService) {
     }
 
     ngOnInit(): void {
@@ -54,10 +55,10 @@ export class TerminalPage {
 
     run(): void {
         this.isRunning = true;
-        this._terminalService.run({ Content: this.commands })
-            .subscribe(results => { 
+        this._topicaService.run({ Content: this.commands })
+            .subscribe(results => {
                 this.results = results.html;
-                this.isRunning = false; 
+                this.isRunning = false;
             });
         this.commands = "";
     }

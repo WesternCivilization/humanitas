@@ -242,7 +242,7 @@ namespace Humanitas.Api.Controllers
 
         [HttpPost]
         [Route("save")]
-        public string Save(string token, Fragment fragment)
+        public dynamic Save(string token, Fragment fragment)
         {
             using (var scope = log.Scope("Save()", Request.Headers))
             {
@@ -259,7 +259,14 @@ namespace Humanitas.Api.Controllers
                     var obj = JObject.FromObject(fragment);
                     obj["FragmentId"] = obj["FragmentId"].ToString().ToUpper();
                     obj.Remove("Tags");
-                    return this._zeteticaService.SaveFragment(obj, token);
+
+                    string sqlExecuted; 
+                    var id = this._zeteticaService.SaveFragment(obj, token, out sqlExecuted);
+                    return new
+                    {
+                        id = id,
+                        sql = sqlExecuted
+                    };
                 }
                 catch (Exception ex)
                 {

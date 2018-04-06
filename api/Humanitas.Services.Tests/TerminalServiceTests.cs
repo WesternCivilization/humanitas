@@ -11,7 +11,9 @@ namespace Humanitas.Services.Tests
         public void Run_HappyPath()
         {
             ITerminalService service = new TerminalService(TestHelper.GetAppConfiguration(), new UserAccessService(TestHelper.GetAppConfiguration()));
-            var output = service.Run($@"Autor: Henry Cobin
+            string html;
+            string sql;
+            service.Run($@"Autor: Henry Cobin
 Tópico: Predestinação
 Tópico: Personalidade Islâmica
 Tópico: Direito de um é a obrigação do outro
@@ -156,9 +158,7 @@ Olavo de Carvalho
 Olavo de Carvalho
 
 ""A maior prova de mentalidade mesquinha é a pressa em sentir-se ofendido.""
-Olavo de Carvalho", "EAAE6keP0ZCAABAIEVkAOc0C6NhkZAUA4WDVkfoNkzZCSoBV2ZCjXZBMIpjwz0ytCveodG0Eh98m5l4OHPVDLZAWZAl6YidNsW2XkIGdZACz0ioLvX9IpcSidJbp4FRlZCU0B46KsZCtbUtspmFd5VGZBHyec3cjtKozD4mLKqvdYTGkK8mGYllZCSZAaQhzkwnP4EDkjxWTGr2HzWMAZDZD");
-
-            output.ToString();
+Olavo de Carvalho", "EAAE6keP0ZCAABAIEVkAOc0C6NhkZAUA4WDVkfoNkzZCSoBV2ZCjXZBMIpjwz0ytCveodG0Eh98m5l4OHPVDLZAWZAl6YidNsW2XkIGdZACz0ioLvX9IpcSidJbp4FRlZCU0B46KsZCtbUtspmFd5VGZBHyec3cjtKozD4mLKqvdYTGkK8mGYllZCSZAaQhzkwnP4EDkjxWTGr2HzWMAZDZD", out html, out sql);
         }
     }
 }

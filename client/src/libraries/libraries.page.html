@@ -5,6 +5,10 @@
             Biblioteca Virtual
             <span *ngIf="booksCount">({{booksCount}})</span>
         </h4>
+        <div [style.float]="'right'" [style.top]="'-10px'" [style.position]="'relative'" [style.display]="showFilters ? 'inline-block' : 'none'">
+            <preload-template type="tag" icon="fa fa-user" value="{{tag}}" placeholder="Nome do tópico, livro ou autor"
+                (select)="setFilter($event.value)"></preload-template>
+        </div>
     </div>
 </div>
 

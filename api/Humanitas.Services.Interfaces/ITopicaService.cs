@@ -24,7 +24,7 @@ namespace Humanitas.Services.Interfaces
 
         bool SaveImage(string userId, HttpPostedFile file);
 
-        string SaveTag(JObject tag, string userId);
+        string SaveTag(JObject tag, string userId, out string sqlExecuted);
 
         long SaveLibraryBook(JObject book, string userId);
 

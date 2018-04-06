@@ -28,9 +28,11 @@ export class EditFragmentPage implements OnInit {
         private _topicaService: TopicaService,
         private _zeteticaService: ZeteticaService) {
         ZeteticaService.saved.subscribe(data => this.saved = data);
+        console.warn("constructor");
     }
 
     ngOnInit(): void {
+        console.warn("init");
         if (this._settings.getUserType() > 0) {
             alert("Acesso negado. Você não é administrador.");
             this._router.navigate(['/activities']);

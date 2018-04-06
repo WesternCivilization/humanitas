@@ -1,4 +1,4 @@
-import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, PathLocationStrategy, Location, LocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

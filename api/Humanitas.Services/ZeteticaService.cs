@@ -1458,14 +1458,18 @@ namespace Humanitas.Services
             }
         }
 
-        string IZeteticaService.SaveFragment(JObject obj, string token)
+        string IZeteticaService.SaveFragment(JObject obj, string token, out string sqlExecuted)
         {
             using (var scope = log.Scope("SaveFragment()"))
             {
                 try
                 {
+                    var sql = new StringBuilder();
                     using (var conn = new SqlCacheConnection(this._config.ConnectionString))
                     {
+                        conn.SqlExecuted = (data, cmd) => 
+                        {
+                        };
                         var id = (string)conn.Save("Fragments", obj);
                         var act = conn.TypedQuery<Activity>($"SELECT * FROM Activities WHERE FragmentId = '{id}'").FirstOrDefault();
                         if (act == null)
@@ -1508,6 +1512,7 @@ namespace Humanitas.Services
                         act.TopicId4 = Nvl(obj["TopicId4"].ToString());
                         act.TopicId5 = Nvl(obj["TopicId5"].ToString());
                         var actId = (string)conn.Save("Activities", JObject.FromObject(act));
+                        sqlExecuted = sql.ToString();
                         return id;
                     }
                 }

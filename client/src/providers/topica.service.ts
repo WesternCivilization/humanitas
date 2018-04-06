@@ -111,12 +111,47 @@ export class TopicaService implements OnInit {
         });
     }
 
+    execute(scripts: string): void {
+        var obj = this;
+        this.cacheDb.transaction(function (transaction) {
+            console.info("running scripts...");
+            let cmds = scripts.split('`');
+            function error_handler(sql) {
+                var statement = sql;
+                return function (_, error) {
+                    console.error(error);
+                    console.warn(statement);
+                }
+            };
+            for (let i = 0; i < cmds.length; i++) {
+                let sql = cmds[i];
+                if (sql[0] == '"') {
+                    sql = sql.substring(1);
+                }
+                if (sql.length > 2) {
+                    transaction.executeSql(sql, [],
+                        function (_, result) { },
+                        error_handler(sql));
+                }
+            }
+            console.info("execution is completed.");
+        });
+    }
+
     save(data: any): Observable<any> {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
         return this._http
             .post(this._settings.ApiUrl + '/api/topica/save?token=' + AppSettings.UserToken, data, options)
-            .map((response: any) => response.json());
+            .map((response: any) => { this.execute(response.json().sql); return response.json(); });
+    }
+
+    run(data: any): Observable<any> {
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+        return this._http
+            .post(this._settings.ApiUrl + '/api/terminal/run?token=' + AppSettings.UserToken, data, options)
+            .map((response: any) => { this.execute(response.json().sql); return response.json(); });
     }
 
     notifyAll(data: any): void {

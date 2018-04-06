@@ -30,6 +30,8 @@ namespace SqlCache
 
         public string ConnectionString { get; set; }
 
+        public Action<dynamic, string> SqlExecuted { get; set; }
+
 
         private System.Data.IDbConnection _conn;
 
@@ -123,6 +125,8 @@ namespace SqlCache
                     this._conn.Open();
 
                 cmd2.ExecuteNonQuery();
+
+                this.SqlExecuted?.Invoke(data, sb.ToString());
             }
 
             return keyValue;
@@ -253,10 +257,11 @@ namespace SqlCache
             {
                 if (this._conn.State != System.Data.ConnectionState.Open)
                     this._conn.Open();
-
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.CommandText = sql;
-                return cmd.ExecuteNonQuery();
+                var result = cmd.ExecuteNonQuery();
+                this.SqlExecuted?.Invoke(null, sql);
+                return result;
             }
         }
 

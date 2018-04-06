@@ -9,7 +9,7 @@ namespace Humanitas.Services.Interfaces
     public interface ITerminalService
     {
 
-        string Run(string cmds, string userId);
+        void Run(string cmds, string userId, out string html, out string sql);
 
         string SaveObject(Dictionary<string, string> keyValues, string userId);
 

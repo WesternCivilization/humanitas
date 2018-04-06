@@ -23,9 +23,10 @@ namespace Humanitas.Services
             this._userService = userService;
         }
 
-        string ITerminalService.Run(string cmds, string token)
+        void ITerminalService.Run(string cmds, string token, out string html, out string sql)
         {
-            var output = new StringBuilder();
+            var htmlOutput = new StringBuilder();
+            var sqlOutput = new StringBuilder();
             var lines = Regex.Split(cmds, "\n");
             var keyValues = new Dictionary<string, string>();
             bool doubleQuoteOpen = false;
@@ -37,6 +38,17 @@ namespace Humanitas.Services
                 throw new ArgumentOutOfRangeException($"Invalid user token '{token}'.");
             using (var conn = new SqlCache.SqlCacheConnection(this._config.ConnectionString))
             {
+                conn.SqlExecuted = (data, cmd) =>
+                {
+                    if (cmd.Contains("INSERT INTO Tags"))
+                    {
+                        sqlOutput.Append($"INSERT INTO AutoComplete (Id, Category, Type, Name) VALUES ('{((string)data.TagId.ToString()).ToUpper()}', 'TAG', {data.Type}, '{((string)data.Name).Replace("'", "''")}')`");
+                    }
+                    else if (cmd.Contains("UPDATE Tags"))
+                    {
+                        sqlOutput.Append($"UPDATE AutoComplete SET Type = {data.Type}, Name = '{((string)data.Name).Replace("'", "''")}' WHERE Id = '{((string)data.TagId.ToString()).ToUpper()}'`");
+                    }
+                };
                 foreach (var line in lines)
                 {
                     if (!doubleQuoteOpen && line.StartsWith("Tópico: "))
@@ -60,7 +72,30 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                    }
+                    else if (!doubleQuoteOpen && line.StartsWith("Habilidade: "))
+                    {
+                        var tag = conn.NewRow("Tags");
+                        tag.TagId = Guid.NewGuid().ToString().ToUpper();
+                        tag.Name = line.Substring(12).TrimEnd('\r');
+                        tag.Type = 10;
+                        tag.DomainId = 41;
+                        tag.CreatedAt = DateTime.Now;
+                        tag.CreatedBy = userId;
+                        tag.UpdatedAt = DateTime.Now;
+                        tag.UpdatedBy = userId;
+                        var id = conn.Save("Tags", tag);
+
+                        var act = conn.NewRow("Activities");
+                        act.ActivityId = Guid.NewGuid().ToString().ToUpper();
+                        act.UserId = userId;
+                        act.TagId = id;
+                        act.DomainId = tag.DomainId;
+                        act.CreatedAt = tag.CreatedAt;
+                        conn.Save("Activities", act);
+
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("Livro: "))
                     {
@@ -83,7 +118,7 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("Autor: "))
                     {
@@ -106,7 +141,7 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("Período: "))
                     {
@@ -129,7 +164,7 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("Área: "))
                     {
@@ -152,7 +187,7 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("Instituição: "))
                     {
@@ -175,7 +210,7 @@ namespace Humanitas.Services
                         act.CreatedAt = tag.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
+                        htmlOutput.AppendLine($"Tag <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-tag/{tag.TagId}' target='_blank'>{tag.Name}</a> adicionada.<br />");
                     }
                     else if (!doubleQuoteOpen && line.StartsWith("\""))
                     {
@@ -226,12 +261,13 @@ namespace Humanitas.Services
                         act.CreatedAt = quote.CreatedAt;
                         conn.Save("Activities", act);
 
-                        output.AppendLine($"Fragmento <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-fragment/{quote.FragmentId}' target='_blank'>{quote.Title} ({quote.Author})</a> adicionado.<br />");
+                        htmlOutput.AppendLine($"Fragmento <a href='http://rafaelmelo.web1612.kinghost.net/humanitas/#/edit-fragment/{quote.FragmentId}' target='_blank'>{quote.Title} ({quote.Author})</a> adicionado.<br />");
 
                     }
                 }
             }
-            return output.ToString();
+            html = htmlOutput.ToString();
+            sql = sqlOutput.ToString();
         }
 
         string ITerminalService.SaveObject(Dictionary<string, string> keyValues, string token)

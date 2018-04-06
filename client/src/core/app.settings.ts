@@ -10,6 +10,7 @@ function _window(): any {
 export class AppSettings {
 
     public static FilterTag: string = null;
+    public static FilterLibraryTag: string = null;
     public static SortType: string = "4";
 
     constructor() {

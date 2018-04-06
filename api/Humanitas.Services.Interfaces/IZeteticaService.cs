@@ -34,7 +34,7 @@ namespace Humanitas.Services.Interfaces
 
         bool SaveImage(string userId, HttpPostedFile file);
 
-        string SaveFragment(JObject obj, string userId);
+        string SaveFragment(JObject obj, string userId, out string sqlExecuted);
 
         bool Score(string fragmentId, short score, string userId);
 

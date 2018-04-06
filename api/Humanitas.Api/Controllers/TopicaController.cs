@@ -212,7 +212,7 @@ namespace Humanitas.Api.Controllers
 
         [HttpPost]
         [Route("save")]
-        public string Save(string token, Tag tag)
+        public dynamic Save(string token, Tag tag)
         {
             using (var scope = log.Scope("Image()", Request.Headers))
             {
@@ -240,8 +240,14 @@ namespace Humanitas.Api.Controllers
                     this._topicaService.SaveEvents(tag.TagId, obj["Events"], token);
                     obj.Remove("Links");
                     obj.Remove("Events");
+                    string sqlExecuted;
+                    var id = this._topicaService.SaveTag(obj, token, out sqlExecuted);
+                    return new
+                    {
+                        id = id,
+                        sql = sqlExecuted
+                    };
 
-                    return this._topicaService.SaveTag(obj, token);
                 }
                 catch (Exception ex)
                 {

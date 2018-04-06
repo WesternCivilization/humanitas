@@ -21,6 +21,8 @@ namespace SqlCache
         private Dictionary<string, string> _settings = new Dictionary<string, string>();
         private NativeConnection _native;
 
+        public Action<dynamic, string> SqlExecuted;
+
         public void RebuildIndexes()
         {
             if (this.State == System.Data.ConnectionState.Closed)
@@ -1437,6 +1439,7 @@ namespace SqlCache
             {
                 var connString = $"Server={this._settings["server"]};Database={this._settings["database"]};Uid={this._settings["uid"]};Password={this._settings["password"]};MultipleActiveResultSets=true";
                 this._native = new NativeConnection(this._settings["database type"], connString);
+                this._native.SqlExecuted = this.SqlExecuted;
             }
             else
             {

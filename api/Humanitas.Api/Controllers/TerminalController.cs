@@ -32,9 +32,11 @@ namespace Humanitas.Api.Controllers
         [Route("run")]
         public dynamic Run(string token, dynamic cmds)
         {
-            var html = this._service.Run(cmds.Content.ToString(), token);
+            string html;
+            string sql;
+            this._service.Run(cmds.Content.ToString(), token, out html, out sql);
             CacheHelper.Clear();
-            return new { Html = html };
+            return new { Html = html, Sql = sql };
         }
 
     }

@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace Humanitas.Services
@@ -1045,14 +1046,26 @@ namespace Humanitas.Services
             }
         }
 
-        string ITopicaService.SaveTag(JObject obj, string token)
+        string ITopicaService.SaveTag(JObject obj, string token, out string sqlExecuted)
         {
             using (var scope = log.Scope("SaveTag()"))
             {
                 try
                 {
+                    var sql = new StringBuilder();
                     using (var conn = new SqlCacheConnection(this._config.ConnectionString))
                     {
+                        conn.SqlExecuted = (data, cmd) =>
+                        {
+                            if (cmd.Contains("INSERT INTO Tags"))
+                            {
+                                sql.Append($"INSERT INTO AutoComplete (Id, Category, Type, Name) VALUES ('{((string)data.TagId.ToString()).ToUpper()}', 'TAG', {data.Type}, '{((string)data.Name).Replace("'", "''")}')`");
+                            }
+                            else if (cmd.Contains("UPDATE Tags"))
+                            {
+                                sql.Append($"UPDATE AutoComplete SET Type = {data.Type}, Name = '{((string)data.Name).Replace("'", "''")}' WHERE Id = '{((string)data.TagId.ToString()).ToUpper()}'`");
+                            }
+                        };
                         var id = (string)conn.Save("Tags", obj);
                         var act = conn.TypedQuery<Activity>($"SELECT * FROM Activities WHERE TagId = '{id}'").FirstOrDefault();
                         if (act == null)
@@ -1095,6 +1108,7 @@ namespace Humanitas.Services
                         act.TopicId4 = Nvl(obj["TopicId4"].ToString());
                         act.TopicId5 = Nvl(obj["TopicId5"].ToString());
                         var actId = (string)conn.Save("Activities", JObject.FromObject(act));
+                        sqlExecuted = sql.ToString();
                         return id;
                     }
                 }

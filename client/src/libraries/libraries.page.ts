@@ -22,6 +22,8 @@ export class LibrariesPage implements OnInit, OnDestroy {
     libraryId: string;
     libraryName: string;
     sub: Subscription;
+    showFilters: boolean;
+    tag: string;
 
     constructor(public _breadcrumb: Breadcrumb,
         public _settings: AppSettings,
@@ -31,6 +33,8 @@ export class LibrariesPage implements OnInit, OnDestroy {
     }
 
     ngOnInit(): void {
+        this.tag = AppSettings.FilterLibraryTag;
+
         this._route.params.subscribe(params => {
             this.libraryId = params["libraryId"];
             this.libraryName = params["libraryName"];
@@ -39,10 +43,17 @@ export class LibrariesPage implements OnInit, OnDestroy {
             this._breadcrumb.append("Biblioteca Virtual", "fa fa-book", "/libraries");
             if (!this.libraryId) {
                 this.libraries();
+                this.showFilters = false;
             }
             else {
                 this._breadcrumb.append(this.libraryName, "fa fa-book", "/libraries;libraryId=" + this.libraryId + "&libraryName=" + this.libraryName);
-                this.filter(new Array());
+                if (this.tag) {
+                    this.filter([{ value: this.tag, label: this.tag }]);
+                }
+                else {
+                    this.filter(new Array());
+                }
+                this.showFilters = true;
             }
         });
 
@@ -67,6 +78,12 @@ export class LibrariesPage implements OnInit, OnDestroy {
         });
     }
 
+    public setFilter(value: string): void {
+        AppSettings.FilterLibraryTag = value;
+        this.tag = value;
+        this.filter([{ value: value, label: value }]);
+    }
+
     filter(ev: Array<IOption>): void {
         this.tags = new Array();
         ev.forEach(item => this.tags.push(item.value));
@@ -77,7 +94,7 @@ export class LibrariesPage implements OnInit, OnDestroy {
         });
     }
 
-    url(src:string){
+    url(src: string) {
         return this._domSanitizer.bypassSecurityTrustStyle(src);
     }
 
